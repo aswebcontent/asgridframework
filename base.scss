@@ -32,17 +32,18 @@ blockquote {
 	background-size: 986px;
 }
 
-/*
+
 @media all and (min-width: 75em) {
 	.HP-Test, .FOOTER-Test {
-		font-size: 1.25em;
+		font-size: 1.1em;
+		width: 100%;
 		max-width: 60em;
 	}
 
 }
 @media all and (min-width: 57em) and (max-width: 59.9999em) {
 	.HP-Test, .FOOTER-Test {
-		font-size: 0.9375em;
+		width: 100%;		
 		max-width: 57em;
 	}
 
@@ -50,16 +51,18 @@ blockquote {
 @media all and (min-width: 47.9376em) and (max-width: 56.9999em) {
 	.HP-Test, .FOOTER-Test {
 		font-size: 0.875em;
-		width: 48em;
+		width: 100%;		
+		max-width: 48em;
 	}
 
 }
 @media all and (max-width: 47.9375em) {
 	.HP-Test, .FOOTER-Test {
+		font-size: 0.9em;
 		padding: 1em;
 	}
 
-}*/
+}
 
 .FOOTER-Test {
 	font-family: $font-stack;

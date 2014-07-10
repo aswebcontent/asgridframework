@@ -114,6 +114,17 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 	min-height: 24em;
 	background-image: url(http://www.brandonshields.com/alaska-airlines/homepage/images/istock_000011347788medium.jpg);
 	background-size: 100%;
+	background-repeat: no-repeat;
+}
+
+
+
+@media all and (max-width: 26.7em) {
+
+.module-hero .module-textareaWhite{
+	font-size: .8em;
+}
+
 }
 
 .module-textareaWhite span {font-size: .5em}

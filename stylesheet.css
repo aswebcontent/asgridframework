@@ -81,34 +81,24 @@ blockquote {
   background-position: center top;
   background-size: 986px; }
 
-/*
 @media all and (min-width: 75em) {
-	.HP-Test, .FOOTER-Test {
-		font-size: 1.25em;
-		max-width: 60em;
-	}
-
-}
+  .HP-Test, .FOOTER-Test {
+    font-size: 1.1em;
+    width: 100%;
+    max-width: 60em; } }
 @media all and (min-width: 57em) and (max-width: 59.9999em) {
-	.HP-Test, .FOOTER-Test {
-		font-size: 0.9375em;
-		max-width: 57em;
-	}
-
-}
+  .HP-Test, .FOOTER-Test {
+    width: 100%;
+    max-width: 57em; } }
 @media all and (min-width: 47.9376em) and (max-width: 56.9999em) {
-	.HP-Test, .FOOTER-Test {
-		font-size: 0.875em;
-		width: 48em;
-	}
-
-}
+  .HP-Test, .FOOTER-Test {
+    font-size: 0.875em;
+    width: 100%;
+    max-width: 48em; } }
 @media all and (max-width: 47.9375em) {
-	.HP-Test, .FOOTER-Test {
-		padding: 1em;
-	}
-
-}*/
+  .HP-Test, .FOOTER-Test {
+    font-size: 0.9em;
+    padding: 1em; } }
 .FOOTER-Test {
   font-family: ScalaSans, Helvetica, sans-serif;
   font-size: 16px;
@@ -188,14 +178,10 @@ hr {
   vertical-align: top;
   float: left; }
 
-/*
 @media all and (max-width: 48em) {
-	body .grid {
-		display: block;
-		width: 100%;
-	}
-}
-*/
+  body .grid {
+    display: block;
+    width: 100%; } }
 .grid-container {
   min-height: 5em; }
 
@@ -433,8 +419,12 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-hero {
   min-height: 24em;
   background-image: url(http://www.brandonshields.com/alaska-airlines/homepage/images/istock_000011347788medium.jpg);
-  background-size: 100%; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
+@media all and (max-width: 26.7em) {
+  .module-hero .module-textareaWhite {
+    font-size: .8em; } }
 .module-textareaWhite span {
   font-size: .5em; }
 
@@ -474,6 +464,9 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   padding: 0;
   line-height: 1em;
   color: #454545; }
+
+.emphasize {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29); }
 
 .headlines-centered {
   text-align: center;
@@ -1523,33 +1516,39 @@ h6 {
 
 #emsl1 {
   background-image: url(http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/parallax-backgrounds/bags.jpg);
-  background-position: right;
-  background-size: 200%; }
+  background-position: right center;
+  background-size: 200%;
+  background-repeat: no-repeat; }
 
 #emsl2 {
   background-image: url(http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/parallax-backgrounds/bags.jpg);
-  background-position: -0.5em -16.5em;
-  background-size: 230%; }
+  background-position: left center;
+  background-size: 230%;
+  background-repeat: no-repeat; }
 
 #pic1 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/3814934-u4415-fr.jpg);
   background-position: center;
-  background-size: 100%; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 #pic2 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/6241955-u4414-fr.jpg);
   background-position: center;
-  background-size: 100%; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 #pic3 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/gettyimages_200374167-001-u5242-fr.png);
   background-position: center;
-  background-size: 100%; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 #pic4 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/cbp1162173-2-u5249-fr.jpg);
   background-position: center;
-  background-size: 100%; }
+  background-size: 100%;
+  background-repeat: no-repeat; }
 
 .grid-3x4 .module-Picturecontainer, .grid-3x4-nomargin .module-Picturecontainer, .grid-3x4-nomargin .module-Picturecontainer {
   min-height: 9em; }
@@ -1579,7 +1578,8 @@ div.layout-40.module-textareaWhite {
 
 #miles {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/3654241-u5666-fr.png);
-  background-position: center;
+  background-position: center center;
+  background-repeat: no-repeat;
   background-size: 100%;
   min-height: 14.69em;
   color: white; }
@@ -1594,3 +1594,9 @@ div.layout-40.module-textareaWhite {
 #miles a {
   color: white;
   text-decoration: none; }
+
+@media all and (max-width: 26.7em) {
+  #miles {
+    background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/3654241-u5666-fr.png);
+    background-position: center;
+    background-size: 142%; } }
