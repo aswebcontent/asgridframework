@@ -2,6 +2,9 @@ body {background-color: $sitebg-color; margin: 0 auto}
 
 a {color:$sitelink-color;}
 a:hover {color:$sitelinkhover-color;}
+
+.subdued {color:$subdued-txt;}
+
 input {	font-family: $font-stack;}
 blockquote {
 	border-right: 1px solid $siteborder-color;

@@ -64,6 +64,12 @@
 	background-color: rgba( $emslbluewtransparency, .7 );
 }
 
+.module-grayContainer {
+	width: auto;
+	display: block;
+	background-color: rgba( $graywtransparency, .7 );
+}
+
 /* MODULE Horizontal Menu
 http://css-tricks.com/keep-margins-out-of-link-lists/ 
 */

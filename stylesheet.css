@@ -51,6 +51,9 @@ a {
 a:hover {
   color: #4770a2; }
 
+.subdued {
+  color: #aaaaaa; }
+
 input {
   font-family: ScalaSans, Helvetica, sans-serif; }
 
@@ -341,6 +344,11 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   width: auto;
   display: block;
   background-color: rgba(64, 108, 173, 0.7); }
+
+.module-grayContainer {
+  width: auto;
+  display: block;
+  background-color: rgba(119, 119, 119, 0.7); }
 
 /* MODULE Horizontal Menu
 http://css-tricks.com/keep-margins-out-of-link-lists/ 
