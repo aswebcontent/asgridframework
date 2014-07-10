@@ -89,12 +89,12 @@ blockquote {
 @media all and (min-width: 57em) and (max-width: 59.9999em) {
   .HP-Test, .FOOTER-Test {
     width: 100%;
-    max-width: 57em; } }
+    max-width: 60em; } }
 @media all and (min-width: 47.9376em) and (max-width: 56.9999em) {
   .HP-Test, .FOOTER-Test {
     font-size: 0.875em;
     width: 100%;
-    max-width: 48em; } }
+    max-width: 60em; } }
 @media all and (max-width: 47.9375em) {
   .HP-Test, .FOOTER-Test {
     font-size: 0.9em;
@@ -149,7 +149,8 @@ hr {
   margin-right: -0.9375em;*/
   margin-top: 0;
   margin-bottom: 0;
-  max-width: none; }
+  max-width: none;
+  padding: 0; }
 
 .row .row:before, .row .row:after {
   content: " ";
@@ -191,60 +192,110 @@ I'd like to figure out why I need to use this many decimals to make all the em's
 grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
 
 */
-.grid-margin, .grid-3, .grid-3-nomargin, .grid-3x4, .grid-3x4-nomargin, .grid-4, .grid-4-nomargin, .grid-5, .grid-5-nomargin, .grid-6, .grid-6-nomargin, .grid-7, .grid-7-nomargin, .grid-8, .grid-8-nomargin, .grid-9, .grid-9-nomargin {
+.grid-margin, .grid-3, .grid-3-last, .grid-3x4, .grid-3x4-last, .grid-4, .grid-4-last, .grid-5, .grid-5-last, .grid-6, .grid-6-last, .grid-7, .grid-7-last, .grid-8, .grid-8-last, .grid-9, .grid-9-last {
   margin-right: 3%; }
 
-.grid-1, .grid-1-nomargin {
+.grid-1, .grid-1-last {
   width: 8.3333%; }
 
-.grid-2, .grid-2-nomargin {
+.grid-2, .grid-2-last {
   width: 16.6667%; }
 
-.grid-3, .grid-3-nomargin {
+.grid-3, .grid-3-last {
   width: 24.5%; }
 
-.grid-3x4, .grid-3x4-nomargin {
+.grid-3x4, .grid-3x4-last {
   width: 22.75%; }
 
-.grid-4, .grid-4-nomargin {
+.grid-4, .grid-4-last {
   width: 33%; }
 
-.grid-4x3, .grid-4x3-nomargin {
+.grid-4x3, .grid-4x3-last {
   margin-right: 2%;
   width: 32%; }
 
-.grid-5, .grid-5-nomargin {
+.grid-5, .grid-5-last {
   width: 42%; }
 
-.grid-6, .grid-6-nomargin {
+.grid-6, .grid-6-last {
   width: 48.5%; }
 
-.grid-7, .grid-7-nomargin {
+.grid-6 .grid-6, .grid-6-last .grid-6, .grid-6 .grid-6-last, .grid-6-last .grid-6-last {
+  width: 47%;
+  margin-right: 6%; }
+
+.grid-7, .grid-7-last {
   width: 55%; }
 
-.grid-8, .grid-8-nomargin {
+.grid-8, .grid-8-last {
   width: 64%; }
 
-.grid-9, .grid-9-nomargin {
+.grid-9, .grid-9-last {
   width: 72.5%; }
 
-.grid-10, .grid-10-nomargin {
+.grid-10, .grid-10-last {
   width: 83.3333%; }
 
-.grid-11, .grid-11-nomargin {
+.grid-11, .grid-11-last {
   width: 91.66667%; }
 
 .grid-12 {
   width: 100%; }
 
+/* Base 12 Grid System 5em=80px 60em=960px
+
+I'd like to figure out why I need to use this many decimals to make all the em's add up to 60em
+grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
+
+*/
+.grid-1-noMargin {
+  width: 8.3333%; }
+
+.grid-2-noMargin {
+  width: 16.6667%; }
+
+.grid-3-noMargin {
+  width: 25%; }
+
+.grid-4-noMargin {
+  width: 33.3333%; }
+
+.grid-5-noMargin {
+  width: 41.6667%; }
+
+.grid-6-noMargin {
+  width: 50%; }
+
+.grid-7-noMargin {
+  width: 58.3333%; }
+
+.grid-8-noMargin {
+  width: 66.6667%; }
+
+.grid-9-noMargin {
+  width: 72.5%; }
+
+.grid-10-noMargin {
+  width: 83.3333%; }
+
+.grid-11-noMargin {
+  width: 91.66667%; }
+
+.grid-12-noMargin {
+  width: 100%; }
+
 /* Base 12 Grid System 5em=80px 60em=960px*/
-.grid-nomargin, .grid-1-nomargin, .grid-2-nomargin, .grid-3-nomargin, .grid-3x4-nomargin, .grid-4-nomargin, .grid-4x3-nomargin, .grid-5-nomargin, .grid-6-nomargin, .grid-7-nomargin, .grid-8-nomargin, .grid-9-nomargin, .grid-10-nomargin, .grid-11-nomargin {
+.grid-last, .grid-1-last, .grid-2-last, .grid-3-last, .grid-3x4-last, .grid-4-last, .grid-4x3-last, .grid-5-last, .grid-6-last, .grid-6 .grid-6-last, .grid-6-last .grid-6-last, .grid-7-last, .grid-8-last, .grid-9-last, .grid-10-last, .grid-11-last {
   margin-right: 0%;
   margin-left: 0%; }
 
-.grid-12-nomargin {
-  width: 60em; }
+.grid-6 .grid-6-last, .grid-6-last .grid-6-last, .grid-6-last .grid-6-last {
+  width: 47%; }
 
+.grid-12-last {
+  width: 100%; }
+
+/*Layout*/
 .grid-40 {
   width: 40%;
   padding: 0 1em; }
@@ -278,6 +329,10 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 .grid-modulePrice {
   width: 100%;
   text-align: right; }
+
+.layout-discoverText {
+  margin: 2.5em auto;
+  min-height: 3.8em; }
 
 /*MODULE*/
 .module, .module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer, .module-whiteContainer {
@@ -371,6 +426,64 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   margin: .1em 0;
   color: #7997c8; }
 
+/*MODULE Discover Module*/
+.module-discover {
+  font-weight: normal; }
+
+.module-discover * {
+  font-weight: normal; }
+
+.module-discover a {
+  text-decoration: none; }
+
+.module-discover h2 {
+  margin: 0em;
+  line-height: 1em;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+.module-discover h3 {
+  margin: 0em;
+  line-height: 1em;
+  /*centers the text vertically*/
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+.module-discover h4 {
+  margin: 0em;
+  line-height: 1em;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+/*MODULE Discover Grid Module*/
+.module-discover-grid {
+  font-weight: normal; }
+
+.module-discover-grid * {
+  font-weight: normal; }
+
+.module-discover-grid a {
+  text-decoration: none; }
+
+.module-discover-grid h2 {
+  margin: 0em;
+  line-height: 1em;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+.module-discover-grid h3 {
+  margin: 0em;
+  line-height: 2em;
+  /*centers the text vertically*/
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
+.module-discover-grid h4 {
+  margin: 0em;
+  line-height: 1em;
+  color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
+
 /*MODULE emsl boxes*/
 .module-headlinesInBoxes {
   padding: 1em; }
@@ -407,6 +520,13 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-Picturecontainer {
   min-height: 12em; }
 
+.bg-blueTint {
+  background-color: rgba(0, 36, 90, 0.84); }
+
+/*Used to give the pciture grid consistant buffer between images*/
+.module-pictureWrapper {
+  margin-bottom: 1.5em; }
+
 .module-price {
   font-size: 2.5em;
   color: white;
@@ -422,9 +542,13 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   background-size: 100%;
   background-repeat: no-repeat; }
 
+/*How do we want to do the sign in widget.*/
+@media all and (max-width: 40em) {
+  .module-hero {
+    min-height: 12em; } }
 @media all and (max-width: 26.7em) {
   .module-hero .module-textareaWhite {
-    font-size: .8em; } }
+    font-size: 1em; } }
 .module-textareaWhite span {
   font-size: .5em; }
 
@@ -537,9 +661,9 @@ h6 {
 .module-myAccountInput {
   margin-bottom: .5em; }
 
-.module-form label + a {
-  font-size: 0.9em;
-  line-height: 1.5em; }
+/*.module-form label + a {font-size: 0.9em;line-height: 1.5em;}*/
+.module-form a {
+  font-size: .8em; }
 
 .formhelp {
   font-size: .8em;
@@ -1526,31 +1650,76 @@ h6 {
   background-size: 230%;
   background-repeat: no-repeat; }
 
+#emsl3 {
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/ayp1349609.jpg);
+  background-position: left center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#emsl4 {
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/164852022.jpg);
+  background-position: left center;
+  background-size: 150%;
+  background-repeat: no-repeat; }
+
+#emsl5 {
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/img_1631-cabo-u5238-fr.png);
+  background-position: left center;
+  background-size: 150%;
+  background-repeat: no-repeat; }
+
+#emsl6 {
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/2306786-u5236-fr.png);
+  background-position: left center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+
+#emsl7 {
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/2582269-u5240-fr.png);
+  background-position: left center;
+  background-size: 150%;
+  background-repeat: no-repeat; }
+
+#emsl8 {
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/gettyimages_200374167-001-u5242-fr.png);
+  background-position: left center;
+  background-size: 145%;
+  background-repeat: no-repeat; }
+
+#emsl9 {
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/164852022.jpg);
+  background-position: left center;
+  background-size: 150%;
+  background-repeat: no-repeat; }
+
+#emsl5 h2 {
+  line-height: 7em; }
+
 #pic1 {
-  background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/3814934-u4415-fr.jpg);
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3814934-u4415-fr.jpg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat; }
 
 #pic2 {
-  background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/6241955-u4414-fr.jpg);
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/6241955-u4414-fr.jpg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat; }
 
 #pic3 {
-  background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/gettyimages_200374167-001-u5242-fr.png);
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/gettyimages_200374167-001-u5242-fr.png);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat; }
 
 #pic4 {
-  background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/cbp1162173-2-u5249-fr.jpg);
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/cbp1162173-2-u5249-fr.jpg);
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat; }
 
-.grid-3x4 .module-Picturecontainer, .grid-3x4-nomargin .module-Picturecontainer, .grid-3x4-nomargin .module-Picturecontainer {
+.grid-3x4 .module-Picturecontainer, .grid-3x4-last .module-Picturecontainer, .grid-3x4-nomargin .module-Picturecontainer {
   min-height: 9em; }
 
 .module-carouselImages img {
@@ -1577,11 +1746,11 @@ div.layout-40.module-textareaWhite {
   top: 25px; }
 
 #miles {
-  background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/3654241-u5666-fr.png);
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100%;
-  min-height: 14.69em;
+  min-height: 13.3em;
   color: white; }
 
 #milesText {
@@ -1597,6 +1766,6 @@ div.layout-40.module-textareaWhite {
 
 @media all and (max-width: 26.7em) {
   #miles {
-    background-image: url(http://www.brandonshields.com/alaska-airlines/asgrid-framework/images/3654241-u5666-fr.png);
+    background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
     background-position: center;
     background-size: 142%; } }

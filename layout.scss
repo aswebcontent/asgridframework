@@ -1,0 +1,45 @@
+/*Layout*/
+
+.grid-40 {
+	width: 40%;
+	padding: 0 1em;	
+}
+.grid-50 {
+	width: 50%;
+	padding: 0 1em;	
+}
+.grid-60 {
+	width: 60%;
+	padding: 0 1em;	
+}
+.grid-67 {
+	width: 67%;
+	padding: 0 1em;
+}
+
+.grid-leftinsidebox {
+	width: 67%;
+	min-height: 5em;
+	margin-left: -1.5em;
+}
+/*
+@media all and (max-width: 980px) {
+	.grid-leftinsidebox {
+		margin-left: 0em;
+		max-width: 24em;
+	}
+
+}
+*/
+
+
+.grid-modulePrice {
+	width: 100%;
+	text-align: right;
+}
+
+
+.layout-discoverText {
+margin: 2.5em auto;
+min-height: 3.8em;
+}

@@ -26,7 +26,8 @@
     margin-right: -0.9375em;*/
     margin-top: 0;
     margin-bottom: 0;
-    max-width: none; }
+    max-width: none;
+    padding: 0 }
     .row .row:before, .row .row:after {
       content: " ";
       display: table; }
@@ -91,7 +92,6 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 .grid-4x3 {
 	margin-right: 2%;
 	width: 32%
-	/*IE drops the last column so I moved it to 18.45 instead of 18.5*/
 }
 .grid-5 {
 	@extend .grid-margin;
@@ -100,6 +100,10 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 .grid-6 {
 	@extend .grid-margin;
 	width: 48.5%;
+}
+.grid-6 .grid-6 {
+	width:47%;
+	margin-right: 6%;
 }
 .grid-7 {
 	@extend .grid-margin;
@@ -123,100 +127,110 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 	width: 100%;
 }
 
+/* Base 12 Grid System 5em=80px 60em=960px
+
+I'd like to figure out why I need to use this many decimals to make all the em's add up to 60em
+grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to use unless they are a bit larger.
+
+*/
+.grid-1-noMargin {
+	width: 8.3333%;
+}
+.grid-2-noMargin {
+	width: 16.6667%;
+}
+.grid-3-noMargin {
+	width: 25%;
+}
+.grid-4-noMargin {
+	width: 33.3333%
+}
+.grid-5-noMargin {
+	width: 41.6667%;
+}
+.grid-6-noMargin {
+	width: 50%;
+}
+.grid-7-noMargin {
+	width: 58.3333%;
+}
+.grid-8-noMargin {
+	width: 66.6667%;
+}
+.grid-9-noMargin {
+	width: 72.5%;
+}
+.grid-10-noMargin {
+	width: 83.3333%;
+}
+.grid-11-noMargin {
+	width: 91.66667%;
+}
+.grid-12-noMargin {
+	width: 100%;
+}
+
 /* Base 12 Grid System 5em=80px 60em=960px*/
-.grid-nomargin {
+.grid-last {
 	margin-right: 0%;
 	margin-left: 0%;
 }
-.grid-1-nomargin {
+.grid-1-last {
 	@extend .grid-1;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-2-nomargin {
+.grid-2-last {
 	@extend .grid-2;
-	@extend .grid-nomargin;	
+	@extend .grid-last;	
 }
-.grid-3-nomargin {
+.grid-3-last {
 	@extend .grid-3;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-3x4-nomargin {
+.grid-3x4-last {
 	@extend .grid-3x4;
-	@extend .grid-nomargin;		
+	@extend .grid-last;		
 }
-.grid-4-nomargin {
+.grid-4-last {
 	@extend .grid-4;
-	@extend .grid-nomargin;		
+	@extend .grid-last;		
 }
-.grid-4x3-nomargin {
+.grid-4x3-last {
 	@extend .grid-4x3;
-	@extend .grid-nomargin;		
+	@extend .grid-last;		
 }
-.grid-5-nomargin {
+.grid-5-last {
 	@extend .grid-5;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-6-nomargin {
+.grid-6-last {
 	@extend .grid-6;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-7-nomargin {
+.grid-6 .grid-6-last, .grid-6-last .grid-6-last {
+	width:47%;
+	@extend .grid-last;
+}
+.grid-7-last {
 	@extend .grid-7;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-8-nomargin {
+.grid-8-last {
 	@extend .grid-8;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-9-nomargin {
+.grid-9-last {
 	@extend .grid-9;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-10-nomargin {
+.grid-10-last {
 	@extend .grid-10;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-11-nomargin {
+.grid-11-last {
 	@extend .grid-11;
-	@extend .grid-nomargin;
+	@extend .grid-last;
 }
-.grid-12-nomargin {
-	width: 60em;
-}
-.grid-40 {
-	width: 40%;
-	padding: 0 1em;	
-}
-.grid-50 {
-	width: 50%;
-	padding: 0 1em;	
-}
-.grid-60 {
-	width: 60%;
-	padding: 0 1em;	
-}
-.grid-67 {
-	width: 67%;
-	padding: 0 1em;
-}
-
-.grid-leftinsidebox {
-	width: 67%;
-	min-height: 5em;
-	margin-left: -1.5em;
-}
-/*
-@media all and (max-width: 980px) {
-	.grid-leftinsidebox {
-		margin-left: 0em;
-		max-width: 24em;
-	}
-
-}
-*/
-
-
-.grid-modulePrice {
+.grid-12-last {
 	width: 100%;
-	text-align: right;
 }

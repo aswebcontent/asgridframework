@@ -88,6 +88,24 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-headlines h3 { color:$secondary-color;}
 .module-headlines h4 { margin: .1em 0; color:lighten($secondary-color, 20%);}
 
+/*MODULE Discover Module*/
+.module-discover { font-weight: normal;}
+.module-discover * { font-weight: normal;}
+.module-discover a { text-decoration: none;}
+.module-discover h2 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
+.module-discover h3 { margin: 0em; line-height: 1em;/*centers the text vertically*/ color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
+.module-discover h4 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
+
+/*MODULE Discover Grid Module*/
+.module-discover-grid { font-weight: normal;}
+.module-discover-grid * { font-weight: normal;}
+.module-discover-grid a { text-decoration: none;}
+.module-discover-grid h2 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
+.module-discover-grid h3 { margin: 0em; line-height: 2em;/*centers the text vertically*/ color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
+.module-discover-grid h4 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
+
+
+
 /*MODULE emsl boxes*/
 .module-headlinesInBoxes { padding: 1em; }
 .module-headlinesInBoxes { margin: 1em 0; font-weight: normal;}
@@ -105,6 +123,13 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-Picturecontainer {
 	min-height: 12em;
 }
+.bg-blueTint{
+background-color: rgba(0, 36, 90, 0.84);
+}
+/*Used to give the pciture grid consistant buffer between images*/
+.module-pictureWrapper{ margin-bottom: 1.5em}
+
+
 .module-price { font-size: 2.5em; color: lighten($secondary-color, 100%); font-weight: normal;}
 
 .module-textarea {padding: 1em;font-size: 2em;}
@@ -117,12 +142,18 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 	background-repeat: no-repeat;
 }
 
+/*How do we want to do the sign in widget.*/
+@media all and (max-width: 40em) {
+	.module-hero {
+	min-height: 12em;
+	}
+}
 
 
 @media all and (max-width: 26.7em) {
 
 .module-hero .module-textareaWhite{
-	font-size: .8em;
+	font-size: 1em;
 }
 
 }
