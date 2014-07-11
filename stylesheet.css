@@ -335,7 +335,7 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   min-height: 3.8em; }
 
 /*MODULE*/
-.module, .module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer, .module-whiteContainer {
+.module, .module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer, .module-whiteContainer, .module-blueContainer {
   min-height: 1em;
   padding: 1.5em;
   width: auto; }
@@ -364,6 +364,39 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   background-color: white;
   display: block;
   box-shadow: 0 0 1px gainsboro; }
+
+.module-blueContainer {
+  background-color: rgba(0, 36, 90, 0.84);
+  display: block;
+  box-shadow: 0 0 1px gainsboro; }
+
+.module-tealContainer {
+  width: auto;
+  background-color: rgba(0, 132, 128, 0.84);
+  display: block;
+  box-shadow: 0 0 1px gainsboro; }
+
+.panelGrid .module-content {
+  min-height: 5em; }
+
+.panelGrid .module-whiteContainer {
+  padding: 0;
+  margin: 0; }
+
+.panelGrid .module-Picturecontainer {
+  min-height: 10em; }
+
+.panelGrid .module-tealContainer a {
+  color: white;
+  text-decoration: none;
+  padding: .5em 1em;
+  display: block; }
+
+.panelGrid .module-tealContainer a:hover {
+  background-color: #006b67; }
+
+.panelGrid .module-tealContainer a span {
+  color: #008480; }
 
 .module-clearContainer {
   min-height: 1em;
@@ -484,6 +517,10 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   color: white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3); }
 
+/*MODULE 3x4 grid with no margin*/
+.grid.grid-3-noMargin .module-headlines, div.grid.grid-3-noMargin .module-content {
+  padding: 1em; }
+
 /*MODULE emsl boxes*/
 .module-headlinesInBoxes {
   padding: 1em; }
@@ -519,9 +556,6 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 
 .module-Picturecontainer {
   min-height: 12em; }
-
-.bg-blueTint {
-  background-color: rgba(0, 36, 90, 0.84); }
 
 /*Used to give the pciture grid consistant buffer between images*/
 .module-pictureWrapper {
@@ -580,6 +614,12 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   background-color: #4e76b6;
   cursor: pointer;
   color: white; }
+
+.btn-circle {
+  background-color: white;
+  border-radius: 60px;
+  padding: .1em .4em;
+  float: right; }
 
 /*HEADLINES*/
 /* .headlines class is applied to all h tags*/
@@ -1651,15 +1691,15 @@ h6 {
   background-repeat: no-repeat; }
 
 #emsl3 {
-  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/ayp1349609.jpg);
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/164852022-u4619-fr.png);
   background-position: left center;
-  background-size: 100%;
+  background-size: 150%;
   background-repeat: no-repeat; }
 
 #emsl4 {
-  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/164852022.jpg);
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/ayp1349609-u4627-fr.png);
   background-position: left center;
-  background-size: 150%;
+  background-size: 100%;
   background-repeat: no-repeat; }
 
 #emsl5 {
@@ -1698,25 +1738,25 @@ h6 {
 #pic1 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3814934-u4415-fr.jpg);
   background-position: center;
-  background-size: 100%;
+  background-size: 101%;
   background-repeat: no-repeat; }
 
 #pic2 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/6241955-u4414-fr.jpg);
   background-position: center;
-  background-size: 100%;
+  background-size: 101%;
   background-repeat: no-repeat; }
 
 #pic3 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/gettyimages_200374167-001-u5242-fr.png);
   background-position: center;
-  background-size: 100%;
+  background-size: 101%;
   background-repeat: no-repeat; }
 
 #pic4 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/cbp1162173-2-u5249-fr.jpg);
   background-position: center;
-  background-size: 100%;
+  background-size: 101%;
   background-repeat: no-repeat; }
 
 .grid-3x4 .module-Picturecontainer, .grid-3x4-last .module-Picturecontainer, .grid-3x4-nomargin .module-Picturecontainer {

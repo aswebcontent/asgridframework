@@ -23,6 +23,15 @@
 	cursor:pointer;
 	color: $sitebtn-txtcolor;
 }
+
+.btn-circle {
+	background-color: white;
+	border-radius: 60px;
+	padding: .1em .4em;
+	float: right;
+}
+
+
 .btn-large {}
 .btn-small {}
 .btn-default {}

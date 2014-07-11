@@ -39,6 +39,33 @@
 
 }
 
+.module-blueContainer {
+	@extend .module;	
+	background-color: rgba( $primary-color, .84 );
+	display: block;
+	box-shadow: 0 0 1px $siteborder-color;
+
+}
+
+.module-tealContainer {
+	width: auto;
+	background-color: rgba( $teal-color, .84 );
+	display: block;
+	box-shadow: 0 0 1px $siteborder-color;
+
+}
+
+
+
+.panelGrid .module-content {min-height: 5em;}
+.panelGrid .module-whiteContainer{padding: 0; margin: 0}
+.panelGrid .module-Picturecontainer {min-height: 10em;}
+.panelGrid .module-tealContainer a {color: $sitebtn-txtcolor; text-decoration: none; padding: .5em 1em; display: block;}
+.panelGrid .module-tealContainer a:hover {	background-color: darken( $teal-color, 5% ) ;}
+.panelGrid .module-tealContainer a span {color: $teal-color;}
+
+
+
 .module-clearContainer {
 	min-height: 1em;
 	padding: 0;
@@ -104,7 +131,10 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-discover-grid h3 { margin: 0em; line-height: 2em;/*centers the text vertically*/ color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
 .module-discover-grid h4 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
 
-
+/*MODULE 3x4 grid with no margin*/
+.grid.grid-3-noMargin .module-headlines, div.grid.grid-3-noMargin .module-content {
+padding: 1em;
+}
 
 /*MODULE emsl boxes*/
 .module-headlinesInBoxes { padding: 1em; }
@@ -123,9 +153,7 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-Picturecontainer {
 	min-height: 12em;
 }
-.bg-blueTint{
-background-color: rgba(0, 36, 90, 0.84);
-}
+
 /*Used to give the pciture grid consistant buffer between images*/
 .module-pictureWrapper{ margin-bottom: 1.5em}
 
