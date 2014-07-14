@@ -1,161 +1,120 @@
 <html lang="en">
 <head>
+<meta name="viewport" content="width=device-width, initial-size=1">
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <body>
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
 
 <!--Wrap testing blockquote in "HP-TEST"-->
 <div class="HP-TEST"> 
   
   <!-- Second Section-->
-  <div class="row">
-    <div class="grid grid-12-nomargin">
-      <div class="module-hero">
-        <div class="grid-60 module-bookingForm"> </div>
-        <div class="grid-40 module-textareaWhite">
-          <h6>Discover</h6>
-          <h2>HAWAII</h2>
-          <span>Explore More. Spend Less. &raquo;</span> </div>
+  <div class="row module-hero">  
+      <div class="grid grid-7">
+      <div class="module-heroText">
+      <h6>Discover</h6>
+      <h2 class="emphasize">HAWAII</h2>
+      <span class="linkText">Explore More. Spend Less. &raquo;</span>
       </div>
-    </div>
-  </div>
-  <!-- Second Section-->
-  <div class="row">
-    <div class="grid grid-4">
-      <div class="module-whiteContainer">
-        <div class="module-MyAccountSignUp"> <a id="signUpLink" title="Sign Up" tabindex="8" href="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCMyAccountCreate&amp;lid=MyAccount:Sign Up">Join MileagePlan&trade;</a> </div>
-        <h3>Sign In</h3>
-        <div class="module-form">
-          <form action="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCSignInStart" method="post">
-            <div class="module-MyAccountUserID">
-              <div id="divUserId">
-                <label for="UserId" class="left">User ID</label>
-                <a class="formhelp" id="forgotIdLink" title="Help Retrieving User ID" tabindex="5" href="https://www.alaskaair.com/myaccount/forgotcredentials/userid" onclick="if(s_gi){var s=s_gi('alaskacom');s.linkTrackVars='prop16';s.linkTrackEvents='None';s.prop16='MyAccount:Forgot User ID';s.tl(this,'o','MyAccount:Forgot User ID');s.prop16='';}as.authentication.forgotUserId(this.href);return false;" class="smallLink right">Forgot User ID?</a> </div>
-              <div>
-                <input class="module-myAccountInput" id="UserId" maxlength="50" autocorrect="off" tabindex="1" name="UserId" type="text" placeholder="Or MileagePlan&trade; Account Number" value="">
-              </div>
-            </div>
-            <div class="module-MyAccountPassWord">
-              <div id="divPassword">
-                <label for="Password" class="left">Password</label>
-                <a class="formhelp" id="forgotPasswordLink" title="Help Retrieving Password" tabindex="6" href="https://www.alaskaair.com/myaccount/forgotcredentials/password" onclick="if(s_gi){var s=s_gi('alaskacom');s.linkTrackVars='prop16';s.linkTrackEvents='None';s.prop16='MyAccount:Forgot Password';s.tl(this,'o','MyAccount:Forgot Password');s.prop16='';}as.authentication.forgotPassword(this.href);return false;" class="smallLink right">Forgot Password?</a> </div>
-              <div>
-                <input class="module-myAccountInput" id="Password" maxlength="50" tabindex="2" name="Password" type="password" autocomplete="off" placeholder="****" value="">
-              </div>
-            </div>
-            <div class="module-MyAccountRememberMe">
-              <input id="RememberMe" name="RememberMe" type="checkbox" tabindex="4" value="true">
-              <label id="RememberMeLabel" for="RememberMe">Remember my User ID on this computer.</label>
-              <div class="clear"></div>
-            </div>
-            <div class="btn-wrapper">
-              <input id="myAccoutnSignInButton" class="btn btn-primary" tabindex="7" type="submit" value="SIGN IN">
-            </div>
-            <input id="signInClient" name="signInClient" type="hidden" value="signInWidget">
-            <div class="clear"></div>
-          </form>
+    </div>      
+    <div class="grid grid-5-last panelGrid">
+      <div class="module-bookingForm-right">
+        <div class="module-whiteContainer" style="visibility:hidden">
+          <div class="module-tealContainer"><a href="#">Book<span class="btn-circle">&gt;</span></a></div>
+          <div class="module-tealContainer"><a href="#">Check In<span class="btn-circle">&gt;</span></a></div>
+          <div class="module-tealContainer"><a href="#">See more<span class="btn-circle">&gt;</span></a></div>
+          <div class="module-tealContainer"><a href="#">See more<span class="btn-circle">&gt;</span></a></div>
+          <div class="module-tealContainer"><a href="#">See more<span class="btn-circle">&gt;</span></a></div>
         </div>
       </div>
     </div>
-    <div class="grid grid-8-nomargin">
-      <div id="miles" class="module-whiteContainer">
-      <div id="milesText">
-      <a href="#"><span>Go Places with</span>
-      <h2><strong>25,000</strong> Bonus Miles</h2>
-      <span>Alaska Airlines Visa Signature Card &raquo</span></a>
-      </div>
+
+  </div>
+  
+  
+  <!-- Second Section-->
+  <div class="row">
+    <div class="grid grid-8">
+      <div id="miles" class="module-blueContainer">
+        <div id="milesText"> <a href="#"><span>Go Places with</span>
+          <h2 class="emphasize"><strong>25,000</strong> Bonus Miles</h2>
+          <span>Alaska Airlines Visa Signature Card &raquo</span></a> </div>
       </div>
     </div>
-  </div>  
-  <!-- Quick Links-->
-  <div class="row">
-  <div class="grid grid-moduleWrapper">
-    <div class="grid grid-12">
+    <div class="grid grid-4-last">
       <div class="module-whiteContainer">
-        <ul class="module-horizontalMenu">
-          <li>
-            <h4>News &amp; Advisories:</h4>
-          </li>
-          <li><a href="http://www.alaskaair.com/content/travel-info/before-your-trip/travel-tips/travel-advisories.aspx?_z=z?lid=home-page:news-advisories::travel-advisories">Travel Advisories</a></li>
-          <li><a href="http://www.alaskaair.com/content/travel-info/at-the-airport/airport-boarding-times.aspx?lid=home-page:news-advisories::check-in-time">Check-in Time Change</a></li>
-          <li><a href="http://blog.alaskaair.com/">Alaska Airlines Blog</a></li>
-          <li><a href="http://www.alaskalistens.com/">Alaska Listens</a></li>
-          <li><a href="http://www.alaskaair.com/content/travel-info/at-the-airport/airport-boarding-times.aspx?lid=home-page:news-advisories::check-in-time">Check-in Time Change</a></li>
+        <div class="module-headlines">
+          <h3>News & Advisories</h3>
+          <hr>
+        </div>
+        <ul class="module-verticalMenu">
+            <li><a href="http://www.alaskaair.com/content/travel-info/before-your-trip/travel-tips/travel-advisories.aspx?_z=z?lid=home-page:news-advisories::travel-advisories">Travel Advisories</a></li>
+            <li><a href="http://www.alaskaair.com/content/travel-info/at-the-airport/airport-boarding-times.aspx?lid=home-page:news-advisories::check-in-time">Check-in Time Change</a></li>
+            <li><a href="http://blog.alaskaair.com/">Alaska Airlines Blog</a></li>
+            <li><a href="http://www.alaskalistens.com/">Alaska Listens</a></li>
         </ul>
       </div>
     </div>
   </div>
-  </div>  
-  <!-- Second Section-->
+  <!-- Third Section-->
   <div class="row">
-  <div class="grid grid-moduleWrapper">
-    <h2 class="headlines headlines-centered">Discover</h2>
-    <div class="grid grid-4x3">
-      <div id="pic1" class="module-Picturecontainer"></div>
-      <div class="module-headlines">
-        <h3>Manhattan</h3>
-        <h4>Subheader</h4>
+    <div class="grid grid-moduleWrapper">
+      <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
+      <div class="grid grid-6">
+        <div id="emsl1" class="module-blueContainer">
+          <div class="grid-leftinsidebox">
+            <div class="module-grayContainer module-headlinesInBoxes">
+              <h3>Lorem Ipsum</h3>
+              <h4>Subheader</h4>
+              <div class="grid-modulePrice"> <span class="module-price">$129</span> </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="module-content"> Awesome Shot of a Perfect Rainbow In Manhattan, New York</div>
-    </div>
-    <div class="grid grid-4x3">
-      <div id="pic2" class="module-Picturecontainer"></div>
-      <div class="module-headlines">
-        <h3>Mission Inn</h3>
-        <h4>Subheader</h4>
-      </div>
-      <div class="module-content"> Mesmorising Photo of The Historical Mission Inn Staircase in California, USA </div>
-    </div>
-    <div class="grid grid-4x3-nomargin">
-      <div id="pic3" class="module-Picturecontainer"></div>
-      <div class="module-headlines">
-        <h3>Yosemite</h3>
-        <h4>Subheader</h4>
-      </div>
-      <div class="module-content"> Unbelievable Picture of a Crazy Man Highlining In Yosemite National Park </div>
-    </div>
-  </div>
-  </div>  
-   <!-- Image with Text on right-->
-  <div class="row">
-  <div class="grid grid-moduleWrapper">
-    <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
-    <div class="grid grid-5">
-      <div id="emsl2" class="module-whiteContainer">
-        <div class="grid-leftinsidebox">
-          <div class="module-emslSalmonContainer module-headlinesInBoxes">
-            <h3>Lorem Ipsum</h3>
-            <h4>Subheader</h4>
-            <div class="grid-modulePrice"> <span class="module-price">$129</span> </div>
+      <div class="grid grid-6-last">
+        <div id="emsl2" class="module-blueContainer">
+          <div class="grid-leftinsidebox">
+            <div class="module-grayContainer module-headlinesInBoxes">
+              <h3>Lorem Ipsum</h3>
+              <h4>Subheader</h4>
+              <div class="grid-modulePrice"> <span class="module-price">$89</span> </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="grid grid-7-nomargin">
-        <div class="module-content module-clearContainer">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-        cillum dolore eu fugiat nulla pariatur.
-        
-          <div class="btn-wrapper"><a class="btn btn-primary" href="#">Button</a></div>
-        
-      </div>     
+  <!-- Second Section-->
+  <div class="row">
+    <div class="grid grid-moduleWrapper">
+      <h2 class="headlines headlines-centered">Discover</h2>
+      <div class="grid grid-4x3">
+        <div id="pic1" class="module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Manhattan</h3>
+          <h4>Subheader</h4>
+        </div>
+        <div class="module-content"> Awesome Shot of a Perfect Rainbow In Manhattan, New York</div>
+      </div>
+      <div class="grid grid-4x3">
+        <div id="pic2" class="module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Mission Inn</h3>
+          <h4>Subheader</h4>
+        </div>
+        <div class="module-content"> Mesmorising Photo of The Historical Mission Inn Staircase in California, USA </div>
+      </div>
+      <div class="grid grid-4x3-last">
+        <div id="pic3" class="module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Yosemite</h3>
+          <h4>Subheader</h4>
+        </div>
+        <div class="module-content"> Unbelievable Picture of a Crazy Man Highlining In Yosemite National Park </div>
+      </div>
     </div>
   </div>
-  </div>
-  
-
- 
-
-
-
-
-
-
-
   
   <!--Closing div--> 
 </div>
@@ -165,7 +124,7 @@
     <div class="firstRow append-bottom-less"><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&amp;lid=footer:easyBiz" class="first">EasyBiz</a> | <a href="https://www.alaskaair.com/travel-agent/logon?lid=footer:travelAgent" class="">Travel Agents</a> | <a href="http://www.alaskaair.com/content/cargo/cargo-home.aspx?lid=footer:cargo" class="">Cargo</a> | <a href="http://www.alaskaair.com/content/about-us/careers.aspx?lid=footer:careers" class="">Careers</a> | <a href="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCNewsletterSignupStart&amp;lid=footer:emailDeals" class="">Email Deals</a> | <a href="http://www.alaskaair.com/content/gifts-and-products/mobile/mobile-overview.aspx?lid=footer:Mobile" class="">Mobile</a> | <a href="http://www.alaskaair.com/content/site-map.aspx?lid=footer:siteMap" class="">Site Map</a></div>
     <div class="footer-line"><!-- --></div>
     <div class="clear"></div>
-    <div class="append-bottom-less"><span class="first">Copyright © 1995 - 2014 Alaska Air Group, Inc. All Rights Reserved</span> | <a href="http://www.alaskaair.com/content/about-us.aspx?lid=footer:about" class="" target="">About Us</a> | <a href="http://www.alaskaair.com/content/about-us/contact-us/online-help.aspx?lid=footer:contactUs" class="" target="">Contact Us</a> | <a href="https://www.alaskaair.com/feedback?lid=footer:feedback" class="" target="_blank">Feedback</a> | <a href="http://www.alaskaair.com/content/legal/consumer-notices.aspx?lid=footer:legal" class="" target="">Legal</a> | <a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?lid=footer:privacyPolicy" class="privacy" target="">Privacy Notice</a></div>
+    <div class="append-bottom-less"><span class="first">Copyright &copy; 1995 - 2014 Alaska Air Group, Inc. All Rights Reserved</span> | <a href="http://www.alaskaair.com/content/about-us.aspx?lid=footer:about" class="" target="">About Us</a> | <a href="http://www.alaskaair.com/content/about-us/contact-us/online-help.aspx?lid=footer:contactUs" class="" target="">Contact Us</a> | <a href="https://www.alaskaair.com/feedback?lid=footer:feedback" class="" target="_blank">Feedback</a> | <a href="http://www.alaskaair.com/content/legal/consumer-notices.aspx?lid=footer:legal" class="" target="">Legal</a> | <a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?lid=footer:privacyPolicy" class="privacy" target="">Privacy Notice</a></div>
     <div id="AdChoicesContainer" class="append-bottom-less AdChoicesContainer" style="display:block"><a class="AdChoices" id="_bapw-link" target="_blank" href="#">AdChoices</a></div>
   </div>
 </div>

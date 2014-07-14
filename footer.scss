@@ -1,5 +1,46 @@
 /*FOOTER*/
-
-.footer {margin:0 auto; padding: 3em 0; font-size:.8em; color: lighten($copy-color, 20%); line-height: 1.5em; width:960px}
+.FOOTER-Test {
+	font-family: $font-stack;
+	font-size: 16px;
+	margin: 4em auto 0;
+	padding: 0em;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	width: 100%;
+	color:$primary-color;
+	border-top:1px solid $accent-color;
+}
+.footer {margin:0 auto; padding: 3em 0; font-size:.8em; color: lighten($copy-color, 20%); line-height: 1.5em; max-width:60em}
 .footer a {color:lighten($copy-color, 20%);margin: 0 .8em 0 .8em}
 .footer a.first, a.AdChoices {margin-left: 0}
+
+@media all and (min-width: 75em) {
+	.FOOTER-Test .footer {
+		font-size: 1em;
+		max-width: 66em;		
+
+	}
+
+}
+@media all and (min-width: 57em) and (max-width: 59.9999em) {
+	.FOOTER-Test {
+		width: 100%;		
+		max-width: 60em;
+	}
+
+}
+@media all and (min-width: 47.9376em) and (max-width: 56.9999em) {
+	.FOOTER-Test {
+		width: 100%;		
+		max-width: 60em;
+	}
+
+}
+@media all and (max-width: 47.9375em) {
+	.FOOTER-Test {
+		padding: 1em;
+	}
+
+}
+

@@ -15,7 +15,7 @@
 #emsl3 {
 	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/164852022-u4619-fr.png);
 	background-position: left center;
-	background-size: 150%;
+	background-size: 300%;
 	background-repeat: no-repeat;
 }
 
@@ -58,16 +58,22 @@
 
 #emsl9 {
 	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/164852022.jpg);
-	background-position: left center;
-	background-size: 150%;
+	background-position: right center;
+	background-size: 300%;
 	background-repeat: no-repeat;
 }
 
 
 #emsl5 h2 {line-height: 7em}
 
-#pic1 {
+#pic1, .destination-chicago {
 background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3814934-u4415-fr.jpg);
+background-position: center;
+background-size: 101%;
+	background-repeat: no-repeat;
+}
+.destination-orlando {
+background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/BLP0106233.JPG);
 background-position: center;
 background-size: 101%;
 	background-repeat: no-repeat;
@@ -75,6 +81,12 @@ background-size: 101%;
 
 #pic2 {
 background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/6241955-u4414-fr.jpg);
+background-position: center;
+background-size: 101%;
+	background-repeat: no-repeat;
+}
+.vegas {
+background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/ayp1216538-u5672-fr.png);
 background-position: center;
 background-size: 101%;
 	background-repeat: no-repeat;

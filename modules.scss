@@ -56,15 +56,76 @@
 }
 
 
-
+/* Grid with 3 or 4 destination*/
 .panelGrid .module-content {min-height: 5em;}
 .panelGrid .module-whiteContainer{padding: 0; margin: 0}
 .panelGrid .module-Picturecontainer {min-height: 10em;}
 .panelGrid .module-tealContainer a {color: $sitebtn-txtcolor; text-decoration: none; padding: .5em 1em; display: block;}
 .panelGrid .module-tealContainer a:hover {	background-color: darken( $teal-color, 5% ) ;}
 .panelGrid .module-tealContainer a span {color: $teal-color;}
+.panelGrid .grid.grid-3-noMargin .module-content {padding: 0 1em 1em;}
+.panelGrid .grid.grid-3-noMargin .module-headlines {padding: 0em 1em 0em;}
+.panelGrid .grid.grid-4-noMargin .module-headlines {padding: 0em 1em 0em;}
+.panelGrid .grid.grid-4-noMargin .module-content {padding: 0 1em 1em;}
+/* Hawaii Hero*/
+.module-hero {
+	min-height: 24em;
+	background-image: url(http://www.brandonshields.com/alaska-airlines/homepage/images/istock_000011347788medium.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.module-heroText {
+	padding: 2em 1em 1em;font-size: 2em;
+	color: $sitebtn-txtcolor;
+	text-align: center;
+}
+
+.module-heroText h2, .module-heroText h3, .module-heroText h6 {color: $sitebtn-txtcolor;}
+
+/* Seattle Hero*/
+.module-hero-seattle {
+	min-height: 27em;
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/974x457_bg_sea3.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.module-hero-seattle-right {
+	min-height: 27em;
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/974x457_bg_sea3_reverse.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+}
+.module-heroText-seattle {
+	padding: 2em 1em 1em;font-size: 2em;
+	color: $sitebtn-txtcolor;
+	text-align: center;
+	visibility: hidden;
+}
+
+.module-heroText h2, .module-heroText h3, .module-heroText h6 {color: $sitebtn-txtcolor;}
 
 
+/* Booking form*/
+
+.module-bookingForm {
+background-image: url(http://brandonshields.com/alaska-airlines/asgridframework/images/formlet.png);
+height: 348px;
+background-repeat: no-repeat;
+position: relative;
+left: 2em;
+top: 2em;
+}
+.module-bookingForm-right {background-image: url(http://brandonshields.com/alaska-airlines/asgridframework/images/formlet.png);
+height: 348px;
+background-repeat: no-repeat;
+position: relative;
+right: 2em;
+top: 2em;
+}
+.module-bookingForm .module-tealContainer a {color: $sitebtn-txtcolor; text-decoration: none; padding: .25em 1em; display: block;}
+.module-bookingForm .module-tealContainer a:hover {	background-color: darken( $teal-color, 5% ) ;}
+.module-bookingForm .module-tealContainer a span {color: $teal-color;}
+.module-heroText .linkText {font-size: .5em}
 
 .module-clearContainer {
 	min-height: 1em;
@@ -131,10 +192,7 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-discover-grid h3 { margin: 0em; line-height: 2em;/*centers the text vertically*/ color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
 .module-discover-grid h4 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);}
 
-/*MODULE 3x4 grid with no margin*/
-.grid.grid-3-noMargin .module-headlines, div.grid.grid-3-noMargin .module-content {
-padding: 1em;
-}
+
 
 /*MODULE emsl boxes*/
 .module-headlinesInBoxes { padding: 1em; }
@@ -160,29 +218,21 @@ padding: 1em;
 
 .module-price { font-size: 2.5em; color: lighten($secondary-color, 100%); font-weight: normal;}
 
-.module-textarea {padding: 1em;font-size: 2em;}
 
-
-.module-hero {
-	min-height: 24em;
-	background-image: url(http://www.brandonshields.com/alaska-airlines/homepage/images/istock_000011347788medium.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
 
 /*How do we want to do the sign in widget.*/
 @media all and (max-width: 40em) {
 	.module-hero {
-	min-height: 12em;
+		min-height: 12em;
 	}
 }
 
 
 @media all and (max-width: 26.7em) {
 
-.module-hero .module-textareaWhite{
-	font-size: 1em;
-}
+	.module-hero .module-textareaWhite{
+		font-size: 1em;
+	}
 
 }
 
