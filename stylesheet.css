@@ -54,6 +54,10 @@ a:hover {
 .subdued {
   color: #aaaaaa; }
 
+/*makes all image links have a glow effect when tabbing through the screen*/
+a.imagelinks:focus {
+  box-shadow: 0px 0px 5px #aaaaaa; }
+
 input {
   font-family: ScalaSans, Helvetica, sans-serif; }
 
@@ -115,6 +119,12 @@ hr {
   border: none;
   border-bottom: 1px solid gainsboro;
   margin: 1em 0 0 0; }
+
+.sup {
+  font-size: 0.8em;
+  vertical-align: top;
+  position: relative;
+  top: -3px; }
 
 /*grid*/
 /* Row CSS from http://foundation.zurb.com/ */
@@ -211,8 +221,8 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   width: 33%; }
 
 .grid-4x3, .grid-4x3-last {
-  margin-right: 2%;
-  width: 32%; }
+  margin-right: 3%;
+  width: 31.334%; }
 
 .grid-5, .grid-5-last {
   width: 42%; }
@@ -366,9 +376,12 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   box-shadow: 0 0 1px gainsboro; }
 
 .module-blueContainer {
-  background-color: rgba(0, 36, 90, 0.84);
+  background-color: rgba(0, 36, 90, 0.4);
   display: block;
   box-shadow: 0 0 1px gainsboro; }
+
+.module-blueContainer:hover {
+  background-color: rgba(0, 36, 90, 0.6); }
 
 .module-tealContainer {
   width: auto;
@@ -527,7 +540,7 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   line-height: 1.1em; }
 
 .module-verticalMenu li a {
-  padding: 0 0 1em 0;
+  margin-bottom: 1em;
   display: block; }
 
 /*MODULE Headlines*/
@@ -657,6 +670,10 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
     font-size: 1em; } }
 .module-textareaWhite span {
   font-size: .5em; }
+
+a.imageLinks {
+  display: block;
+  text-decoration: none; }
 
 /*BUTTONS*/
 .btn {
@@ -1814,22 +1831,28 @@ h6 {
   background-size: 100%;
   background-repeat: no-repeat; }
 
-#emsl7 {
+#emsl7, .destination-newyork {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/newyork.ashx);
   background-position: left center;
   background-size: 100%;
   background-repeat: no-repeat; }
 
-#emsl8 {
+.destination-sandiego {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/sandiego.ashx);
   background-position: left center;
-  background-size: 145%;
+  background-size: 107%;
   background-repeat: no-repeat; }
 
-#emsl9 {
+.destination-sandiego .module-blueContainer {
+  background-color: rgba(0, 36, 90, 0.1); }
+
+.destination-sandiego .module-blueContainer:hover {
+  background-color: rgba(0, 36, 90, 0.3); }
+
+#emsl9, .destination-neworleans {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/neworleans.ashx);
   background-position: right center;
-  background-size: 300%;
+  background-size: 100%;
   background-repeat: no-repeat; }
 
 #emsl5 h2 {
@@ -1847,13 +1870,19 @@ h6 {
   background-size: 101%;
   background-repeat: no-repeat; }
 
+.destination-rome {
+  background-image: url(http://www.alaskaair.com/~/media/Images/destinations/rome.ashx);
+  background-position: center;
+  background-size: 101%;
+  background-repeat: no-repeat; }
+
 #pic2 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/6241955-u4414-fr.jpg);
   background-position: center;
   background-size: 101%;
   background-repeat: no-repeat; }
 
-.vegas {
+.destination-vegas {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/lasvegas.ashx);
   background-position: center;
   background-size: 101%;
@@ -1909,12 +1938,16 @@ div.layout-40.module-textareaWhite {
   position: relative;
   top: 10px; }
 
-#miles a .headlines, #miles a h1, #miles a h2, #miles a h3, #miles a h4, #miles a h5, #miles a h6 {
+a#miles .headlines, a#miles h1, a#miles h2, a#miles h3, a#miles h4, a#miles h5, a#miles h6 {
   color: white; }
 
-#miles a {
+a#miles {
   color: white;
   text-decoration: none; }
+
+#miles div.module-blueContainer {
+  height: 13.95em;
+  background-color: rgba(0, 36, 90, 0.25); }
 
 @media all and (max-width: 26.7em) {
   #miles {

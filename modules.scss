@@ -41,10 +41,13 @@
 
 .module-blueContainer {
 	@extend .module;	
-	background-color: rgba( $primary-color, .84 );
+	background-color: rgba( $primary-color, .4 );
 	display: block;
 	box-shadow: 0 0 1px $siteborder-color;
 
+}
+.module-blueContainer:hover {
+	background-color: rgba( $primary-color, .6 );
 }
 
 .module-tealContainer {
@@ -168,7 +171,7 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 
 /*MODULE Vertical Menu*/
 .module-verticalMenu li {line-height: 1.1em;}
-.module-verticalMenu li a {padding:0 0 1em 0; display:block;}
+.module-verticalMenu li a {margin-bottom: 1em; display:block;}
 
 
 
@@ -239,3 +242,6 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 }
 
 .module-textareaWhite span {font-size: .5em}
+
+
+a.imageLinks {display: block; text-decoration: none;}

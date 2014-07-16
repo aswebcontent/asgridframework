@@ -41,25 +41,31 @@
 	background-repeat: no-repeat;
 }
 
-#emsl7 {
+#emsl7, .destination-newyork {
 	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/newyork.ashx);
 	background-position: left center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
-#emsl8 {
+.destination-sandiego {
 	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/sandiego.ashx);
 	background-position: left center;
-	background-size: 145%;
+	background-size: 107%;
 	background-repeat: no-repeat;
+}
+.destination-sandiego .module-blueContainer {
+	background-color: rgba( $primary-color, .1 );
+}
+.destination-sandiego .module-blueContainer:hover {
+	background-color: rgba( $primary-color, .3 );
 }
 
 
-#emsl9 {
+#emsl9, .destination-neworleans {
 	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/neworleans.ashx);
 	background-position: right center;
-	background-size: 300%;
+	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
@@ -67,40 +73,50 @@
 #emsl5 h2 {line-height: 7em}
 
 #pic1, .destination-chicago {
-background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3814934-u4415-fr.jpg);
-background-position: center;
-background-size: 101%;
-	background-repeat: no-repeat;
-}
-.destination-orlando {
-background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/BLP0106233.JPG);
-background-position: center;
-background-size: 101%;
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3814934-u4415-fr.jpg);
+	background-position: center;
+	background-size: 101%;
 	background-repeat: no-repeat;
 }
 
-#pic2 {
-background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/6241955-u4414-fr.jpg);
-background-position: center;
-background-size: 101%;
+.destination-orlando {
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/BLP0106233.JPG);
+	background-position: center;
+	background-size: 101%;
 	background-repeat: no-repeat;
 }
-.vegas {
-background-image: url(http://www.alaskaair.com/~/media/Images/destinations/lasvegas.ashx);
-background-position: center;
-background-size: 101%;
+
+.destination-rome {
+	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/rome.ashx);
+	background-position: center;
+	background-size: 101%;
+	background-repeat: no-repeat;
+}
+
+
+
+#pic2 {
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/6241955-u4414-fr.jpg);
+	background-position: center;
+	background-size: 101%;
+	background-repeat: no-repeat;
+}
+.destination-vegas {
+	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/lasvegas.ashx);
+	background-position: center;
+	background-size: 101%;
 	background-repeat: no-repeat;
 }
 #pic3 {
-background-image: url(http://www.alaskaair.com/~/media/Images/destinations/kauai.ashx);
-background-position: center;
-background-size: 101%;
+	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/kauai.ashx);
+	background-position: center;
+	background-size: 101%;
 	background-repeat: no-repeat;
 }
 #pic4 {
-background-image: url(http://www.alaskaair.com/~/media/Images/destinations/kauai.ashx);
-background-position: center;
-background-size: 101%;
+	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/kauai.ashx);
+	background-position: center;
+	background-size: 101%;
 	background-repeat: no-repeat;
 }
 
@@ -138,8 +154,20 @@ top: 25px;
 }
 #milesText {position: relative;top: 10px}
 
-#miles a .headlines {	color: $sitebtn-txtcolor;}
-#miles a {	color: $sitebtn-txtcolor; text-decoration: none}
+a#miles .headlines {
+	color: $sitebtn-txtcolor;
+}
+a#miles {
+	color: $sitebtn-txtcolor;
+	text-decoration: none;
+}
+
+#miles div.module-blueContainer {
+	height: 13.95em;
+	background-color: rgba( $primary-color, .25 );
+}
+
+
 @media all and (max-width: 26.7em) {
 	#miles {
 	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
