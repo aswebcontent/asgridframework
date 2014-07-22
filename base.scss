@@ -1,4 +1,9 @@
-body {background-color: $sitebg-color; margin: 0 auto}
+body {background-color: $sitebg-color; margin: 0 auto;
+	font-family: $font-stack;
+	font-size: 16px;
+	padding: 0;
+	border: 0;
+	}
 
 a {color:$sitelink-color;}
 a:hover {color:$sitelinkhover-color;}
@@ -19,36 +24,64 @@ blockquote {
 	max-width: 80%;
 }
 
-nav.nav {
-	clear: both;
-	width: 100%;
-	background-color: $primary-color;
-}
-nav.nav ul li {
-	display: inline-block;
-	margin: 1em;
-}
 
-nav.nav ul {width: 60em;margin: 0 auto;}
+.nav ul li {	display: inline-block;}
+.nav a {text-decoration: none;font-family: $font-stack;}
 
-nav a {
-color: $sitebtn-txtcolor;
-text-decoration: none;
-font-family: $font-stack;
-font-size: 1.3em;
-font-weight: bold;
+
+@media all and (max-width: 74.9999em) {
+	.nav-logoNav {	
+	padding: 0 1em;
+	}
+
 }
 
+.nav-logoNav {margin: 1em 0;}
+.nav-mainPersonaNav ul {float: right;}
+.nav-mainPersonaNav ul li {text-align:right; margin: 1em 0em 1em 1em;}
 
-.HP-Test {
-	font-family: $font-stack;
-	font-size: 16px;
+@media all and (max-width: 47.9375em) {
+	nav.nav.nav-mainPersonaNav ul {
+		padding-left: 0;
+		float: none;
+		text-align: left;
+		}
+	nav.nav.nav-mainPersonaNav li {
+		margin-left: 1em;
+		}
+	nav.nav.nav-mainPersonaNav {
+		display: none;
+		}
+
+}
+
+
+.nav-mainNav {	width: auto;background-color: $primary-color;margin-bottom: 1em;}
+.nav-mainNav a:hover {color: rgba( $sitebtn-txtcolor, .8 );}
+.nav-mainNav ul {	max-width: 1000px;	margin: 0 auto;	padding-left: 0px;}
+.nav-mainNav ul li {margin: 1em 2em 1em 0;}
+@media all and (max-width: 74.9999em) {
+	.nav-mainNav ul {	
+		padding-left: 2em;
+		}
+	.nav-mainNav ul li {
+		margin-right:1.25em;
+		}
+
+
+}
+.nav-mainNav a {color: $sitebtn-txtcolor;font-size: 1.3em;font-weight: bold;}
+
+
+.content {
+
+
 	margin: 0 auto;
-	padding: 0;
+
 	border: 0;
-	font-size: 100%;
+
 	vertical-align: baseline;
-	max-width: 960px;
+	max-width: 60em;
 	color:$primary-color;
 
 }
@@ -57,7 +90,7 @@ font-weight: bold;
 
 
 @media all and (min-width: 75em) {
-	.HP-Test {
+	.content {
 		font-size: 1em;
 		width: 100%;
 		max-width: 66em;
@@ -66,21 +99,21 @@ font-weight: bold;
 }
 
 @media all and (min-width: 57em) and (max-width: 59.9999em) {
-	.HP-Test {
+	.content {
 		width: 100%;		
 		max-width: 60em;
 	}
 
 }
 @media all and (min-width: 47.9376em) and (max-width: 56.9999em) {
-	.HP-Test {
+	.content {
 		width: 100%;		
 		max-width: 60em;
 	}
 
 }
 @media all and (max-width: 47.9375em) {
-	.HP-Test {
+	.content {
 		padding: 1em;
 	}
 

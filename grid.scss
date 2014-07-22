@@ -42,6 +42,10 @@
         display: table; }
       .row .row.collapse:after {
         clear: both; }	
+
+.row.row-noBottomMargin {margin: 0 auto;}
+.row.row-fullWidth {margin: 0 auto;max-width: 100%;}
+
 .grid {
 	padding: 0;
 	width: 100%;
