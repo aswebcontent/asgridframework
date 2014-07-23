@@ -1,4 +1,27 @@
-@import "http://www.alaskaair.com/content/~/media/Files/fonts/ScalaSansv2/scalasans.css";
+@font-face {
+  font-family: 'ScalaSansSC';
+  src: url("scalasanssccomp-bold-webfont-eot.eot");
+  src: url("scalasanssccomp-bold-webfont-eot.eot?#iefix") format("embedded-opentype"), url("scalasanssccomp-bold-webfont-woff.woff") format("woff"), url("scalasanssccomp-bold-webfont-ttf.ttf") format("truetype"), url("scalasanssccomp-bold-webfont-svg.svg#scalasanssccomp-boldregular") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'ScalaSans';
+  src: url("scalasanscomp-bold-webfont-eot.eot");
+  src: url("scalasanscomp-bold-webfont-eot.eot?#iefix") format("embedded-opentype"), url("scalasanscomp-bold-webfont-woff.woff") format("woff"), url("scalasanscomp-bold-webfont-ttf.ttf") format("truetype"), url("scalasanscomp-bold-webfont-svg.svg#scalasanscomp-boldregular") format("svg");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: 'ScalaSansSC';
+  src: url("scalasanssccomp-webfont-eot.eot");
+  src: url("scalasanssccomp-webfont-eot.eot?#iefix") format("embedded-opentype"), url("scalasanssccomp-webfont-woff.woff") format("woff"), url("scalasanssccomp-webfont-ttf.ttf") format("truetype"), url("scalasanssccomp-webfont-svg.svg#scalasanssccompregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: 'ScalaSans';
+  src: url("scalasanscomp-webfont-eot.eot");
+  src: url("scalasanscomp-webfont-eot.eot?#iefix") format("embedded-opentype"), url("scalasanscomp-webfont-woff.woff") format("woff"), url("scalasanscomp-webfont-ttf.ttf") format("truetype"), url("scalasanscomp-webfont-svg.svg#scalasanscompregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 /*RESET
 See how much of this we can remove
 div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del,dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -73,64 +96,6 @@ blockquote {
   display: inline-block;
   color: #787878;
   max-width: 80%; }
-
-.nav ul li {
-  display: inline-block; }
-
-.nav a {
-  text-decoration: none;
-  font-family: ScalaSans, Helvetica, sans-serif; }
-
-@media all and (max-width: 74.9999em) {
-  .nav-logoNav {
-    padding: 0 1em; } }
-.nav-logoNav {
-  margin: 1em 0; }
-
-.nav-mainPersonaNav ul {
-  float: right; }
-
-.nav-mainPersonaNav ul li {
-  text-align: right;
-  margin: 1em 0em 1em 1em; }
-
-@media all and (max-width: 47.9375em) {
-  nav.nav.nav-mainPersonaNav ul {
-    padding-left: 0;
-    float: none;
-    text-align: left; }
-
-  nav.nav.nav-mainPersonaNav li {
-    margin-left: 1em; }
-
-  nav.nav.nav-mainPersonaNav {
-    display: none; } }
-.nav-mainNav {
-  width: auto;
-  background-color: #00245a;
-  margin-bottom: 1em; }
-
-.nav-mainNav a:hover {
-  color: rgba(255, 255, 255, 0.8); }
-
-.nav-mainNav ul {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding-left: 0px; }
-
-.nav-mainNav ul li {
-  margin: 1em 2em 1em 0; }
-
-@media all and (max-width: 74.9999em) {
-  .nav-mainNav ul {
-    padding-left: 2em; }
-
-  .nav-mainNav ul li {
-    margin-right: 1.25em; } }
-.nav-mainNav a {
-  color: white;
-  font-size: 1.3em;
-  font-weight: bold; }
 
 .content {
   margin: 0 auto;
@@ -404,6 +369,113 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   margin: 2.5em auto;
   min-height: 4em; }
 
+.nav ul li {
+  display: inline-block; }
+
+.nav a {
+  text-decoration: none;
+  font-family: ScalaSans, Helvetica, sans-serif; }
+
+@media all and (max-width: 74.9999em) {
+  .nav-logoNav {
+    padding: 0 1em; } }
+.nav-logoNav {
+  margin: 1em 0; }
+
+.nav-mainPersonaNav ul {
+  float: right;
+  padding: .82em 0; }
+
+.nav-mainPersonaNav ul li {
+  text-align: right;
+  padding: 1em 0em 1em 1em;
+  color: #454545; }
+
+.nav-mainPersonaNav a {
+  color: #777777; }
+
+@media all and (max-width: 47.9375em) {
+  nav.nav.nav-mainPersonaNav {
+    display: none; } }
+.nav-mainNav {
+  width: auto;
+  background-color: #00245a;
+  margin-bottom: 1em;
+  border-bottom: 8px solid #008480; }
+
+.nav-mainNav ul {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-left: 0px; }
+
+.nav-mainNav ul li a {
+  display: block;
+  padding: .75em;
+  color: white;
+  font-size: 1.3em;
+  min-width: 1em; }
+
+@media all and (max-width: 47.9375em) {
+  .nav-mainNav ul li a {
+    padding: .75em .5em; } }
+.nav-mainNav ul li input {
+  margin: .75em; }
+
+.nav-mainNav ul li a:hover {
+  background-color: #008480; }
+
+.nav-mainNav .nav-desktop {
+  display: none; }
+
+@media all and (min-width: 47.9375em) {
+  .nav-mainNav .nav-desktop {
+    display: inline-block; } }
+@media all and (max-width: 47.9375em) {
+  .nav-mainNav .nav-search {
+    display: none; } }
+@media all and (max-width: 47.9375em) {
+  .nav-mainNav .nav-searchIcon {
+    display: inline-block;
+    background-image: url(images/menu-sprite.png);
+    background-repeat: no-repeat;
+    background-position: center -48px; }
+
+  .nav-mainNav .nav-searchIcon a span {
+    visibility: hidden; }
+
+  .nav-mainNav .nav-searchIcon a:hover {
+    background-color: inherit; } }
+@media all and (max-width: 47.9375em) {
+  .nav-mainNav .nav-hamburger {
+    display: inline-block;
+    background-image: url(images/menu-sprite.png);
+    background-repeat: no-repeat;
+    background-position: center 2px; }
+
+  .nav-mainNav .nav-hamburger a span {
+    visibility: hidden; }
+
+  .nav-mainNav .nav-hamburger a:hover {
+    background-color: inherit; } }
+@media all and (min-width: 47.9375em) {
+  .nav-mainNav .nav-hamburger {
+    display: none; }
+
+  .nav-mainNav .nav-searchIcon {
+    display: none; }
+
+  .nav-mainNav li.nav-search {
+    position: relative;
+    top: -3px; } }
+@media all and (max-width: 60em) {
+  .nav-mainNav ul li input {
+    margin: .75em 0; } }
+@media all and (max-width: 74.9999em) {
+  .nav-mainNav ul {
+    padding-left: 2em; }
+
+  .nav-mainNav ul li {
+    margin-right: 0em; } }
 /*MODULE*/
 .module, .module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer, .module-whiteContainer, .module-blueContainer {
   min-height: 1em;
@@ -525,22 +597,9 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 
 /* Booking form*/
 .module-bookingForm {
-  background-image: url(http://brandonshields.com/alaska-airlines/asgridframework/images/formlet.png);
+  background-color: rgba(255, 255, 255, 0.9);
   height: 348px;
-  background-repeat: no-repeat;
-  position: relative;
-  left: 2em;
-  top: 2em;
-  background-size: 95%; }
-
-.module-bookingForm-right {
-  background-image: url(http://brandonshields.com/alaska-airlines/asgridframework/images/formlet.png);
-  height: 348px;
-  background-repeat: no-repeat;
-  position: relative;
-  right: 2em;
-  top: 2em;
-  background-size: 95%; }
+  padding: 1em; }
 
 .module-bookingForm .module-tealContainer a {
   color: white;

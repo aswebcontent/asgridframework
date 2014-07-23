@@ -1,0 +1,89 @@
+.nav ul li {	display: inline-block;}
+.nav a {text-decoration: none;font-family: $font-stack;}
+
+
+@media all and (max-width: 74.9999em) {
+	.nav-logoNav {	
+	padding: 0 1em;
+	}
+
+}
+
+.nav-logoNav {margin: 1em 0;}
+.nav-mainPersonaNav ul {float: right;padding: .82em 0;}
+.nav-mainPersonaNav ul li {text-align:right; padding: 1em 0em 1em 1em; color: $copy-color}
+.nav-mainPersonaNav a {color: darken($subdued-txt, 20)}
+.nav-mainPersonaNav ul li:hover {}
+
+@media all and (max-width: 47.9375em) {
+
+	nav.nav.nav-mainPersonaNav {
+		display: none;
+		}
+
+}
+
+
+
+
+.nav-mainNav {	width: auto;background-color: $primary-color;margin-bottom: 1em;border-bottom: 8px solid $d2eGreen;}
+.nav-mainNav ul {	max-width: 1000px;	margin: 0 auto;	padding-left: 0px;}
+.nav-mainNav ul li {}
+.nav-mainNav ul li a {display: block;padding: .75em;color: $sitebtn-txtcolor;font-size: 1.3em; min-width: 1em}
+
+@media all and (max-width: 47.9375em) {
+.nav-mainNav ul li a {padding: .75em .5em;}
+}
+
+
+.nav-mainNav ul li input {margin: .75em}
+.nav-mainNav ul li a:hover {background-color: $d2eGreen;}
+
+
+
+.nav-mainNav .nav-desktop {display: none;}
+@media all and (min-width: 47.9375em) {
+	.nav-mainNav .nav-desktop {display: inline-block;}
+}
+
+
+
+@media all and (max-width: 47.9375em) {
+
+	.nav-mainNav .nav-search {display: none;}
+}
+
+
+@media all and (max-width: 47.9375em) {
+	.nav-mainNav .nav-searchIcon  {display: inline-block;background-image: url(images/menu-sprite.png); background-repeat: no-repeat; background-position: center -48px}
+	.nav-mainNav .nav-searchIcon a span {visibility: hidden;}
+	.nav-mainNav .nav-searchIcon a:hover {background-color: inherit;}
+}
+
+@media all and (max-width: 47.9375em) {
+	.nav-mainNav .nav-hamburger {display: inline-block;background-image: url(images/menu-sprite.png); background-repeat: no-repeat; background-position: center 2px}
+	.nav-mainNav .nav-hamburger a span {visibility: hidden;}
+	.nav-mainNav .nav-hamburger a:hover {background-color: inherit;}
+}
+@media all and (min-width: 47.9375em) {
+	.nav-mainNav .nav-hamburger {display: none;}
+	.nav-mainNav .nav-searchIcon {display: none;}
+	.nav-mainNav li.nav-search {position: relative;top: -3px;}
+}
+
+@media all and (max-width: 60em) {
+	.nav-mainNav ul li input {
+		margin: .75em 0;
+	}
+}
+
+@media all and (max-width: 74.9999em) {
+	.nav-mainNav ul {	
+		padding-left: 2em;
+		}
+	.nav-mainNav ul li {
+		margin-right:0em;
+		}
+
+
+}

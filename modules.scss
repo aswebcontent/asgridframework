@@ -111,22 +111,11 @@
 /* Booking form*/
 
 .module-bookingForm {
-background-image: url(http://brandonshields.com/alaska-airlines/asgridframework/images/formlet.png);
-height: 348px;
-background-repeat: no-repeat;
-position: relative;
-left: 2em;
-top: 2em;
-background-size: 95%;
+	background-color: rgba($sitemodule-color, .9);
+	height: 348px;
+	padding: 1em;
 }
-.module-bookingForm-right {background-image: url(http://brandonshields.com/alaska-airlines/asgridframework/images/formlet.png);
-height: 348px;
-background-repeat: no-repeat;
-position: relative;
-right: 2em;
-top: 2em;
-background-size: 95%;
-}
+
 .module-bookingForm .module-tealContainer a {color: $sitebtn-txtcolor; text-decoration: none; padding: .25em 1em; display: block;}
 .module-bookingForm .module-tealContainer a:hover {	background-color: darken( $teal-color, 5% ) ;}
 .module-bookingForm .module-tealContainer a span {color: $teal-color;}

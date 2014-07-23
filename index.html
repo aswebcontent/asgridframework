@@ -13,7 +13,7 @@
 <div class="grid grid-8-last">
 <nav class="nav nav-mainPersonaNav">
     <ul>
-      <li><a href="#">Welcome, Brandon</a></li>
+      <li><a href="#">Welcome, {FirstName}</a></li>
       <li><a href="#">Plan</a></li>
       <li><a href="#">Fly</a></li>
       <li><a href="#">Discover</a></li>
@@ -21,13 +21,17 @@
 </nav>
 </div>
 </div>
-<div class="row row-fullWidth">
+<!--seems like we can do better for the navigation in case we want to put features in the nav bar-->
   <nav class="nav nav-mainNav">
       <ul>
-        <li><a href="#">Book</a></li>
-        <li><a href="#">Plan</a></li>
-        <li><a href="#">Fly</a></li>
-        <li><a href="#">Discover</a></li>
+        <li class="nav-mobile nav-book"><a href="#">Book</a></li><!--
+        --><li class="nav-mobile nav-checkin"><a href="#">Check-In</a></li><!--
+        --><li class="nav-hamburger"><a href="#footer"><span>More</span></a></li><!--
+        --><li class="nav-desktop nav-discover"><a href="#">Discover</a></li><!--
+        --><li class="nav-desktop nav-travelInfo"><a href="#">Travel Info</a></li><!--
+        --><li class="nav-desktop nav-travelInfo"><a href="#">Mileage Plan&trade;</a></li><!--
+        --><li class="nav-search"><input type=search results=5 autosave=some_unique_value name=s></li><!--
+        --><li class="nav-searchIcon"><a href="#footer"><span>More</span></a></li>        
       </ul>
   </nav>
 </div>
@@ -37,15 +41,14 @@
   
   <!-- Second Section-->
   <div class="row module-hero">
-    <div class="grid grid-5 panelGrid">
-      <div class="module-bookingForm"><!--
-        <div class="module-whiteContainer">
-          <div class="module-tealContainer"><a href="#">Book<span class="btn-circle">&gt;</span></a></div>
-          <div class="module-tealContainer"><a href="#">Check In<span class="btn-circle">&gt;</span></a></div>
-          <div class="module-tealContainer"><a href="#">See more<span class="btn-circle">&gt;</span></a></div>
-          <div class="module-tealContainer"><a href="#">See more<span class="btn-circle">&gt;</span></a></div>
-          <div class="module-tealContainer"><a href="#">See more<span class="btn-circle">&gt;</span></a></div>
-        </div>--> 
+    <div class="grid grid-5">
+      <div class="module-bookingForm">
+          <h3>Book Flight</h3>
+          <form action="">
+            <input type="radio" name="trip" value="Round Trip">Round Trip
+            <input type="radio" name="trip" value="One Way">One Way
+            <input type="radio" name="trip" value="Multi City">Multi City
+          </form>
       </div>
     </div>
     <div class="grid grid-7-last">
@@ -462,8 +465,8 @@
   
   <!--Closing div--> 
 </div>
-<div class="FOOTER-Test">
-  <div class="footer">
+<div class="row row-fullWidth">
+  <div id="footer" class="footer">
     <div class="clear"></div>
     <div class="firstRow append-bottom-less"><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&amp;lid=footer:easyBiz" class="first">EasyBiz</a> | <a href="https://www.alaskaair.com/travel-agent/logon?lid=footer:travelAgent" class="">Travel Agents</a> | <a href="http://www.alaskaair.com/content/cargo/cargo-home.aspx?lid=footer:cargo" class="">Cargo</a> | <a href="http://www.alaskaair.com/content/about-us/careers.aspx?lid=footer:careers" class="">Careers</a> | <a href="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCNewsletterSignupStart&amp;lid=footer:emailDeals" class="">Email Deals</a> | <a href="http://www.alaskaair.com/content/gifts-and-products/mobile/mobile-overview.aspx?lid=footer:Mobile" class="">Mobile</a> | <a href="http://www.alaskaair.com/content/site-map.aspx?lid=footer:siteMap" class="">Site Map</a></div>
     <div class="footer-line"><!-- --></div>
