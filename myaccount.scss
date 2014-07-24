@@ -1,4 +1,4 @@
-/*My Account Sign in Module*/
+/* My Account Sign in Module */
 
 .module-MyAccountRememberMe {
 	font-size: .8em;
@@ -10,11 +10,27 @@
 .module-MyAccountSignUp a#signUpLink {
 	font-size: .9em;
 }
+.module-myAccountInput {
+	width: 100%;
+	padding: .3em
+}
+.module-MyAccount #divPassword {
+	width: 100%;
+	padding: .3em
+}
+.module-myAccountInput {
+	margin-bottom: .5em
+}
 
-.module-myAccountInput {width: 100%; padding: .3em}
-.module-MyAccount #divPassword {width: 100%; padding: .3em}
-.module-myAccountInput {margin-bottom: .5em}
-/*.module-form label + a {font-size: 0.9em;line-height: 1.5em;}*/
-.module-form a {font-size: .8em;}
-
-.formhelp {font-size: .8em;float: right;}
+/* .module-form label + a {
+	font-size: 0.9em;
+	line-height: 1.5em;
+}
+*/
+.module-form a {
+	font-size: .8em;
+}
+.formhelp {
+	font-size: .8em;
+	float: right;
+}

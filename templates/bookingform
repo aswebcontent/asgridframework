@@ -1,0 +1,112 @@
+          <div class="module-bookingForm">
+            <h3>Book Flight</h3>
+            <fieldset class="bookingbar-lead l-inner">
+              <legend class="is-visuallyhidden">Round trip</legend>
+              <ul class="l-grid l-gap l-gap-small">
+                <li class="l-one-half l-mobile-portrait-one-whole l-column">
+                  <div class="frm-input frm-text">
+                    <label class="is-visuallyhidden" for="departure"></label>
+                    <input autocomplete="off" id="Origin" name="Origin" placeholder="From" type="text" value="Seattle (SEA)">
+                  </div>
+                </li>
+                <li class="l-one-half l-mobile-portrait-one-whole l-column">
+                  <div class="frm-field frm-input frm-text">
+                    <label for="destination" class="is-visuallyhidden">
+                      To
+                    <abbr title="is required" class="required">*</abbr>
+                  </label>
+                  <div class="frm-field-holder">
+                    <input autocomplete="off" id="Destination" name="Destination" placeholder="To" type="text" value="">
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="fieldset bookingbar-details-inner">
+            <legend class="is-visuallyhidden">More options</legend>
+            <ul class="l-grid l-gap">
+              <li class="l-one-whole l-column">
+                <div class="frm-radio frm-inline-radio frm-field">
+                  <fieldset>
+                    <div class="frm-field-holder">
+                      <ul class="frm-field-list frm-radio-list l-horizontal-list">
+                        <li>
+                          <input checked="checked" class="js-state-on-change" id="BookingbarFlightMode" name="BookingbarFlightMode" type="radio" value="roundtrip">
+                          <label for="radio-roundtrip">Round trip</label>
+                        </li>
+                        <li>
+                          <input class="js-state-on-change" id="BookingbarFlightMode" name="BookingbarFlightMode" type="radio" value="oneway">
+                          <label for="radio-oneway">One-way</label>
+                        </li>
+                        <li>
+                          <a class="t-arrow-link multi-city-flights-link" href="#">Advanced</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </fieldset>
+                </div>
+              </li>
+              <li class="l-one-half l-mobile-portrait-one-whole l-column is-oneway-visible">
+                <ul class="frm-list">
+                  <li class="full-width">
+                    <div class="frm-field frm-input frm-text">
+                      <label for="bookingbaronewaydate" class="is-visuallyhidden">Outbound</label>
+                      <div class="frm-field-holder">
+                        <input value="Departure" class="" autofocus data-datepicker-type="#outbound" id="bookingbaronewaydate" max="06/27/2015" name="OuboundDate" placeholder="Departure date" type="date" data-has-module="yes">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <li class="l-one-half l-mobile-portrait-one-whole l-column is-oneway-hidden l-no-gap">
+                <ul class="frm-list">
+                  <li class="full-width">
+                    <div class="frm-field frm-input frm-text">
+                      <label for="bookingbaroutbounddate" class="is-visuallyhidden">Outbound</label>
+                      <div class="frm-field-holder">
+                        <input value="07/23/2014" class="js-date-range date-input" data-datepicker-rel="#bookingbarreturndate" data-datepicker-type="#outbound" id="bookingbaroutbounddate" max="06/27/2015" name="OutboundDate" placeholder="Departure date" type="date" data-has-module="yes">
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="l-gap-above">
+              <ul class="l-grid l-gap l-gap-small">
+                <li class="l-one-third l-mobile-portrait-one-whole l-column">
+                  <div class="frm-field frm-select">
+                    <label for="bookingbarnbrofadults" class="is-visuallyhidden">Adults</label>
+                    <select class="frm-field-holder" id="Adults" name="Adults">
+                    <option value="1">1 Adult</option>
+                    <option value="2">2 Adults</option>
+                    <option value="3">3 Adults</option>
+                    <option value="4">4 Adults</option>
+                    <option value="5">5 Adults</option>
+                    <option value="6">6 Adults</option>
+                  </select>
+                </div>
+              </li>
+              <li class="l-one-third l-mobile-portrait-one-whole l-column">
+                <div class="frm-field frm-select">
+                  <label for="bookingbarnbrofchildren" class="is-visuallyhidden">Children (2-11 y.)</label>
+                  <select class="frm-field-holder" id="Children" name="Children">
+                  <option selected="selected" value="0">0 Children</option>
+                  <option value="1">1 Child</option>
+                  <option value="2">2 Children</option>
+                  <option value="3">3 Children</option>
+                  <option value="4">4 Children</option>
+                  <option value="5">5 Children</option>
+                  <option value="6">6 Children</option>
+                  <option value="7">7 Children</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </fieldset>
+      <div class="l-leftright l-mobile-portrait-leftright-reset l-gap-above buttons">
+        <div class="l-right">
+          <button class="btn btn-primary">Search flights</button>
+        </div>
+      </div>
+    </div>

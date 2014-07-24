@@ -43,7 +43,20 @@
       .row .row.collapse:after {
         clear: both; }	
 
+@media all and (max-width: 48em) {
+	.row {
+		margin-bottom: 0em;
+	}
+}        
+
 .row.row-noBottomMargin {margin: 0 auto;}
+
+@media all and (max-width: 48em) {
+	.row.row-noBottomMargin .grid{
+		margin-bottom: 0em;
+	}
+}
+
 .row.row-fullWidth {margin: 0 auto;max-width: 100%;}
 
 .grid {
@@ -60,6 +73,7 @@
 	body .grid {
 		display: block;
 		width: 100%;
+		margin-bottom: 1.5em;
 	}
 }
 

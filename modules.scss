@@ -72,8 +72,8 @@
 .panelGrid .grid.grid-4-noMargin .module-content {padding: 0 1em 1em;}
 /* Hawaii Hero*/
 .module-hero {
-	min-height: 24em;
-	background-image: url(http://www.brandonshields.com/alaska-airlines/homepage/images/istock_000011347788medium.jpg);
+	min-height: 30em;
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/hawaii.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
@@ -88,16 +88,11 @@
 /* Seattle Hero*/
 .module-hero-seattle {
 	min-height: 27em;
-	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/974x457_bg_sea3.jpg);
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/974x457_bg_sea-notype);
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
-.module-hero-seattle-right {
-	min-height: 27em;
-	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/974x457_bg_sea3_reverse.jpg);
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
+
 .module-heroText-seattle {
 	padding: 2em 1em 1em;font-size: 2em;
 	color: $sitebtn-txtcolor;
@@ -112,8 +107,11 @@
 
 .module-bookingForm {
 	background-color: rgba($sitemodule-color, .9);
-	height: 348px;
 	padding: 1em;
+}
+
+.module-bookingForm li {
+	display: inline-block;
 }
 
 .module-bookingForm .module-tealContainer a {color: $sitebtn-txtcolor; text-decoration: none; padding: .25em 1em; display: block;}
@@ -157,6 +155,20 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 */
 .module-horizontalMenu li {display:inline-block;margin-right: 1em;line-height: 2em;}
 .module-horizontalMenu li a {padding:0 .3em 0 0; display:block;}
+/*How do we want to do the sign in widget.*/
+@media all and (max-width: 40em) {
+	.module-horizontalMenu li {
+		display: block;
+		line-height: 2.5em;
+		border-bottom: 1px solid rgba($subdued-txt, 0.5);
+	}
+}
+@media all and (max-width: 40em) {
+	.module-horizontalMenu li h4 {
+		line-height: 2.5em;
+	}
+}
+
 
 /*MODULE Vertical Menu*/
 .module-verticalMenu li {line-height: 1.1em;}

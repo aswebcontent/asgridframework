@@ -1,0 +1,17 @@
+    <div class="row row-noBottomMargin navHeader">
+      <div class="grid grid-4">
+        <nav class="nav nav-logoNav">
+          <a href="#"><img src="http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/alaska_script_cmyk.png"></a>
+        </nav>
+      </div>
+      <div class="grid grid-8-last">
+        <nav class="nav nav-mainPersonaNav">
+          <ul>
+            <li><a href="#">Welcome, {FirstName}</a></li>
+            <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+            <li><a href="#"><i class="fa fa-plane"></i></a></li>
+            <li><a href="#"><i class="fa fa-briefcase"></i></a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
