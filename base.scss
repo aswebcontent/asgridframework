@@ -16,6 +16,12 @@ a:hover {
 	color: $subdued-txt;
 }
 
+header {background-color: $white;	margin-bottom: 1em;}
+@media all and (max-width:66em) {
+	.footer {
+		padding: 0 1em;
+	}
+}
 /* makes all image links have a glow effect when tabbing through the screen */
 a.imagelinks:focus {
 	box-shadow: 0px 0px 5px $subdued-txt;
@@ -44,7 +50,7 @@ blockquote {
 	margin: 0 auto;
 	border: 0;
 	vertical-align: baseline;
-	max-width: 60em;
+	max-width: 66em;
 	color: $primary-color;
 }
 @media all and (min-width:75em) {
@@ -52,24 +58,12 @@ blockquote {
 		font-size: 1em;
 		width: 100%;
 		max-width: 66em;
-		background-size: 1084px;
 	}
 }
-@media all and (min-width:57em) and (max-width:59.9999em) {
+
+@media all and (max-width:66em) {
 	.content {
-		width: 100%;
-		max-width: 60em;
-	}
-}
-@media all and (min-width:47.9376em) and (max-width:56.9999em) {
-	.content {
-		width: 100%;
-		max-width: 60em;
-	}
-}
-@media all and (max-width:47.9375em) {
-	.content {
-		padding: 1em;
+		padding: 0 1em;
 	}
 }
 hr {
@@ -78,7 +72,7 @@ hr {
 	margin: 1em 0 0 0;
 }
 .sup {
-	font-size: 0.8em;
+	font-size: 0.6em;
 	vertical-align: top;
 	position: relative;
 	top: -3px;

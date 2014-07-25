@@ -63,7 +63,7 @@
 .panelGrid .module-content {min-height: 5em;}
 .panelGrid .module-whiteContainer{padding: 0; margin: 0}
 .panelGrid .module-Picturecontainer {min-height: 10em;}
-.panelGrid .module-tealContainer a {color: $sitebtn-txtcolor; text-decoration: none; padding: .5em 1em; display: block;}
+.panelGrid .module-tealContainer a {color: $white; text-decoration: none; padding: .5em 1em; display: block;}
 .panelGrid .module-tealContainer a:hover {	background-color: darken( $teal-color, 5% ) ;}
 .panelGrid .module-tealContainer a span {color: $teal-color;}
 .panelGrid .grid.grid-3-noMargin .module-content {padding: 0 1em 1em;}
@@ -77,13 +77,30 @@
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
-.module-heroText {
-	padding: 2em 1em 1em;font-size: 2em;
-	color: $sitebtn-txtcolor;
-	text-align: center;
+@media all and (max-width: 48em) {
+	.module-hero {
+		background-size: inherit;
+		background-position: center;
+	}
 }
 
-.module-heroText h2, .module-heroText h3, .module-heroText h6 {color: $sitebtn-txtcolor;}
+
+
+.module-heroText {
+	padding: 2em 1em 1em;font-size: 2em;
+	color: $white;
+	text-align: center;
+}
+@media all and (max-width: 48em) {
+.module-heroText {
+	font-size: 1.75em;
+	padding: .5em 1em 1em;
+	color: $white;
+	text-align: center;
+}
+}
+
+.module-heroText h2, .module-heroText h3, .module-heroText h6 {color: $white;}
 
 /* Seattle Hero*/
 .module-hero-seattle {
@@ -95,12 +112,12 @@
 
 .module-heroText-seattle {
 	padding: 2em 1em 1em;font-size: 2em;
-	color: $sitebtn-txtcolor;
+	color: $white;
 	text-align: center;
 	visibility: hidden;
 }
 
-.module-heroText h2, .module-heroText h3, .module-heroText h6 {color: $sitebtn-txtcolor;}
+.module-heroText h2, .module-heroText h3, .module-heroText h6 {color: $white;}
 
 
 /* Booking form*/
@@ -114,7 +131,7 @@
 	display: inline-block;
 }
 
-.module-bookingForm .module-tealContainer a {color: $sitebtn-txtcolor; text-decoration: none; padding: .25em 1em; display: block;}
+.module-bookingForm .module-tealContainer a {color: $white; text-decoration: none; padding: .25em 1em; display: block;}
 .module-bookingForm .module-tealContainer a:hover {	background-color: darken( $teal-color, 5% ) ;}
 .module-bookingForm .module-tealContainer a span {color: $teal-color;}
 .module-heroText .linkText {font-size: .5em}
@@ -186,17 +203,17 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-discover { font-weight: normal;}
 .module-discover * { font-weight: normal;}
 .module-discover a { text-decoration: none;}
-.module-discover h2 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
-.module-discover h3 { margin: 0em; line-height: 1em;/*centers the text vertically*/ color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
-.module-discover h4 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
+.module-discover h2 { margin: 0em; line-height: 1em; color:$white;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
+.module-discover h3 { margin: 0em; line-height: 1em;/*centers the text vertically*/ color:$white;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
+.module-discover h4 { margin: 0em; line-height: 1em; color:$white;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
 
 /*MODULE Discover Grid Module*/
 .module-discover-grid { font-weight: normal;}
 .module-discover-grid * { font-weight: normal;}
 .module-discover-grid a { text-decoration: none;}
-.module-discover-grid h2 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
-.module-discover-grid h3 { margin: 0em; line-height: 2em;/*centers the text vertically*/ color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
-.module-discover-grid h4 { margin: 0em; line-height: 1em; color:$sitebtn-txtcolor;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
+.module-discover-grid h2 { margin: 0em; line-height: 1em; color:$white;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
+.module-discover-grid h3 { margin: 0em; line-height: 2em;/*centers the text vertically*/ color:$white;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
+.module-discover-grid h4 { margin: 0em; line-height: 1em; color:$white;text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);}
 
 
 
@@ -223,24 +240,6 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 
 
 .module-price { font-size: 2.5em; color: lighten($secondary-color, 100%); font-weight: normal;}
-
-
-
-/*How do we want to do the sign in widget.*/
-@media all and (max-width: 40em) {
-	.module-hero {
-		min-height: 12em;
-	}
-}
-
-
-@media all and (max-width: 26.7em) {
-
-	.module-hero .module-textareaWhite{
-		font-size: 1em;
-	}
-
-}
 
 .module-textareaWhite span {font-size: .5em}
 

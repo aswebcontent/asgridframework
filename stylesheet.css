@@ -1568,6 +1568,13 @@ a:hover {
 .subdued {
   color: #aaaaaa; }
 
+header {
+  background-color: white;
+  margin-bottom: 1em; }
+
+@media all and (max-width: 66em) {
+  .footer {
+    padding: 0 1em; } }
 /* makes all image links have a glow effect when tabbing through the screen */
 a.imagelinks:focus {
   box-shadow: 0px 0px 5px #aaaaaa; }
@@ -1596,33 +1603,24 @@ blockquote {
   margin: 0 auto;
   border: 0;
   vertical-align: baseline;
-  max-width: 60em;
+  max-width: 66em;
   color: #00245a; }
 
 @media all and (min-width: 75em) {
   .content {
     font-size: 1em;
     width: 100%;
-    max-width: 66em;
-    background-size: 1084px; } }
-@media all and (min-width: 57em) and (max-width: 59.9999em) {
+    max-width: 66em; } }
+@media all and (max-width: 66em) {
   .content {
-    width: 100%;
-    max-width: 60em; } }
-@media all and (min-width: 47.9376em) and (max-width: 56.9999em) {
-  .content {
-    width: 100%;
-    max-width: 60em; } }
-@media all and (max-width: 47.9375em) {
-  .content {
-    padding: 1em; } }
+    padding: 0 1em; } }
 hr {
   border: none;
   border-bottom: 1px solid gainsboro;
   margin: 1em 0 0 0; }
 
 .sup {
-  font-size: 0.8em;
+  font-size: 0.6em;
   vertical-align: top;
   position: relative;
   top: -3px; }
@@ -1635,7 +1633,7 @@ hr {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 1.5em;
-  max-width: 62.5em;
+  max-width: 60em;
   padding: 0; }
 
 .row:before, .row:after {
@@ -1685,7 +1683,13 @@ hr {
 @media all and (max-width: 48em) {
   .row {
     margin-bottom: 0em; } }
+@media all and (min-width: 70em) {
+  .row {
+    max-width: 66em; } }
 .row.row-noBottomMargin {
+  margin: 0 auto; }
+
+header .row {
   margin: 0 auto; }
 
 @media all and (max-width: 48em) {
@@ -1891,13 +1895,13 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 .nav-mainNav {
   width: auto;
   background-color: #00245a;
-  margin-bottom: 1em;
   border-bottom: 8px solid #008480; }
 
 .nav-mainNav ul {
-  max-width: 1000px;
+  max-width: 66em;
   margin: 0 auto;
-  padding-left: 0px; }
+  padding-left: 0px;
+  max-width: 66em; }
 
 .nav-mainNav ul li {
   display: inline-block; }
@@ -1964,27 +1968,6 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 
   .nav-mainNav ul li {
     margin-right: 0em; } }
-/* --------------------------------- */
-.navFooter {
-  max-width: 60em;
-  margin: 0 auto; }
-
-.navFooter h6 {
-  font-size: 1em;
-  padding-bottom: .5em;
-  border-bottom: 1px solid #c5c5c5; }
-
-.navFooter li {
-  line-height: 2em;
-  border-bottom: 1px solid #c5c5c5; }
-
-@media all and (max-width: 48em) {
-  .navFooter {
-    padding: 0 2em; }
-
-  .navFooter h6 {
-    padding-top: 2em; } }
-/* --------------------------------- */
 /*MODULE*/
 .module, .module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer, .module-whiteContainer, .module-blueContainer {
   min-height: 1em;
@@ -2072,12 +2055,22 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   background-size: 100%;
   background-repeat: no-repeat; }
 
+@media all and (max-width: 48em) {
+  .module-hero {
+    background-size: inherit;
+    background-position: center; } }
 .module-heroText {
   padding: 2em 1em 1em;
   font-size: 2em;
   color: white;
   text-align: center; }
 
+@media all and (max-width: 48em) {
+  .module-heroText {
+    font-size: 1.75em;
+    padding: .5em 1em 1em;
+    color: white;
+    text-align: center; } }
 .module-heroText h2, .module-heroText h3, .module-heroText h6 {
   color: white; }
 
@@ -2294,13 +2287,6 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   color: white;
   font-weight: normal; }
 
-/*How do we want to do the sign in widget.*/
-@media all and (max-width: 40em) {
-  .module-hero {
-    min-height: 12em; } }
-@media all and (max-width: 26.7em) {
-  .module-hero .module-textareaWhite {
-    font-size: 1em; } }
 .module-textareaWhite span {
   font-size: .5em; }
 
@@ -2387,6 +2373,37 @@ h6 {
   text-transform: uppercase; }
 
 /* FOOTER */
+/* --------------------------------- */
+.navFooter {
+  font-size: 1em;
+  max-width: 66em;
+  margin: 0 auto; }
+
+@media all and (max-width: 48em) {
+  .navFooter {
+    padding: 0 2em; } }
+@media all and (max-width: 66em) {
+  .navFooter {
+    max-width: 92%; } }
+.navFooter h6 {
+  font-size: 1em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #c5c5c5; }
+
+@media all and (max-width: 48em) {
+  .navFooter h6 {
+    padding-top: 2em; } }
+.navFooter li {
+  line-height: 2em;
+  border-bottom: 1px solid #c5c5c5; }
+
+@media all and (max-width: 48em) {
+  .navFooter {
+    padding: 0 2em; }
+
+  .navFooter h6 {
+    padding-top: 2em; } }
+/* --------------------------------- */
 .footer {
   color: #00245a;
   border-top: 1px solid #dddddd;
@@ -2397,6 +2414,9 @@ h6 {
   line-height: 1.5em;
   max-width: 60em; }
 
+@media all and (max-width: 66em) {
+  .footer {
+    padding: 3em 1em; } }
 .row.row-fullWidth.footer {
   margin-top: 5em; }
 
@@ -3492,41 +3512,64 @@ h6 {
   background-size: 100%;
   background-repeat: no-repeat; }
 
-#emsl5 {
+/*Kauai*/
+.destination-kauai {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/kauai.ashx);
   background-position: left center;
   background-size: 105%;
   background-repeat: no-repeat; }
 
-#emsl6 {
+@media all and (min-width: 48em) and (max-width: 62em) {
+  .destination-kauai {
+    background-size: initial; } }
+@media all and (max-width: 32em) {
+  .destination-kauai {
+    background-size: initial; } }
+/*Puerto Vallarta*/
+.destination-puertovallarta {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/puertovallarta.ashx);
   background-position: left center;
   background-size: 100%;
   background-repeat: no-repeat; }
 
-#emsl7, .destination-newyork {
-  background-image: url(http://www.alaskaair.com/~/media/Images/destinations/newyork.ashx);
-  background-position: left center;
+@media all and (max-width: 32em) {
+  .destination-puertovallarta {
+    background-size: initial; } }
+/*New Orleans*/
+.destination-neworleans {
+  background-image: url(http://www.alaskaair.com/~/media/Images/destinations/neworleans.ashx);
+  background-position: right center;
   background-size: 100%;
   background-repeat: no-repeat; }
 
+/*New York*/
+.destination-newyork {
+  background-image: url(http://www.alaskaair.com/~/media/Images/destinations/newyork.ashx);
+  background-position: left center;
+  background-size: 140%;
+  background-repeat: no-repeat; }
+
+@media all and (max-width: 40em) {
+  .destination-newyork {
+    background-size: 200%; } }
+@media all and (max-width: 24em) {
+  .destination-newyork {
+    background-size: initial; } }
+/*San Diego*/
 .destination-sandiego {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/sandiego.ashx);
   background-position: left center;
   background-size: 107%;
   background-repeat: no-repeat; }
 
+@media all and (max-width: 30em) {
+  .destination-sandiego {
+    background-size: initial; } }
 .destination-sandiego .module-blueContainer {
   background-color: rgba(0, 36, 90, 0.1); }
 
 .destination-sandiego .module-blueContainer:hover {
   background-color: rgba(0, 36, 90, 0.3); }
-
-#emsl9, .destination-neworleans {
-  background-image: url(http://www.alaskaair.com/~/media/Images/destinations/neworleans.ashx);
-  background-position: right center;
-  background-size: 100%;
-  background-repeat: no-repeat; }
 
 #emsl5 h2 {
   line-height: 7em; }
@@ -3549,6 +3592,36 @@ h6 {
   background-size: 101%;
   background-repeat: no-repeat; }
 
+.destination-rome {
+  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 13.95em;
+  color: white; }
+
+a.destination-rome .headlines, a.destination-rome h1, a.destination-rome h2, a.destination-rome h3, a.destination-rome h4, a.destination-rome h5, a.destination-rome h6 {
+  color: white; }
+
+@media all and (max-width: 48em) {
+  a.destination-rome .headlines, a.destination-rome h1, a.destination-rome h2, a.destination-rome h3, a.destination-rome h4, a.destination-rome h5, a.destination-rome h6 {
+    font-size: 1.5em; } }
+@media all and (max-width: 48em) {
+  a.destination-rome h2 {
+    font-size: 1.65em; } }
+a.destination-rome {
+  color: white;
+  text-decoration: none; }
+
+.destination-rome div.module-blueContainer {
+  height: 13.95em;
+  background-color: rgba(0, 36, 90, 0.01); }
+
+@media all and (max-width: 26.7em) {
+  .destination-rome {
+    background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
+    background-position: center;
+    background-size: 142%; } }
 #pic2 {
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/6241955-u4414-fr.jpg);
   background-position: center;
@@ -3599,34 +3672,6 @@ div.layout-40.module-textareaWhite {
   position: relative;
   top: 25px; }
 
-#miles {
-  background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  min-height: 13.95em;
-  color: white; }
-
-#milesText {
-  position: relative;
-  top: 10px; }
-
-a#miles .headlines, a#miles h1, a#miles h2, a#miles h3, a#miles h4, a#miles h5, a#miles h6 {
-  color: white; }
-
-a#miles {
-  color: white;
-  text-decoration: none; }
-
-#miles div.module-blueContainer {
-  height: 13.95em;
-  background-color: rgba(0, 36, 90, 0.01); }
-
-@media all and (max-width: 26.7em) {
-  #miles {
-    background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
-    background-position: center;
-    background-size: 142%; } }
 /*Javascript Classes*/
 .is-visuallyHidden {
   display: none; }

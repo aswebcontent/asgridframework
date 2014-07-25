@@ -26,33 +26,77 @@
 	background-repeat: no-repeat;
 }
 
-#emsl5 {
+
+/*Kauai*/
+.destination-kauai {
 	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/kauai.ashx);
 	background-position: left center;
 	background-size: 105%;
 	background-repeat: no-repeat;
 }
+@media all and (min-width: 48em) and (max-width: 62em)  {
+	.destination-kauai {
+		background-size: initial;
+	}
+}
+@media all and (max-width: 32em) {
+	.destination-kauai {
+		background-size: initial;
+	}
+}
 
-
-#emsl6 {
+/*Puerto Vallarta*/
+.destination-puertovallarta {
 	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/puertovallarta.ashx);
 	background-position: left center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
+@media all and (max-width: 32em) {
+	.destination-puertovallarta {
+		background-size: initial;
+	}
+}
 
-#emsl7, .destination-newyork {
-	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/newyork.ashx);
-	background-position: left center;
+/*New Orleans*/
+.destination-neworleans {
+	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/neworleans.ashx);
+	background-position: right center;
 	background-size: 100%;
 	background-repeat: no-repeat;
 }
 
+/*New York*/
+.destination-newyork {
+	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/newyork.ashx);
+	background-position: left center;
+	background-size: 140%;
+	background-repeat: no-repeat;
+}
+@media all and (max-width: 40em) {
+	.destination-newyork {
+		background-size: 200%;
+	}
+}
+@media all and (max-width: 24em) {
+	.destination-newyork {
+		background-size: initial;
+	}
+}
+
+
+/*San Diego*/
 .destination-sandiego {
 	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/sandiego.ashx);
 	background-position: left center;
 	background-size: 107%;
 	background-repeat: no-repeat;
+}
+
+@media all and (max-width: 30em) {
+	.destination-sandiego {
+		background-size: initial;
+	}
 }
 .destination-sandiego .module-blueContainer {
 	background-color: rgba( $primary-color, .1 );
@@ -62,12 +106,7 @@
 }
 
 
-#emsl9, .destination-neworleans {
-	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/neworleans.ashx);
-	background-position: right center;
-	background-size: 100%;
-	background-repeat: no-repeat;
-}
+
 
 
 #emsl5 h2 {line-height: 7em}
@@ -91,6 +130,49 @@
 	background-position: center;
 	background-size: 101%;
 	background-repeat: no-repeat;
+}
+
+.destination-rome {
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	min-height: 13.95em;
+	color: $white;
+}
+
+a.destination-rome .headlines {
+	color: $white;
+}
+@media all and (max-width: 48em) {
+
+	a.destination-rome .headlines {
+		font-size: 1.5em;
+	}
+}
+@media all and (max-width: 48em) {
+
+	a.destination-rome h2 {
+		font-size: 1.65em;
+	}
+}
+a.destination-rome {
+	color: $white;
+	text-decoration: none;
+}
+
+.destination-rome div.module-blueContainer {
+	height: 13.95em;
+	background-color: rgba( $primary-color, .01 );
+}
+
+
+@media all and (max-width: 26.7em) {
+	.destination-rome {
+	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
+	background-position: center;
+	background-size: 142%;
+}
 }
 
 
@@ -130,12 +212,12 @@
 .module-textareaWhite {
 	font-size: 2em;
 	float: right;
-	color: $sitebtn-txtcolor;
+	color: $white;
 	padding: 3em 2em;
 	text-align: center;
 }
 .module-textareaWhite .headlines {
-	color: $sitebtn-txtcolor;
+	color: $white;
 }
 
 /*Force text on hero a little further down*/
@@ -144,34 +226,4 @@ position: relative;
 top: 25px;
 }
 
-#miles {
-	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	min-height: 13.95em;
-	color: $sitebtn-txtcolor;
-}
-#milesText {position: relative;top: 10px}
 
-a#miles .headlines {
-	color: $sitebtn-txtcolor;
-}
-a#miles {
-	color: $sitebtn-txtcolor;
-	text-decoration: none;
-}
-
-#miles div.module-blueContainer {
-	height: 13.95em;
-	background-color: rgba( $primary-color, .01 );
-}
-
-
-@media all and (max-width: 26.7em) {
-	#miles {
-	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/3654241-u5666-fr.png);
-	background-position: center;
-	background-size: 142%;
-}
-}

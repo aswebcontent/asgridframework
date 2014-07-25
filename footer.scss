@@ -1,4 +1,49 @@
 /* FOOTER */
+
+/* --------------------------------- */
+.navFooter {
+	font-size: 1em;
+	max-width: 66em;
+	margin: 0 auto;
+
+}
+@media all and (max-width:48em) {
+	.navFooter {
+		padding: 0 2em
+	}
+
+}
+@media all and (max-width:66em) {
+	.navFooter {
+		max-width: 92%;
+	}
+
+}
+.navFooter h6 {
+	font-size: 1em;
+	padding-bottom: .5em;
+	border-bottom: 1px solid lighten($copy-color, 50%);
+}
+@media all and (max-width:48em) {
+	.navFooter h6 {
+		padding-top: 2em
+	}
+}
+.navFooter li {
+	line-height: 2em;
+	border-bottom: 1px solid lighten($copy-color, 50%);
+}
+@media all and (max-width:48em) {
+	.navFooter {
+		padding: 0 2em
+	}
+	.navFooter h6 {
+		padding-top: 2em
+	}
+}
+
+/* --------------------------------- */
+
 .footer {
 	color: $primary-color;
 	border-top: 1px solid $accent-color;
@@ -8,6 +53,11 @@
 	color: lighten($copy-color, 20%);
 	line-height: 1.5em;
 	max-width: 60em
+}
+@media all and (max-width:66em) {
+	.footer {
+		padding: 3em 1em;
+	}
 }
 .row.row-fullWidth.footer {
 	margin-top: 5em;

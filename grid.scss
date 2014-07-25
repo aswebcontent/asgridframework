@@ -6,7 +6,7 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 1.5em;
-  max-width: 62.5em;
+  max-width: 60em;
   padding: 0; }
   .row:before, .row:after {
     content: " ";
@@ -47,9 +47,16 @@
 	.row {
 		margin-bottom: 0em;
 	}
-}        
+} 
+
+@media all and (min-width: 70em) {
+	.row{
+		max-width: 66em;
+	}
+}       
 
 .row.row-noBottomMargin {margin: 0 auto;}
+header .row {margin: 0 auto;}
 
 @media all and (max-width: 48em) {
 	.row.row-noBottomMargin .grid{
