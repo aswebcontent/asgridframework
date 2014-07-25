@@ -66,7 +66,11 @@
 	}
 }
 .nav-mainNav ul li input {
-	margin: .75em
+	margin: 0.75em;
+	border-radius: 5px;
+	padding: 5px;
+	border: 0;
+	box-shadow: 1px 1px 5px rgba($black, 0.1);
 }
 .nav-mainNav ul li a:hover {
 	background-color: $d2eGreen;
