@@ -54,18 +54,15 @@
 	line-height: 1.5em;
 	max-width: 60em
 }
-@media all and (max-width:66em) {
-	.footer {
-		padding: 3em 1em;
-	}
-}
+
 .row.row-fullWidth.footer {
 	margin-top: 5em;
 }
-.footer a {
+.footer li a {
 	color: lighten($copy-color, 20%);
 	margin: 0 .8em 0 0;
 	text-decoration: none;
+	display: block;
 }
 .footer a.first, a.AdChoices {
 	margin-left: 0
@@ -84,7 +81,13 @@
 	}
 }
 
-/* FOOTER */
+
+/* Icons to the right of input box */
+li.icon-links a {
+	display: inline;
+}
+
+/* Bottom FOOTER */
 .subfooter {
 	color: $primary-color;
 	border-top: 1px solid darken($siteborder-color, 9);

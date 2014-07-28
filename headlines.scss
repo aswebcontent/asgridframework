@@ -9,8 +9,10 @@
 	font-weight: normal;
 }
 
+.headlines i {float: right; color:rgba($black, 0.29)}
+
 .emphasize {
-	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29);
+	text-shadow: 1px 1px 1px rgba($black, 0.29);
 }
 
 .headlines-centered {

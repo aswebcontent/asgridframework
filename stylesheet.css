@@ -1569,8 +1569,7 @@ a:hover {
   color: #aaaaaa; }
 
 header {
-  background-color: white;
-  margin-bottom: 1em; }
+  background-color: white; }
 
 @media all and (max-width: 66em) {
   .footer {
@@ -2057,7 +2056,8 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   min-height: 30em;
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/hawaii.jpg);
   background-size: 100%;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-position: 50% 42%; }
 
 @media all and (max-width: 48em) {
   .module-hero {
@@ -2342,6 +2342,10 @@ a.imageLinks {
   color: #454545;
   font-weight: normal; }
 
+.headlines i, h1 i, h2 i, h3 i, h4 i, h5 i, h6 i {
+  float: right;
+  color: rgba(0, 0, 0, 0.29); }
+
 .emphasize {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29); }
 
@@ -2418,16 +2422,14 @@ h6 {
   line-height: 1.5em;
   max-width: 60em; }
 
-@media all and (max-width: 66em) {
-  .footer {
-    padding: 3em 1em; } }
 .row.row-fullWidth.footer {
   margin-top: 5em; }
 
-.footer a {
+.footer li a {
   color: #787878;
   margin: 0 .8em 0 0;
-  text-decoration: none; }
+  text-decoration: none;
+  display: block; }
 
 .footer a.first, a.AdChoices {
   margin-left: 0; }
@@ -2443,7 +2445,11 @@ h6 {
     margin: 0;
     padding: .3em 0;
     display: block; } }
-/* FOOTER */
+/* Icons to the right of input box */
+li.icon-links a {
+  display: inline; }
+
+/* Bottom FOOTER */
 .subfooter {
   color: #00245a;
   border-top: 1px solid #c5c5c5;
