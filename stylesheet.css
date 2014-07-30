@@ -1871,6 +1871,10 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 .nav-logoNav {
   margin: 1em 0; }
 
+@media all and (max-width: 48em) {
+  .nav-logoNav a img {
+    margin: 0 auto;
+    display: block; } }
 /* --------------------------------- */
 .nav-mainPersonaNav ul {
   float: right;
@@ -2055,14 +2059,28 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 .module-hero {
   min-height: 30em;
   background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/hawaii.jpg);
-  background-size: 100%;
+  background-size: 102%;
   background-repeat: no-repeat;
-  background-position: 50% 42%; }
+  background-position: 50% 42%;
+  margin: 0 1em 1em 1em; }
 
 @media all and (max-width: 48em) {
   .module-hero {
     background-size: inherit;
     background-position: center; } }
+@media all and (min-width: 70em) {
+  .module-hero.content {
+    max-width: 100%;
+    margin: 0 auto; } }
+/* This will adjust the booking form on small screens*/
+@media all and (max-width: 48em) {
+  .module-hero .grid.grid-5, .module-hero .grid.grid-5-last {
+    position: relative;
+    bottom: -222px; }
+
+  .module-hero .grid.grid-7-last {
+    position: relative;
+    top: -222px; } }
 .module-heroText {
   padding: 2em 1em 1em;
   font-size: 2em;
@@ -2269,12 +2287,6 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   margin: 1em 0 0 0;
   font-weight: normal; }
 
-.module-form * {
-  font-weight: normal; }
-
-.module-form h3 {
-  color: #40639b; }
-
 .module-form h4 {
   margin: .1em 0;
   color: #7997c8; }
@@ -2463,9 +2475,15 @@ li.icon-links a {
 .row.row-fullWidth.subfooter {
   margin-top: 0em; }
 
-.subfooter a {
+.subfooter li {
+  display: inline-block;
+  padding: .5em 0 .5em 0;
+  border-bottom: 0px; }
+
+.subfooter li a {
   color: #787878;
-  margin: 0; }
+  margin: 0;
+  padding: 0 .5em; }
 
 .subfooter a.first {
   margin-left: 0; }
@@ -2476,11 +2494,6 @@ li.icon-links a {
 @media all and (max-width: 48em) {
   .subfooter {
     padding: 1em 0; } }
-.subfooter li {
-  display: inline-block;
-  padding: .5em .5em .5em 0;
-  border-bottom: 0px; }
-
 .subfooter .nav-socialLinks {
   font-size: 1.5em; }
 

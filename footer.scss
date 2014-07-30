@@ -101,9 +101,16 @@ li.icon-links a {
 .row.row-fullWidth.subfooter {
 	margin-top: 0em;
 }
-.subfooter a {
+.subfooter li {
+	display: inline-block;
+	padding: .5em 0 .5em 0;
+	border-bottom: 0px;
+
+}
+.subfooter li a {
 	color: lighten($copy-color, 20%);
 	margin: 0;
+	padding: 0 .5em;
 }
 .subfooter a.first {
 	margin-left: 0
@@ -117,12 +124,9 @@ li.icon-links a {
 	}
 }
 
-.subfooter li {
-	display: inline-block;
-	padding: .5em .5em .5em 0;
-	border-bottom: 0px;
 
-}
+
+
 
 
 .subfooter .nav-socialLinks {

@@ -12,6 +12,12 @@
 .nav-logoNav {
 	margin: 1em 0;
 }
+@media all and (max-width:48em) {
+	.nav-logoNav a img {
+		margin: 0 auto;
+		display: block;
+	}
+}
 
 /* --------------------------------- */
 .nav-mainPersonaNav ul {

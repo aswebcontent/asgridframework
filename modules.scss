@@ -70,13 +70,16 @@
 .panelGrid .grid.grid-3-noMargin .module-headlines {padding: 0em 1em 0em;}
 .panelGrid .grid.grid-4-noMargin .module-headlines {padding: 0em 1em 0em;}
 .panelGrid .grid.grid-4-noMargin .module-content {padding: 0 1em 1em;}
+
+
 /* Hawaii Hero*/
 .module-hero {
 	min-height: 30em;
 	background-image: url(http://www.brandonshields.com/alaska-airlines/asgridframework/images/hawaii.jpg);
-	background-size: 100%;
+	background-size: 102%;
 	background-repeat: no-repeat;
 	background-position: 50% 42%;
+	margin: 0 1em 1em 1em;
 }
 @media all and (max-width: 48em) {
 	.module-hero {
@@ -85,7 +88,25 @@
 	}
 }
 
+@media all and (min-width: 70em) {
+	.module-hero.content{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+} 
 
+/* This will adjust the booking form on small screens*/
+@media all and (max-width: 48em) {
+.module-hero .grid.grid-5 {
+position: relative;
+bottom: -222px;
+}
+.module-hero .grid.grid-7-last {
+position: relative;
+top: -222px;
+}
+
+}
 
 .module-heroText {
 	padding: 2em 1em 1em;font-size: 2em;
@@ -227,8 +248,6 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 
 /*MODULE sign in form*/
 .module-form { margin: 1em 0 0 0; font-weight: normal;}
-.module-form * { font-weight: normal;}
-.module-form h3 { color:$secondary-color;}
 .module-form h4 { margin: .1em 0; color:lighten($secondary-color, 20%);}
 
 
