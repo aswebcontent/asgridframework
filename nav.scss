@@ -1,3 +1,6 @@
+
+.logoHeader {background-color: $white;}
+.logoHeader .grid {margin-bottom: 0}
 .nav a {
 	text-decoration: none;
 	font-family: $font-stack;
@@ -42,14 +45,13 @@
 }
 
 /* --------------------------------- */
-.nav-mainNav {
+.navHeader {
 	width: auto;
 	background-color: $primary-color;
 	border-bottom: 8px solid $d2eGreen;
 
 }
 .nav-mainNav ul {
-	max-width: 66em;
 	margin: 0 auto;
 	padding-left: 0px;
 	max-width: 66em;	

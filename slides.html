@@ -7,61 +7,52 @@
     <!-- foundation datepicker start -->
     <script src="js/foundation-datepicker.js"></script>
     <link rel="stylesheet" href="stylesheets/foundation-datepicker.css">
+    <link href="https://fontastic.s3.amazonaws.com/tUrLZaJKE2Y9qso8kdx4yQ/icons.css" rel="stylesheet">
     <!-- foundation datepicker end -->
   </head>
   <body>
+    <section class="logoHeader">
     <header>
-      <div class="row row-noBottomMargin navHeader">
+      <div class="row">
         <div class="grid grid-5">
           <nav class="nav nav-logoNav"> <a href="#"><img src="http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/alaska_script_cmyk.png"></a> </nav>
         </div>
         <div class="grid grid-7-last">
           <nav class="nav nav-mainPersonaNav">
             <ul>
-              <li><a href="#"><i class="fa fa-user fa-fw"></i> Welcome, {FirstName}</a></li>
-              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              <li><a href="#"><i class="fa fa-plane"></i></a></li>
-              <li><a href="#"><i class="fa fa-briefcase"></i></a></li>
+              <li><a href="#"><i class="icon-user"></i> Welcome, {FirstName}</a></li>
+              <li><a href="#"><i class="icon-shop-share"></i></a></li>
+              <li><a href="#"><i class="icon-plane-airport"></i></a></li>
+              <li><a href="#"><i class="icon-briefcase-case"></i></a></li>
             </ul>
           </nav>
         </div>
       </div>
-      <div class="row row-fullWidth">
+      </header>
+      </section>
+      <section class="navHeader">
+      <header>
+      <div class="row nav">
         <!--seems like we can do better for the navigation in case we want to put features in the nav bar-->
-        <nav class="nav nav-mainNav">
+        <nav class="nav-mainNav">
           <ul>
-            <li class="nav-mobile nav-book"><a href="#">Book</a></li>
-            <!--
-            -->
-            <li class="nav-mobile nav-checkin"><a href="#">Check-In</a></li>
-            <!--
-            -->
-            <li class="nav-mobile nav-checkin"><a href="#">Flight Status</a></li>
-            <!--
-            -->
-            <li class="nav-hamburger"><a href="#footer"><i class="fa fa-navicon"></i></a></li>
-            <!--
-            -->
-            <li class="nav-desktop nav-discover"><a href="#">Discover</a></li>
-            <!--
+            <li class="nav-mobile nav-book"><a href="#">Book</a></li><!--
+            --><li class="nav-mobile nav-checkin"><a href="#">Check-In</a></li><!--
+            --><li class="nav-mobile nav-checkin"><a href="#">Flight Status</a></li><!--
+            --><li class="nav-hamburger"><a href="#footer"><i class="fa fa-navicon"></i></a></li><!--
+            --><li class="nav-desktop nav-discover"><a href="#">Discover</a></li><!--
             <li class="nav-desktop nav-travelInfo"><a href="#">Travel Info</a></li>--><!--
-            -->
-            <li class="nav-desktop nav-travelInfo"><a href="#">Mileage Plan&trade;</a></li>
-            <!--
-            -->
-            <li class="nav-search">
-              <input type="search" results="5" autosave="some_unique_value" value="Search">
-            </li>
-            <!--
-            -->
-            <li class="nav-searchIcon"><a href="#footer"><i class="fa fa-search"></i></a></li>
+            --><li class="nav-desktop nav-travelInfo"><a href="#">Mileage Plan&trade;</a></li><!--
+            --><li class="nav-search"><input type="search" results="5" autosave="some_unique_value" value="Search"></li><!--
+            --><li class="nav-searchIcon"><a href="#footer"><i class="fa fa-search"></i></a></li>
           </ul>
         </nav>
       </div>
     </header>
-    <!--Wrap testing blockquote in "HP-TEST"-->
+    </section>
     <!-- hero Section-->
-    <section class="module-hero content">
+    <section class="module-hero">
+    <section class="content">
       <div class="row">
         <div class="grid grid-5">
           <div class="module-whiteContainer module-form">
@@ -106,6 +97,7 @@
           <span class="linkText">Explore More. Spend Less. &raquo;</span> </div>
         </div>
       </div>
+    </section>
     </section>
     <section class="content">
       <!-- Second Section-->
@@ -368,9 +360,9 @@
                     </section>
                     <!--Closing div-->
                   </div>
-                  <section id="footer" class="row row-fullWidth footer">
+                  <section id="footer" class="row footer">
                 <section id="footer-slide1" class="slidr" data-slidr="f1" >
-                  <footer class="row row-fullWidth">
+                  <footer class="row">
                     <nav class="navFooter">
                       
                       <div class="grid grid-6">
@@ -378,7 +370,7 @@
                         <div class="textBox">
                         A good day of travel is about lots of little things lining up just right. You check in for your flight with your convenient mobile app. At the airport you're greeted with warmth, and accommodated with care. On the plane you can relax with a purchase of fresh fruits, artisan cheeses, and craft beers. You land, get your bags fast, and head out to your adventure. Satisfaction is simple.
                         </div>
-                        <div class="grid-11">
+                        <div class="grid-6">
                         <button class="btn btn-primary">Learn More</button>
                         </div>
                       </div>
@@ -396,12 +388,12 @@
                           <li><a href="#">Check-in information</a></li>
                           <li><a href="#">Baggage</a></li>
                         </ul>
-                        <h6><i class="fa fa-plane"></i>Information</h6>
-                        <ul class="footerLists">
-                          <li><a href="#">Careers</a></li>
-                          <li><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&lid=footer:easyBiz">EasyBiz</a></li>
-                          <li><a href="http://www.alaskaair.com/content/travel-info/optional-services-fees.aspx?cid=mobsite-optional-services-fees">Optional Services & Fees</a></li>
-                          <!--<li><a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?cid=mobsite-privacypolicy">Privacy</a></li>-->
+                         <h6><i class="fa fa-plane"></i>Mileage Plan<sup>&trade;</sup></h6>
+                      <ul class="footerLists">
+                          <li><a href="http://www.alaskaair.com/content/mileage-plan/benefits/about-mileage-plan.aspx">About Mileage Plan<sup>&trade;</sup></a></li>
+                          <li><a href="http://www.alaskaair.com/content/mileage-plan/frequently-asked-questions/faq-companion-discount-code.aspx">Companion Fare FAQ</a></li>
+                          <li><a href="http://www.alaskaair.com/content/mileage-plan/benefits/elite-levels-and-benefits.aspx">Elite Benefits</a></li>
+                          <li><a href="#">Enroll Today</a></li>
                         </ul>
                       </div>
                       <div class="grid grid-3x4-last">
@@ -417,14 +409,14 @@
                           <li><a href="#">Careers</a></li>
                           <li><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&lid=footer:easyBiz">EasyBiz</a></li>
                           <li><a href="http://www.alaskaair.com/content/travel-info/optional-services-fees.aspx?cid=mobsite-optional-services-fees">Optional Services & Fees</a></li>
-                          <!--<li><a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?cid=mobsite-privacypolicy">Privacy</a></li>-->
+                          <li><a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?cid=mobsite-privacypolicy">Privacy</a></li>
                         </ul>
                     </div>
                   </nav>
                 </footer>
                 </section>
                 <section id="footer-slide2" class="slidr" data-slidr="f2" >
-                  <footer class="row row-fullWidth">
+                  <footer class="row">
                     <nav class="navFooter">
                       <div class="grid grid-3x4">
                         <h6><i class="fa fa-plane"></i>About Alaska</h6>
@@ -454,18 +446,19 @@
                       <div class="grid grid-3x4-last">
                         <h6><i class="fa fa-dollar"></i>Specials</h6>
                         <ul>
+                          <ul class="footerLists">
                           <li>Sign up for Email Deals</li>
-                          <li class="icon-links"><a href="#"><i class="fa fa-envelope"></i></a>
-                          <input type="email" name="email">
-                        </li>
-                        <li><a href="#">Flight Deals</a></li>
+                          <li><a href="#">Flight Deals</a></li>
+                          <li><a href="#">Hotel Deals</a></li>
+                          <li><a href="#">Car Deals</a></li>
+                      </ul>
                       </ul>
                     </div>
                   </nav>
                 </footer>
                 </section>
                 </section>
-                <section id="footer" class="row row-fullWidth footer subfooter">
+                <section id="footer" class="row subfooter">
                 <footer>
                   <nav class="navFooter">
                     <div class="grid grid-6">
@@ -487,7 +480,7 @@
                   </nav>
                 </footer>
                 </section>
-                <!--<footer class="row row-fullWidth subfooter">
+                <!--<footer class="row subfooter">
                   <div class="grid">
                   </div>
                 </footer>-->

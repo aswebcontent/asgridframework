@@ -10,58 +10,44 @@
     <!-- foundation datepicker end -->
   </head>
   <body>
-    <header>
-      <div class="row row-noBottomMargin navHeader">
-        <div class="grid grid-5">
-          <nav class="nav nav-logoNav"> <a href="#"><img src="http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/alaska_script_cmyk.png"></a> </nav>
+  <section class="header">
+      <header>
+        <div class="row row-noBottomMargin navHeader">
+          <div class="grid grid-5">
+            <nav class="nav nav-logoNav"> <a href="#"><img src="http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/alaska_script_cmyk.png"></a> </nav>
+          </div>
+          <div class="grid grid-7-last">
+            <nav class="nav nav-mainPersonaNav">
+              <ul>
+                <li><a href="#"><i class="fa fa-user fa-fw"></i> Welcome, {FirstName}</a></li>
+                <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
+                <li><a href="#"><i class="fa fa-plane"></i></a></li>
+                <li><a href="#"><i class="fa fa-briefcase"></i></a></li>
+              </ul>
+            </nav>
+          </div>
         </div>
-        <div class="grid grid-7-last">
-          <nav class="nav nav-mainPersonaNav">
+        <div class="row">
+          <!--seems like we can do better for the navigation in case we want to put features in the nav bar-->
+          <nav class="nav nav-mainNav">
             <ul>
-              <li><a href="#"><i class="fa fa-user fa-fw"></i> Welcome, {FirstName}</a></li>
-              <li><a href="#"><i class="fa fa-shopping-cart"></i></a></li>
-              <li><a href="#"><i class="fa fa-plane"></i></a></li>
-              <li><a href="#"><i class="fa fa-briefcase"></i></a></li>
+              <li class="nav-mobile nav-book"><a href="#">Book</a></li><!--
+              --><li class="nav-mobile nav-checkin"><a href="#">Check-In</a></li><!--
+              --><li class="nav-mobile nav-checkin"><a href="#">Flight Status</a></li><!--
+              --><li class="nav-hamburger"><a href="#footer"><i class="fa fa-navicon"></i></a></li><!--
+              --><li class="nav-desktop nav-discover"><a href="#">Discover</a></li><!--
+              <li class="nav-desktop nav-travelInfo"><a href="#">Travel Info</a></li>--><!--
+              --><li class="nav-desktop nav-travelInfo"><a href="#">Mileage Plan&trade;</a></li><!--
+              --><li class="nav-search"><input type="search" results="5" autosave="some_unique_value" value="Search"></li><!--
+              --><li class="nav-searchIcon"><a href="#footer"><i class="fa fa-search"></i></a></li>
             </ul>
           </nav>
         </div>
-      </div>
-      <div class="row row-fullWidth">
-        <!--seems like we can do better for the navigation in case we want to put features in the nav bar-->
-        <nav class="nav nav-mainNav">
-          <ul>
-            <li class="nav-mobile nav-book"><a href="#">Book</a></li>
-            <!--
-            -->
-            <li class="nav-mobile nav-checkin"><a href="#">Check-In</a></li>
-            <!--
-            -->
-            <li class="nav-mobile nav-checkin"><a href="#">Flight Status</a></li>
-            <!--
-            -->
-            <li class="nav-hamburger"><a href="#footer"><i class="fa fa-navicon"></i></a></li>
-            <!--
-            -->
-            <li class="nav-desktop nav-discover"><a href="#">Discover</a></li>
-            <!--
-            <li class="nav-desktop nav-travelInfo"><a href="#">Travel Info</a></li>--><!--
-            -->
-            <li class="nav-desktop nav-travelInfo"><a href="#">Mileage Plan&trade;</a></li>
-            <!--
-            -->
-            <li class="nav-search">
-              <input type="search" results="5" autosave="some_unique_value" value="Search">
-            </li>
-            <!--
-            -->
-            <li class="nav-searchIcon"><a href="#footer"><i class="fa fa-search"></i></a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+      </header>
+    </section>
     <!--Wrap testing blockquote in "HP-TEST"-->
     <!-- hero Section-->
-    <section class="module-hero content">
+    <section class="module-hero">
       <div class="row">
         <div class="grid grid-5">
           <div class="module-whiteContainer module-form">
@@ -284,7 +270,7 @@
                     </section>
                     <!--Closing div-->
                   </div>
-                  <footer id="footer" class="row row-fullWidth footer">
+                  <footer id="footer" class="row footer">
                     <nav class="navFooter">
                       <div class="grid grid-3x4">
                         <h6><i class="fa fa-plane"></i>About Alaska</h6>
@@ -323,7 +309,7 @@
                     </div>
                   </nav>
                 </footer>
-                <footer class="row row-fullWidth footer subfooter">
+                <footer class="row footer subfooter">
                   <nav class="navFooter">
                     <div class="grid grid-6">
                       <ul class="nav-socialLinks">
@@ -343,7 +329,7 @@
                     </div>
                   </nav>
                 </footer>
-                <!--<footer class="row row-fullWidth subfooter">
+                <!--<footer class="row subfooter">
                   <div class="grid">
                   </div>
                 </footer>-->

@@ -79,7 +79,7 @@
 	background-size: 102%;
 	background-repeat: no-repeat;
 	background-position: 50% 42%;
-	margin: 0 1em 1em 1em;
+	margin: 0 0 1em 0;
 }
 @media all and (max-width: 48em) {
 	.module-hero {
@@ -99,11 +99,11 @@
 @media all and (max-width: 48em) {
 .module-hero .grid.grid-5 {
 position: relative;
-bottom: -222px;
+bottom: -171px;
 }
 .module-hero .grid.grid-7-last {
 position: relative;
-top: -222px;
+top: -365px;
 }
 
 }
