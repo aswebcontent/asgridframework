@@ -107,9 +107,9 @@
         </div>
       </div>
     </section>
-    <section class="content" id="destinations" style="dislay: none">
+    <section class="content">
       <!-- Second Section-->
-      <div class="row" data-slidr="1">
+      <div class="row">
         <div class="grid grid-8"> <a id="miles" class="destination-rome imageLinks" href="https://www.applyonlinenow.com/USCCapp/Ctl/entry?cid=2110427">
           <div class="module-blueContainer">
             <div class="emphasize"  id="milesText"> <span>Go Places with</span>
@@ -155,7 +155,7 @@
             </div>
           </div>
           <!-- Quick Links-->
-          <div class="row" data-slidr="2">
+          <div class="row">
             <div class="grid grid-moduleWrapper">
               <div class="grid grid-12">
                 <div class="module-whiteContainer">
@@ -177,7 +177,7 @@
           </div>
           
           <!-- Third Section-->
-          <div class="row" data-slidr="4">
+          <div class="row">
             <h2 class="headlines headlines-centered">Stunning Destinations</h2>
             <div class="grid grid-6"> <a id="emsl5" class="destination-kauai imageLinks" href ="http://www.alaskaair.com/content/deals/flights/cheapest-flights-to-hawaii">
               <div class="module-blueContainer">
@@ -216,71 +216,77 @@
             </div>
           </div>
           <!-- Second Section-->
-          <div class="row" data-slidr="4">
-            <div class="grid grid-moduleWrapper">
-              <h2 class="headlines headlines-centered">Stunning Destinations</h2>
-              <div class="grid grid-4x3">
-                <div class="destination-vegas module-Picturecontainer"></div>
-                <div class="module-headlines">
-                  <h3>Las Vegas</h3>
-                  <h4>A few nights of decadence</h4>
-                </div>
-                <div class="module-content"> Vegas, do we need to say more? America's playground for grownups is open 24/7 and waiting for you. Book it and tell your friends. <br />
-                  <a href="#">Learn More &raquo;</a></div>
-                </div>
-                <div class="grid grid-4x3">
-                  <div class="destination-newyork module-Picturecontainer"></div>
-                  <div class="module-headlines">
-                    <h3>New York</h3>
-                    <h4>Come to the center of it all</h4>
-                  </div>
-                  <div class="module-content"> It's probably the most iconic place in America and a city that truly lives up to its reputation. New York feels like the capital of the world. <br />
-                    <a href="#">Learn More &raquo;</a></div>
-                  </div>
-                  <div class="grid grid-4x3-last">
-                    <div class="destination-orlando module-Picturecontainer"></div>
+          <section class="4x3-sliders-1">
+            <section id="4x3-sestination-1">
+              <div class="row">
+                <div class="grid grid-moduleWrapper">
+                  <h2 class="headlines headlines-centered">Stunning Destinations</h2>
+                  <div class="grid grid-4x3">
+                    <div class="destination-vegas module-Picturecontainer"></div>
                     <div class="module-headlines">
-                      <h3>Orlando</h3>
-                      <h4>The theme park destination</h4>
+                      <h3>Las Vegas</h3>
+                      <h4>A few nights of decadence</h4>
                     </div>
-                    <div class="module-content"> More fun than you can handle! Orlando is home to Walt Disney World<span class="sup">&reg;</span> , Universal Orlando<span class="sup">&reg;</span>, SeaWorld<span class="sup">&reg;</span>, and Legoland<span class="sup">&reg;</span>. <br />
+                    <div class="module-content"> Vegas, do we need to say more? America's playground for grownups is open 24/7 and waiting for you. Book it and tell your friends. <br />
                       <a href="#">Learn More &raquo;</a></div>
                     </div>
-                  </div>
-                </div>
-                <!-- Second Section-->
-                <div class="row" data-slidr="5">
-                  <div class="grid grid-moduleWrapper">
-                    <h2 class="headlines headlines-centered">Stunning Destinations</h2>
                     <div class="grid grid-4x3">
-                      <div class="destination-kauai module-Picturecontainer"></div>
+                      <div class="destination-newyork module-Picturecontainer"></div>
                       <div class="module-headlines">
-                        <h3>Kauai</h3>
-                        <h4>A garden paradise</h4>
+                        <h3>New York</h3>
+                        <h4>Come to the center of it all</h4>
                       </div>
-                      <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
+                      <div class="module-content"> It's probably the most iconic place in America and a city that truly lives up to its reputation. New York feels like the capital of the world. <br />
                         <a href="#">Learn More &raquo;</a></div>
                       </div>
-                      <div class="grid grid-4x3">
-                        <div class="destination-neworleans module-Picturecontainer"></div>
+                      <div class="grid grid-4x3-last">
+                        <div class="destination-orlando module-Picturecontainer"></div>
                         <div class="module-headlines">
-                          <h3>New Orleans</h3>
-                          <h4>A place like no other</h4>
+                          <h3>Orlando</h3>
+                          <h4>The theme park destination</h4>
                         </div>
-                        <div class="module-content">Perhaps the most culturally diverse city in the country, you'll remember a trip to New Orleans. History, gumbo, and music all flow together in the Big Easy. <br />
+                        <div class="module-content"> More fun than you can handle! Orlando is home to Walt Disney World<span class="sup">&reg;</span> , Universal Orlando<span class="sup">&reg;</span>, SeaWorld<span class="sup">&reg;</span>, and Legoland<span class="sup">&reg;</span>. <br />
                           <a href="#">Learn More &raquo;</a></div>
                         </div>
-                        <div class="grid grid-4x3-last">
-                          <div class="destination-puertovallarta module-Picturecontainer"></div>
+                      </div>
+                    </div>
+                  </section>
+                  <!-- Second Section-->
+                  <section id="4x3-sestination-2">
+                    <div class="row">
+                      <div class="grid grid-moduleWrapper">
+                        <h2 class="headlines headlines-centered">Stunning Destinations</h2>
+                        <div class="grid grid-4x3">
+                          <div class="destination-kauai module-Picturecontainer"></div>
                           <div class="module-headlines">
-                            <h3>Puerto Vallarta</h3>
-                            <h4>Beauty on the Pacific</h4>
+                            <h3>Kauai</h3>
+                            <h4>A garden paradise</h4>
                           </div>
-                          <div class="module-content">Mexico's resort city of Puerto Vallarta is a perfect balance of amenities, convenience, and scenic beauty. The perfect vacation.<br />
+                          <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
                             <a href="#">Learn More &raquo;</a></div>
                           </div>
-                        </div>
-                      </div>
+                          <div class="grid grid-4x3">
+                            <div class="destination-neworleans module-Picturecontainer"></div>
+                            <div class="module-headlines">
+                              <h3>New Orleans</h3>
+                              <h4>A place like no other</h4>
+                            </div>
+                            <div class="module-content">Perhaps the most culturally diverse city in the country, you'll remember a trip to New Orleans. History, gumbo, and music all flow together in the Big Easy. <br />
+                              <a href="#">Learn More &raquo;</a></div>
+                            </div>
+                            <div class="grid grid-4x3-last">
+                              <div class="destination-puertovallarta module-Picturecontainer"></div>
+                              <div class="module-headlines">
+                                <h3>Puerto Vallarta</h3>
+                                <h4>Beauty on the Pacific</h4>
+                              </div>
+                              <div class="module-content">Mexico's resort city of Puerto Vallarta is a perfect balance of amenities, convenience, and scenic beauty. The perfect vacation.<br />
+                                <a href="#">Learn More &raquo;</a></div>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+                      </section>
                     </section>
                     <!--Closing div-->
                   </div>
@@ -411,7 +417,7 @@
                 </script>
                 <script type="text/javascript" src="http://www.alaskaair.com/content/~/media/Files/js/slidr.js"></script>
                 <script>
-                var s = slidr.create('destinations', {
+                var s = slidr.create('hp_footers', {
                 breadcrumbs: false,
                 controls: 'border',
                 direction: 'h',
@@ -422,7 +428,7 @@
                 timing: { 'cube': '1.9s ease-in' },
                 touch: true,
                 transition: 'cube'
-                }).start().auto(10000).add('v', ['1', '2', '3', '4', '5', '1']);
+                }).start().auto(10000).add('v', ['1', '2', '1']);
                 </script>
               </body>
             </html>

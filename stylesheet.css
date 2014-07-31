@@ -2392,6 +2392,10 @@ h6 {
   font-weight: normal;
   text-transform: uppercase; }
 
+.textBox {
+  padding: 1em .5em 1em 0;
+  line-height: 2em; }
+
 /* FOOTER */
 /* --------------------------------- */
 .navFooter {
@@ -2494,6 +2498,9 @@ li.icon-links a {
 @media all and (max-width: 48em) {
   .subfooter {
     padding: 1em 0; } }
+.footerLists {
+  margin-bottom: 1em; }
+
 .subfooter .nav-socialLinks {
   font-size: 1.5em; }
 
@@ -3694,6 +3701,16 @@ a.destination-rome {
 div.layout-40.module-textareaWhite {
   position: relative;
   top: 25px; }
+
+.slidr {
+  overflow: hidden; }
+
+.footer {
+  overflow: hidden; }
+
+section.slidr {
+  margin: 0 auto;
+  width: 100%; }
 
 /*Javascript Classes*/
 .is-visuallyHidden {
