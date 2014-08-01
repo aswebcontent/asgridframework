@@ -4333,6 +4333,11 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 @media all and (max-width: 48em) {
   nav.nav.nav-mainPersonaNav {
     display: none; } }
+.nav-mainPersonaNav svg {
+  height: 1em;
+  width: auto;
+  vertical-align: text-top; }
+
 /* --------------------------------- */
 .navHeader {
   width: auto;
@@ -4588,17 +4593,17 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
 .module-emslSalmonContainer {
   width: auto;
   display: block;
-  background-color: rgba(240, 79, 76, 0.65); }
+  background-color: rgba(240, 79, 76, 0.85); }
 
 .module-emslBlueContainer {
   width: auto;
   display: block;
-  background-color: rgba(64, 108, 173, 0.7); }
+  background-color: rgba(64, 108, 173, 0.8); }
 
 .module-grayContainer {
   width: auto;
   display: block;
-  background-color: rgba(119, 119, 119, 0.7); }
+  background-color: rgba(119, 119, 119, 0.8); }
 
 /* MODULE Horizontal Menu
 http://css-tricks.com/keep-margins-out-of-link-lists/ 
@@ -4713,12 +4718,27 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-headlinesInBoxes * {
   font-weight: normal; }
 
-.module-headlinesInBoxes h3 {
+.module-headlinesInBoxes h1 {
   color: white; }
 
-.module-headlinesInBoxes h4 {
-  margin: .1em 0;
+.module-headlinesInBoxes h2 {
   color: white; }
+
+.module-headlinesInBoxes h3 {
+  color: white;
+  margin: 0 0 .1em 0; }
+
+.module-headlinesInBoxes h4 {
+  color: white; }
+
+.module-headlinesInBoxes h5 {
+  color: white; }
+
+.module-headlinesInBoxes h6 {
+  color: white;
+  text-transform: none;
+  font-style: italic;
+  font-size: .7em; }
 
 /*MODULE sign in form*/
 .module-form {
@@ -4740,6 +4760,9 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
   font-size: 2.5em;
   color: white;
   font-weight: normal; }
+
+.module-price sup {
+  font-size: .5em; }
 
 .module-textareaWhite span {
   font-size: .5em; }
@@ -4769,6 +4792,9 @@ a.imageLinks {
 .btn a:hover {
   color: white; }
 
+.btn svg {
+  vertical-align: -.1em; }
+
 .btn-primary {
   background-color: #40639b; }
 
@@ -4795,6 +4821,9 @@ a.imageLinks {
 .headlines i, h1 i, h2 i, h3 i, h4 i, h5 i, h6 i {
   float: right;
   color: rgba(0, 0, 0, 0.29); }
+
+.headlines svg, h1 svg, h2 svg, h3 svg, h4 svg, h5 svg, h6 svg {
+  float: right; }
 
 .emphasize {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29); }
@@ -4829,6 +4858,22 @@ h6 {
   font-size: .67em;
   font-weight: normal;
   text-transform: uppercase; }
+
+h1 svg {
+  height: .9em !important;
+  width: auto !important; }
+
+h2 svg {
+  height: .9em !important;
+  width: auto !important; }
+
+h3 svg {
+  height: .9em !important;
+  width: auto !important; }
+
+h4 svg {
+  height: .9em !important;
+  width: auto !important; }
 
 .textBox {
   padding: 1em .5em 1em 0;
@@ -4902,9 +4947,17 @@ h6 {
     margin: 0;
     padding: .3em 0;
     display: block; } }
+@media (max-width: 48em) {
+  .footer a.btn {
+    padding: .5em 1em;
+    display: block;
+    max-width: 40%; } }
 /* Icons to the right of input box */
 li.icon-links a {
   display: inline; }
+
+.footer .headlines svg, .footer h1 svg, .footer h2 svg, .footer h3 svg, .footer h4 svg, .footer h5 svg, .footer h6 svg {
+  color: rgba(0, 0, 0, 0.29); }
 
 .footerLists {
   margin-bottom: 2em;

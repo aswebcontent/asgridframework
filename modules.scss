@@ -175,18 +175,18 @@ top: -365px;
 .module-emslSalmonContainer {
 	width: auto;
 	display: block;
-	background-color: rgba( $emslsalmonwtransparency, .65 );
+	background-color: rgba( $emslsalmonwtransparency, .85 );
 }
 .module-emslBlueContainer {
 	width: auto;
 	display: block;
-	background-color: rgba( $emslbluewtransparency, .7 );
+	background-color: rgba( $emslbluewtransparency, .8 );
 }
 
 .module-grayContainer {
 	width: auto;
 	display: block;
-	background-color: rgba( $graywtransparency, .7 );
+	background-color: rgba( $graywtransparency, .8 );
 }
 
 /* MODULE Horizontal Menu
@@ -243,8 +243,12 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 .module-headlinesInBoxes { padding: 1em; }
 .module-headlinesInBoxes { margin: 1em 0; font-weight: normal;}
 .module-headlinesInBoxes * { font-weight: normal;}
-.module-headlinesInBoxes h3 { color: lighten($secondary-color, 100%)}
-.module-headlinesInBoxes h4 { margin: .1em 0; color: lighten($accent-color, 80%);}
+.module-headlinesInBoxes h1 { color: lighten($secondary-color, 100%)}
+.module-headlinesInBoxes h2 { color: lighten($secondary-color, 100%)}
+.module-headlinesInBoxes h3 { color: lighten($secondary-color, 100%);margin: 0 0 .1em 0;}
+.module-headlinesInBoxes h4 { color: lighten($accent-color, 80%);}
+.module-headlinesInBoxes h5 { color: lighten($secondary-color, 100%)}
+.module-headlinesInBoxes h6 { color: lighten($secondary-color, 100%); text-transform:none; font-style:italic; font-size:.7em;}
 
 /*MODULE sign in form*/
 .module-form { margin: 1em 0 0 0; font-weight: normal;}
@@ -260,6 +264,7 @@ http://css-tricks.com/keep-margins-out-of-link-lists/
 
 
 .module-price { font-size: 2.5em; color: lighten($secondary-color, 100%); font-weight: normal;}
+.module-price sup{ font-size: .5em;}
 
 .module-textareaWhite span {font-size: .5em}
 

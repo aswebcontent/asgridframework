@@ -81,10 +81,20 @@
 	}
 }
 
+@media (max-width: 48em) {
+.footer a.btn {
+	padding: .5em 1em;
+	display: block;
+	max-width: 40%;
+}
+}
+
 /* Icons to the right of input box */
 li.icon-links a {
 	display: inline;
 }
+.footer .headlines svg {color:rgba($black, 0.29)}
+
 .footerLists {
 	margin-bottom: 2em;
 	font-size: .9em;

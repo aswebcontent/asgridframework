@@ -15,6 +15,11 @@
 .btn a {color: $sitebtn-txtcolor;}
 .btn a:hover {color: $sitebtn-txtcolor; }
 
+.btn svg {
+vertical-align: -.1em;
+}
+
+
 .btn-primary {
 	background-color: $base-color;
 }

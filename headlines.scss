@@ -10,6 +10,7 @@
 }
 
 .headlines i {float: right; color:rgba($black, 0.29)}
+.headlines svg {float: right;}
 
 .emphasize {
 	text-shadow: 1px 1px 1px rgba($black, 0.29);
@@ -56,6 +57,23 @@ h6 {
 	font-size: .67em;
 	font-weight: normal;
 	text-transform: uppercase;
+}
+
+h1 svg {
+	height: .9em !important;
+	width: auto !important;
+}
+h2 svg {
+	height: .9em !important;
+	width: auto !important;
+}
+h3 svg {
+	height: .9em !important;
+	width: auto !important;
+}
+h4 svg {
+	height: .9em !important;
+	width: auto !important;
 }
 
 
