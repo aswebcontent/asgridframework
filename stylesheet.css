@@ -4822,9 +4822,6 @@ a.imageLinks {
   float: right;
   color: rgba(0, 0, 0, 0.29); }
 
-.headlines svg, h1 svg, h2 svg, h3 svg, h4 svg, h5 svg, h6 svg {
-  float: right; }
-
 .emphasize {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29); }
 
@@ -4938,6 +4935,9 @@ h4 svg {
 
 .footer {
   border-top: 1px solid #c5c5c5; }
+
+.footer .headlines svg, .footer h1 svg, .footer h2 svg, .footer h3 svg, .footer h4 svg, .footer h5 svg, .footer h6 svg {
+  float: right; }
 
 @media all and (max-width: 48em) {
   .footer {
@@ -5998,6 +5998,12 @@ li.icon-links a {
 
 .svg .webicon.zerply {
   background: url("webicons/webicon-zerply.svg"); }
+
+/*SVG Tweaks*/
+svg.icon-farenheit {
+  top: -.1em;
+  left: -.2em;
+  position: relative; }
 
 /*pull help push and pull modules around*/
 .pull-left1 {

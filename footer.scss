@@ -70,6 +70,8 @@
 .footer {
 	border-top: 1px solid lighten($copy-color, 50%);
 }
+.footer .headlines svg {float: right;}
+
 @media all and (max-width:48em) {
 	.footer {
 		padding: 1em 0;
@@ -82,11 +84,11 @@
 }
 
 @media (max-width: 48em) {
-.footer a.btn {
-	padding: .5em 1em;
-	display: block;
-	max-width: 40%;
-}
+	.footer a.btn {
+		padding: .5em 1em;
+		display: block;
+		max-width: 40%;
+	}
 }
 
 /* Icons to the right of input box */
