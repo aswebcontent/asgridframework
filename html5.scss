@@ -1,0 +1,19 @@
+/*html5*/
+
+meter { -webkit-appearance: none; } //Crucial, this will disable the default styling in Webkit browsers
+
+meter::-webkit-meter-bar {
+    background: #FFF;
+    border: 1px solid #CCC;
+}
+
+meter::-webkit-meter-optimum-value {
+    background: #87C7DE;
+    background: -moz-linear-gradient(top, $teal 0%, $teal 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $teal), color-stop(100%, $teal));
+    background: -webkit-linear-gradient(top, teal 0%, $teal 100%);
+    background: -o-linear-gradient(top, $teal 0%, $teal 100%);
+    background: -ms-linear-gradient(top, $teal 0%, teal 100%);
+    background: linear-gradient(to bottom, $teal 0%, $teal 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$teal', endColorstr='$teal',GradientType=0);
+}    

@@ -1,3 +1,26 @@
+a.destinations .headlines {
+	color: $white;
+}
+@media all and (max-width: 48em) {
+
+	a.destinations .headlines {
+		font-size: 1.5em;
+	}
+}
+@media all and (max-width: 48em) {
+
+	a.destinations h2 {
+		font-size: 1.65em;
+	}
+}
+a.destinations {
+	color: $white;
+	text-decoration: none;
+}
+
+.destinations div.module-blueContainer {
+	min-height: 15.5em;
+}
 
 #emsl1 {
 	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/kauai.ashx);
@@ -124,6 +147,9 @@
 	background-size: 101%;
 	background-repeat: no-repeat;
 }
+.destination-orlando div.module-blueContainer {
+	background-color: rgba( $primary-color, .75 );
+}
 
 .destination-rome {
 	background-image: url(http://www.alaskaair.com/~/media/Images/destinations/rome.ashx);
@@ -141,31 +167,10 @@
 	color: $white;
 }
 
-a.destination-rome .headlines {
-	color: $white;
-}
-@media all and (max-width: 48em) {
-
-	a.destination-rome .headlines {
-		font-size: 1.5em;
-	}
-}
-@media all and (max-width: 48em) {
-
-	a.destination-rome h2 {
-		font-size: 1.65em;
-	}
-}
-a.destination-rome {
-	color: $white;
-	text-decoration: none;
-}
 
 .destination-rome div.module-blueContainer {
-	height: 13.95em;
 	background-color: rgba( $primary-color, .01 );
 }
-
 
 @media all and (max-width: 26.7em) {
 	.destination-rome {

@@ -1,515 +1,740 @@
 <html lang="en">
-  <head>
-    <!-- Set the viewport width to device width for mobile -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    <script src="http://code.jquery.com/jquery.min.js"></script>
-    <!-- foundation datepicker start -->
-    <script src="js/foundation-datepicker.js"></script>
-    <link rel="stylesheet" href="stylesheets/foundation-datepicker.css">
-    <link href="https://fontastic.s3.amazonaws.com/tUrLZaJKE2Y9qso8kdx4yQ/icons.css" rel="stylesheet">
-    <script src="https://fontastic.s3.amazonaws.com/tUrLZaJKE2Y9qso8kdx4yQ/icons.js"></script>
-    <!-- foundation datepicker end -->
-  </head>
-  <body>
-    <section class="logoHeader">
-      <section class="content">
-        <header>
-          <div class="row">
-            <div class="grid grid-5">
-              <nav class="nav nav-logoNav"> <a href="#"><img src="http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/alaska_script_cmyk.png"></a> </nav>
-            </div>
-            <div class="grid grid-7-last">
-              <nav class="nav nav-mainPersonaNav">
-                <ul>
-                  <li><a href="#"><svg class="icon-torso-female"><use xlink:href="#icon-torso-female"></use></svg> Welcome, {FirstName}</a></li>
-                  <li><a href="#"><svg class="icon-shop-share"><use xlink:href="#icon-shop-share"></use></svg></a></li>
-                  <li><a href="#"><svg class="icon-plane-airport"><use xlink:href="#icon-plane-airport"></use></svg></a></li>
-                  <li><a href="#"><svg class="icon-briefcase-case"><use xlink:href="#icon-briefcase-case"></use></svg></a></li>
-                </ul>
-              </nav>
-            </div>
-          </div>
-        </header>
-      </section>
-    </section>
-    <section class="navHeader">
-      <header>
-        <div class="row nav">
-          <!--seems like we can do better for the navigation in case we want to put features in the nav bar-->
-          <nav class="nav-mainNav">
+<head>
+<!-- Set the viewport width to device width for mobile -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<!-- foundation datepicker start -->
+<script src="js/foundation-datepicker.js"></script>
+<link rel="stylesheet" href="stylesheets/foundation-datepicker.css">
+<link href="https://fontastic.s3.amazonaws.com/tUrLZaJKE2Y9qso8kdx4yQ/icons.css" rel="stylesheet">
+<script src="https://fontastic.s3.amazonaws.com/tUrLZaJKE2Y9qso8kdx4yQ/icons.js"></script>
+<!-- foundation datepicker end -->
+</head>
+<body>
+<section class="logoHeader">
+  <section class="content">
+    <header>
+      <div class="row">
+        <div class="grid grid-5">
+          <nav class="nav nav-logoNav"> <a href="#"><img src="http://www.alaskaair.com/content/~/media/Images/photos-infographics/d2e/alaska_script_cmyk.png"></a> </nav>
+        </div>
+        <div class="grid grid-7-last">
+          <nav class="nav nav-mainPersonaNav">
             <ul>
-              <li class="nav-mobile nav-book"><a href="#">Book</a></li><!--
-              --><li class="nav-mobile nav-checkin"><a href="#">Check-In</a></li><!--
-              --><li class="nav-mobile nav-checkin"><a href="#">Flight Status</a></li><!--
-              --><li class="nav-hamburger"><a href="#footer"><i class="fa fa-navicon"></i></a></li><!--
-              --><li class="nav-desktop nav-discover"><a href="#">Discover</a></li><!--
-              <li class="nav-desktop nav-travelInfo"><a href="#">Travel Info</a></li>--><!--
-              --><li class="nav-desktop nav-travelInfo"><a href="#">Mileage Plan&trade;</a></li><!--
-              --><li class="nav-search"><input type="search" results="5" autosave="some_unique_value" value="Search"></li><!--
-              --><li class="nav-searchIcon"><a href="#footer"><i class="fa fa-search"></i></a></li>
+              <li><a href="#"><svg class="icon-torso-female">
+                <use xlink:href="#icon-torso-female"></use>
+                </svg> Welcome, {FirstName}</a></li>
+              <li><a href="#"><svg class="icon-shop-share">
+                <use xlink:href="#icon-shop-share"></use>
+                </svg></a></li>
+              <li><a href="#"><svg class="icon-plane-airport">
+                <use xlink:href="#icon-plane-airport"></use>
+                </svg></a></li>
+              <li><a href="#"><svg class="icon-briefcase-case">
+                <use xlink:href="#icon-briefcase-case"></use>
+                </svg></a></li>
             </ul>
           </nav>
         </div>
-      </header>
-    </section>
-    <!-- hero Section-->
-    <section class="module-hero">
-      <section class="content">
-        <div class="row">
-          <div class="grid grid-5">
-            <div class="module-whiteContainer module-form">
-              <h3>Book a Flight</h3>
-              <div class="module-form">
-                <form action="https://www.alaskaair.com/Shopping/Flights/Shop" id="frmShopping" method="post">
-                  <div class="row">
-                    <div class="grid grid-6">
-                      <div>
-                        <input autocorrect="off" class="text_ selfdescribe" id="fromCity1" name="ShoppingRequestModel.DepartureCity1" title="From" type="text" value="From" description="From" autocomplete="off" maxlength="60" style="color: rgb(105, 105, 105);">
-                      <span class=""><i class="fa fa-plane"></i></span> </div>
-                    </div>
-                    <div class="grid grid-6-last">
-                      <div>
-                        <input autocorrect="off" class="text_ selfdescribe" id="toCity1" name="ShoppingRequestModel.ArrivalCity1" title="To" type="text" value="To" description="To" autocomplete="off" maxlength="60" style="color: rgb(105, 105, 105);">
-                      <span class=""><i class="fa fa-plane"></i></span> </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="grid grid-6">
-                      <label>Departure:</label>
-                      <div class="row collape date" id="dpd1" data-date="" data-date-format="mm/dd/yyyy" data-date-viewmode="years" data-date-minviewmode="months">
-                        <input class="small-3 columns" size="20" type="text" value="">
-                      <span class="prefix small-1 columns end"><i class="fa fa-calendar"></i></span> </div>
-                    </div>
-                    <div class="grid grid-6-last">
-                      <label>Return:</label>
-                      <div class="row collape date" id="dpd2" data-date="" data-date-format="mm/dd/yyyy" data-date-viewmode="years" data-date-minviewmode="months">
-                        <input class="small-3 columns" size="20" type="text" value="">
-                      <span class="prefix small-1 columns end"><i class="fa fa-calendar"></i></span> </div>
-                    </div>
-                  </div>
-                  <button id="searchFlight" class="btn btn-primary" type="submit" value="FIND FLIGHTS">Find Flights</button>
-                </form>
+      </div>
+    </header>
+  </section>
+</section>
+<section class="navHeader">
+  <header>
+    <div class="row nav"> 
+      <!--seems like we can do better for the navigation in case we want to put features in the nav bar-->
+      <nav class="nav-mainNav">
+        <ul>
+          <li class="nav-mobile nav-book"><a href="#">Book</a></li><!--    
+          --><li class="nav-mobile nav-checkin"><a href="#">Check-In</a></li><!--
+          --><li class="nav-mobile nav-checkin"><a href="#">Flight Status</a></li><!--    
+          --><li class="nav-hamburger"><a href="#footer"><i class="fa fa-navicon"></i></a></li><!--
+              <li class="nav-desktop nav-travelInfo"><a href="#">Travel Info</a></li>--><!--
+          --><li class="nav-search"><input type="search" results="5" autosave="some_unique_value" value="Search"></li><!--   
+          --><li class="nav-searchIcon"><a href="#footer"><i class="fa fa-search"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+</section>
+<!-- hero Section-->
+<section class="module-hero">
+  <section class="content">
+    <div class="row">
+      <div class="grid grid-5">
+        <div class="module-whiteContainer module-form">
+          <h3>Book a Flight</h3>
+          <div class="module-form">
+            <form action="https://www.alaskaair.com/Shopping/Flights/Shop" id="frmShopping" method="post">
+              <div class="row">
+                <div class="grid grid-6">
+                  <div>
+                    <input autocorrect="off" class="text_ selfdescribe" id="fromCity1" name="ShoppingRequestModel.DepartureCity1" title="From" type="text" value="From" description="From" autocomplete="off" maxlength="60" style="color: rgb(105, 105, 105);">
+                    <span class=""><i class="fa fa-plane"></i></span> </div>
+                </div>
+                <div class="grid grid-6-last">
+                  <div>
+                    <input autocorrect="off" class="text_ selfdescribe" id="toCity1" name="ShoppingRequestModel.ArrivalCity1" title="To" type="text" value="To" description="To" autocomplete="off" maxlength="60" style="color: rgb(105, 105, 105);">
+                    <span class=""><i class="fa fa-plane"></i></span> </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="grid grid-7-last">
-            <div class="module-heroText">
-              <h6>Discover</h6>
-              <h2 class="emphasize">HAWAII</h2>
-            <span class="linkText">Explore More. Spend Less. &raquo;</span> </div>
+              <div class="row">
+                <div class="grid grid-6">
+                  <label>Departure:</label>
+                  <div class="row collape date" id="dpd1" data-date="" data-date-format="mm/dd/yyyy" data-date-viewmode="years" data-date-minviewmode="months">
+                    <input class="small-3 columns" size="20" type="text" value="">
+                    <span class="prefix small-1 columns end"><i class="fa fa-calendar"></i></span> </div>
+                </div>
+                <div class="grid grid-6-last">
+                  <label>Return:</label>
+                  <div class="row collape date" id="dpd2" data-date="" data-date-format="mm/dd/yyyy" data-date-viewmode="years" data-date-minviewmode="months">
+                    <input class="small-3 columns" size="20" type="text" value="">
+                    <span class="prefix small-1 columns end"><i class="fa fa-calendar"></i></span> </div>
+                </div>
+              </div>
+              <button id="searchFlight" class="btn btn-primary" type="submit" value="FIND FLIGHTS">Find Flights</button>
+            </form>
           </div>
         </div>
-      </section>
-    </section>
-    <section class="content">
-      <!-- Second Section-->
-      <div class="row">
-        <div class="grid grid-8"> <a id="miles" class="destination-rome imageLinks" href="https://www.applyonlinenow.com/USCCapp/Ctl/entry?cid=2110427">
-          <div class="module-blueContainer">
-            <div class="emphasize"  id="milesText"> <span>Go Places with</span>
-              <h2><strong>25,000</strong> Bonus Miles</h2>
-            <span>Alaska Airlines Visa Signature<span class="sup">&reg;</span> Card &raquo</span> </div>
-          </div>
-        </a> </div>
-        <div class="grid grid-4-last">
-          <div class="module-whiteContainer">
-            <div class="module-MyAccountSignUp"> <a id="signUpLink" class="subdued" title="Sign Up" tabindex="8" href="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCMyAccountCreate&amp;lid=MyAccount:Sign Up">Join MileagePlan&trade;</a> </div>
-            <h3>Sign In</h3>
-            <div class="module-form">
-              <form action="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCSignInStart" method="post">
-                <div class="module-MyAccountUserID">
-                  <div id="divUserId">
-                    <!--<label for="UserId" class="left">User ID</label>-->
-                    <a class="formhelp" id="forgotIdLink" title="Help Retrieving User ID" tabindex="5" href="https://www.alaskaair.com/myaccount/forgotcredentials/userid" onclick="if(s_gi){var s=s_gi('alaskacom');s.linkTrackVars='prop16';s.linkTrackEvents='None';s.prop16='MyAccount:Forgot User ID';s.tl(this,'o','MyAccount:Forgot User ID');s.prop16='';}as.authentication.forgotUserId(this.href);return false;" class="smallLink right">Forgot User ID?</a> </div>
-                    <div>
-                      <input class="module-myAccountInput" id="UserId" maxlength="50" autocorrect="off" tabindex="1" name="UserId" type="text" placeholder="User ID" value="">
-                    </div>
-                  </div>
-                  <div class="module-MyAccountPassWord">
-                    <div id="divPassword">
-                      <!--<label for="Password" class="left">Password</label>-->
-                      <a class="formhelp" id="forgotPasswordLink" title="Help Retrieving Password" tabindex="6" href="https://www.alaskaair.com/myaccount/forgotcredentials/password" onclick="if(s_gi){var s=s_gi('alaskacom');s.linkTrackVars='prop16';s.linkTrackEvents='None';s.prop16='MyAccount:Forgot Password';s.tl(this,'o','MyAccount:Forgot Password');s.prop16='';}as.authentication.forgotPassword(this.href);return false;" class="smallLink right">Forgot Password?</a> </div>
-                      <div>
-                        <input class="module-myAccountInput" id="Password" maxlength="50" tabindex="2" name="Password" type="password" autocomplete="off" placeholder="Password" value="">
-                      </div>
-                    </div>
-                    <div class="module-MyAccountRememberMe">
-                      <input id="RememberMe" name="RememberMe" type="checkbox" tabindex="4" value="true">
-                      <label id="RememberMeLabel" for="RememberMe">Remember my User ID on this computer.</label>
-                      <div class="clear"></div>
-                    </div>
-                    <div class="btn-wrapper">
-                      <button id="myAccoutnSignInButton" class="btn btn-primary" tabindex="7" type="submit" value="SIGN IN">Sign In</button>
-                    </div>
-                    <input id="signInClient" name="signInClient" type="hidden" value="signInWidget">
-                    <div class="clear"></div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Quick Links-->
-          <div class="row">
-            <div class="grid grid-moduleWrapper">
-              <div class="grid grid-12">
-                <div class="module-whiteContainer">
-                  <nav class="nav">
-                    <ul class="module-horizontalMenu">
-                      <li>
-                        <h4>News &amp; Advisories:</h4>
-                      </li>
-                      <li><a href="http://www.alaskaair.com/content/travel-info/before-your-trip/travel-tips/travel-advisories.aspx?_z=z?lid=home-page:news-advisories::travel-advisories">Travel Advisories</a></li>
-                      <li><a href="http://www.alaskaair.com/content/travel-info/at-the-airport/airport-boarding-times.aspx?lid=home-page:news-advisories::check-in-time">Check-in Time Change</a></li>
-                      <li><a href="http://blog.alaskaair.com/">Alaska Airlines Blog</a></li>
-                      <li><a href="http://www.alaskalistens.com/">Alaska Listens</a></li>
-                      <li><a href="#footer">More <i class="fa fa-chevron-down"></i></a></li>
-                    </ul>
-                  </nav>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Third Section
-          <div class="row">
-            <h2 class="headlines headlines-centered">Stunning Destinations</h2>
-            <div class="grid grid-6"> <a id="emsl5" class="destination-kauai imageLinks" href ="http://www.alaskaair.com/content/deals/flights/cheapest-flights-to-hawaii">
-              <div class="module-blueContainer">
-                <div class="module-discover layout-discoverText">
-                  <h2 class="headlines-centered">Hawaii</h2>
-                </div>
-              </div>
-            </a> </div>
-            <div class="grid grid-6-last">-->
-              <!-- Third Section
-              <div class="row">
-                <div class="module-pictureWrapper"> <a class="destination-puertovallarta imageLinks" href ="http://www.alaskaair.com/travelinfo/destinations/puertovallarta-mexico-overview">
-                  <div class="module-blueContainer">
-                    <div class="module-discover-grid layout-discoverText">
-                      <h3 class="headlines-centered">Puerto Vallarta</h3>
-                    </div>
-                  </div>
-                </a> </div>
-                <div class="row">
-                  <div class="grid grid-6"> <a class="destination-sandiego imageLinks" href ="http://www.alaskaair.com/travelinfo/destinations/sandiego-california-overview">
-                    <div class="module-blueContainer">
-                      <div class="module-discover-grid layout-discoverText">
-                        <h3 class="headlines-centered">San Diego</h3>
-                      </div>
-                    </div>
-                  </a> </div>
-                  <div class="grid grid-6-last"> <a class="destination-newyork imageLinks" href ="http://www.alaskaair.com/travelinfo/destinations/newyork-newyork-overview">
-                    <div class="module-blueContainer">
-                      <div class="module-discover-grid layout-discoverText">
-                        <h3 class="headlines-centered">New York</h3>
-                      </div>
-                    </div>
-                  </a> </div>
-                </div>
-              </div>
-            </div>
-          </div>-->
-          <!-- Second Section-->
-          <section id="4x3-sliders-1" class="slidr">
-            <section id="4x3-sestination-1" data-slidr="1">
-              <div class="row">
-                <div class="grid grid-moduleWrapper">
-                  <h2 class="headlines headlines-centered">Entertainment</h2>
-                  <div class="grid grid-4x3">
-                    <div class="destination-vegas module-Picturecontainer"></div>
-                    <div class="module-headlines">
-                      <h3>Las Vegas</h3>
-                      <h4>A few nights of decadence</h4>
-                    </div>
-                    <div class="module-content"> Vegas, do we need to say more? America's playground for grownups is open 24/7 and waiting for you. Book it and tell your friends. <br />
-                      <a href="#">Learn More &raquo;</a></div>
-                    </div>
-                    <div class="grid grid-4x3">
-                      <div class="destination-newyork module-Picturecontainer"></div>
-                      <div class="module-headlines">
-                        <h3>New York</h3>
-                        <h4>Come to the center of it all</h4>
-                      </div>
-                      <div class="module-content"> It's probably the most iconic place in America and a city that truly lives up to its reputation. New York feels like the capital of the world. <br />
-                        <a href="#">Learn More &raquo;</a></div>
-                      </div>
-                         <div class="grid grid-4x3-last">
-                            <div class="destination-neworleans module-Picturecontainer"></div>
-                            <div class="module-headlines">
-                              <h3>New Orleans</h3>
-                              <h4>A place like no other</h4>
-                            </div>
-                            <div class="module-content">Perhaps the most culturally diverse city in the country, you'll remember a trip to New Orleans. History, gumbo, and music all flow together in the Big Easy. <br />
-                              <a href="#">Learn More &raquo;</a></div>
-                            </div>
-                      </div>
-                    </div>
-                  </section>
-                  <!-- Second Section-->
-                  <section id="4x3-sestination-2" data-slidr="2">
-                    <div class="row">
-                      <div class="grid grid-moduleWrapper">
-                        <h2 class="headlines headlines-centered">Stunning Destinations</h2>
-                        <div class="grid grid-4x3">
-                          <div class="destination-kauai module-Picturecontainer"></div>
-                          <div class="module-headlines">
-                            <h3>Kauai</h3>
-                            <h4>A garden paradise</h4>
-                          </div>
-                          <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
-                            <a href="#">Learn More &raquo;</a></div>
-                          </div>
-                      <div class="grid grid-4x3">
-                        <div class="destination-orlando module-Picturecontainer"></div>
-                        <div class="module-headlines">
-                          <h3>Orlando</h3>
-                          <h4>The theme park destination</h4>
-                        </div>
-                        <div class="module-content"> More fun than you can handle! Orlando is home to Walt Disney World<span class="sup">&reg;</span> , Universal Orlando<span class="sup">&reg;</span>, SeaWorld<span class="sup">&reg;</span>, and Legoland<span class="sup">&reg;</span>. <br />
-                          <a href="#">Learn More &raquo;</a></div>
-                        </div>
-                            <div class="grid grid-4x3-last">
-                              <div class="destination-puertovallarta module-Picturecontainer"></div>
-                              <div class="module-headlines">
-                                <h3>Puerto Vallarta</h3>
-                                <h4>Beauty on the Pacific</h4>
-                              </div>
-                              <div class="module-content">Mexico's resort city of Puerto Vallarta is a perfect balance of amenities, convenience, and scenic beauty. The perfect vacation.<br />
-                                <a href="#">Learn More &raquo;</a></div>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                        <!-- Second Section-->
-                        <section id="4x3-sestination-2" data-slidr="3">
-                          <!-- Image with Text on right-->
-                          <div class="row">
-                            <div class="grid grid-moduleWrapper">
-                              <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
-                              <div class="grid grid-5">
-                                <div class="destination-newyork module-whiteContainer">
-                                  <div class="grid-leftinsidebox">
-                                    <div class="module-emslSalmonContainer module-headlinesInBoxes">
-                                      <h3>New York, NY - 96<svg class="icon-farenheit"><use xlink:href="#icon-farenheit"></use></svg><svg class="icon-sun-1"><use xlink:href="#icon-sun-1"></use></svg></h3>
-                                      <div class="grid-modulePrice1"><h6 style="text-transorm:none; font-style:itallic;">Flights From</h6><span class="module-price"><sup>$</sup>89</span> </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="grid grid-7-last">
-                                <div class="module-headlines">
-                                  <h3>New York</h3>
-                                  <h4>Come to the center of it all</h4>
-                                </div>
-                                <div class="module-content">It's probably the most iconic place in America and a city that truly lives up to its reputation. New York feels like the capital of the world.<br />
-                                  <div class="btn-wrapper"><a class="btn btn-primary" href="#">Explore More <svg class="icon-angle-double-right"><use xlink:href="#icon-angle-double-right"></use></svg></a></div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                        <section id="4x3-sestination-2" data-slidr="4">
-                          <!-- Image with Text on right-->
-                          <div class="row">
-                            <div class="grid grid-moduleWrapper">
-                              <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
-                              <div class="grid grid-5">
-                                <div class="destination-kauai module-whiteContainer">
-                                  <div class="grid-leftinsidebox">
-                                    <div class="module-emslSalmonContainer module-headlinesInBoxes">
-                                      <h3>Kauai, Hawaii - 83<svg class="icon-farenheit"><use xlink:href="#icon-farenheit"></use></svg><svg class="icon-sun-1"><use xlink:href="#icon-sun-1"></use></svg></h3>
-                                      <div class="grid-modulePrice1"><h6 style="text-transorm:none; font-style:itallic;">Flights From</h6><span class="module-price"><sup>$</sup>129</span> </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="grid grid-7-last">
-                                <div class="module-headlines">
-                                  <h3>Kauai</h3>
-                                  <h4>A garden paradise</h4>
-                                </div>
-                                <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
-                                  <div class="btn-wrapper"><a class="btn btn-primary" href="#">Explore More <svg class="icon-angle-double-right"><use xlink:href="#icon-angle-double-right"></use></svg></a></div>
-                                </div>
-                                
-                              </div>
-                            </div>
-                          </div>
-                        </section>
-                        <section id="3x4-sestination-1" data-slidr="5">
-                          <div class="row">
-                            <div class="grid grid-moduleWrapper">
-                              <h2 class="headlines headlines-centered">Discover</h2>
-                              <div class="grid grid-3x4">
-                                <div class="destination-kauai module-Picturecontainer"></div>
-                                <div class="module-headlines">
-                                  <h3>Kauai</h3>
-                                  <h4>A garden paradise</h4>
-                                </div>
-                                <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
-                                  <a href="#">Learn More &raquo;</a></div>
-                                </div>
-                                <div class="grid grid-3x4">
-                                  <div class="destination-neworleans module-Picturecontainer"></div>
-                                  <div class="module-headlines">
-                                    <h3>New Orleans</h3>
-                                    <h4>A place like no other</h4>
-                                  </div>
-                                  <div class="module-content">Perhaps the most culturally diverse city in the country, you'll remember a trip to New Orleans. History, gumbo, and music all flow together in the Big Easy. <br />
-                                    <a href="#">Learn More &raquo;</a></div>
-                                  </div>
-                                  <div class="grid grid-3x4">
-                                    <div class="destination-puertovallarta module-Picturecontainer"></div>
-                                    <div class="module-headlines">
-                                      <h3>Puerto Vallarta</h3>
-                                      <h4>Beauty on the Pacific</h4>
-                                    </div>
-                                    <div class="module-content">Mexico's resort city of Puerto Vallarta is a perfect balance of amenities, convenience, and scenic beauty. The perfect vacation.<br />
-                                      <a href="#">Learn More &raquo;</a></div>
-                                    </div>
-                                    <div class="grid grid-3x4-last">
-                                      <div class="destination-orlando module-Picturecontainer"></div>
-                                      <div class="module-headlines">
-                                        <h3>Orlando</h3>
-                                        <h4>The theme park destination</h4>
-                                      </div>
-                                      <div class="module-content"> More fun than you can handle! Orlando is home to Walt Disney World<span class="sup">&reg;</span> , Universal Orlando<span class="sup">&reg;</span>, SeaWorld<span class="sup">&reg;</span>, and Legoland<span class="sup">&reg;</span>. <br />
-                                        <a href="#">Learn More &raquo;</a></div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </section>
-                              </section>
-                            </section>
-                            <!--Closing div-->
-                          </div>
-                          <section id="footer" class="row footer">
-                            <section id="footer-slide1" class="slidr" data-slidr="f1" >
-                              <footer class="row">
-                                <nav class="navFooter">
-                                  
-                                  <div class="grid grid-6">
-                                    <h6><i class="fa fa-plane"></i>About Alaska</h6>
-                                    <div class="textBox">
-                                      <p>At Alaska Airlines we embody the pioneering spirt. Genuinely curious with a taste for adventure, we're committed to excellence today and improvement tomorrow. Enjoy a flight that mirrors life here in the Northwest &mdash; comfortable, efficient, and forward thinking.</p>
-                                      <p>Most importantly, we bring our own love of travel and exploration on board with us, so that we can share it with you.</p>
+      </div>
+      <div class="grid grid-7-last">
+        <div class="module-heroText">
+          <h6>Discover</h6>
+          <h2 class="emphasize">HAWAII</h2>
+          <span class="linkText">Explore More. Spend Less. &raquo;</span> </div>
+      </div>
+    </div>
+  </section>
+</section>
 
-                                    </div>
-                                      <a class="btn btn-primary" href="#">Explore More <svg class="icon-angle-double-right"><use xlink:href="#icon-angle-double-right"></use></svg></a> 
-                                  </div>
-                                  <div class="grid grid-3x4">
-                                    <h6><i class="fa fa-user"></i>Custom Support</h6>
-                                    <ul class="footerLists">
-                                      <li><a href="#">Contacts</a></li>
-                                      <li><a href="#">FAQ Help</a></li>
-                                      <li><a href="#">Refund</a></li>
-                                    </ul>
-                                    <h6><i class="fa fa-suitcase"></i>Services</h6>
-                                    <ul class="footerLists">
-                                      <li><a href="#">Arrival and departure</a></li>
-                                      <li><a href="#">Check-in information</a></li>
-                                      <li><a href="#">Baggage</a></li>
-                                    </ul>
-                                    <h6><i class="fa fa-plane"></i>Mileage Plan<sup>&trade;</sup></h6>
-                                    <ul class="footerLists">
-                                      <li><a href="http://www.alaskaair.com/content/mileage-plan/benefits/about-mileage-plan.aspx">About Mileage Plan<sup>&trade;</sup></a></li>
-                                      <li><a href="http://www.alaskaair.com/content/mileage-plan/frequently-asked-questions/faq-companion-discount-code.aspx">Companion Fare FAQ</a></li>
-                                      <li><a href="http://www.alaskaair.com/content/mileage-plan/benefits/elite-levels-and-benefits.aspx">Elite Benefits</a></li>
-                                      <li><a href="#">Enroll Today</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="grid grid-3x4-last">
-                                    <h6><i class="fa fa-dollar"></i>Specials</h6>
-                                    <ul class="footerLists">
-                                      <li>Sign up for Email Deals</li>
-                                      <li><a href="#">Flight Deals</a></li>
-                                      <li><a href="#">Hotel Deals</a></li>
-                                      <li><a href="#">Car Deals</a></li>
-                                    </ul>
-                                    <h6><svg class="icon-information"><use xlink:href="#icon-information"></use></svg>Information</h6>
-                                    <ul class="footerLists">
-                                      <li><a href="#">Careers</a></li>
-                                      <li><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&lid=footer:easyBiz">EasyBiz</a></li>
-                                      <li><a href="http://www.alaskaair.com/content/travel-info/optional-services-fees.aspx?cid=mobsite-optional-services-fees">Optional Services & Fees</a></li>
-                                      <li><a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?cid=mobsite-privacypolicy">Privacy</a></li>
-                                      <li><a href="http://www.alaskaair.com/content/travel-info/policies/children-infants-and-children.aspx?lid=home-page:quick-links::infants-children">Infants and Children</a></li>
-                                      
-                                    </ul>
-                                  </div>
-                                </nav>
-                              </footer>
-                            </section>
-                            <section id="footer-slide2" class="slidr" data-slidr="f2" >
-                              <footer class="row">
-                                <nav class="navFooter">
-                                  <div class="grid grid-3x4">
-                                    <h6><i class="fa fa-plane"></i>About Alaska</h6>
-                                    <ul class="footerLists">
-                                      <li><a href="#">Careers</a></li>
-                                      <li><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&lid=footer:easyBiz">EasyBiz</a></li>
-                                      <li><a href="http://www.alaskaair.com/content/travel-info/optional-services-fees.aspx?cid=mobsite-optional-services-fees">Optional Services & Fees</a></li>
-                                      <!--<li><a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?cid=mobsite-privacypolicy">Privacy</a></li>-->
-                                    </ul>
-                                  </div>
-                                  <div class="grid grid-3x4">
-                                    <h6><i class="fa fa-suitcase"></i>Services</h6>
-                                    <ul class="footerLists">
-                                      <li><a href="#">Arrival and departure</a></li>
-                                      <li><a href="#">Check-in information</a></li>
-                                      <li><a href="#">Baggage</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="grid grid-3x4">
-                                    <h6><i class="fa fa-user"></i>Custom Support</h6>
-                                    <ul class="footerLists">
-                                      <li><a href="#">Contacts</a></li>
-                                      <li><a href="#">FAQ Help</a></li>
-                                      <li><a href="#">Refund</a></li>
-                                    </ul>
-                                  </div>
-                                  <div class="grid grid-3x4-last">
-                                    <h6><i class="fa fa-dollar"></i>Specials</h6>
-                                    <ul>
-                                      <ul class="footerLists">
-                                        <li>Sign up for Email Deals</li>
-                                        <li><a href="#">Flight Deals</a></li>
-                                        <li><a href="#">Hotel Deals</a></li>
-                                        <li><a href="#">Car Deals</a></li>
-                                      </ul>
-                                    </ul>
-                                  </div>
-                                </nav>
-                              </footer>
-                            </section>
-                          </section>
-                          <section id="footer" class="row subfooter">
-                            <footer>
-                              <nav class="navFooter">
-                                <div class="grid grid-6">
-                                  <ul class="nav-socialLinks">
-                                    <li class="mobile-headline"><strong>Connect with us</strong></li>
-                                    <li class="socialFirst"><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                                    <li><a href="#"><i class="fa fa-quote-left"></i></a></li>
-                                  </ul>
-                                </div>
-                              </nav>
-                              <nav class="navFooter">
-                                <div class="grid grid-6-last">
-                                  <ul class="legal">
-                                    <li><a href="http://www.alaskaair.com/content/legal/consumer-notices.aspx">Copyright &copy; 1995 - 2014 Alaska Air Group, Inc. All Rights Reserved</a></li>
-                                  </ul>
-                                </div>
-                              </nav>
-                            </footer>
-                          </section>
-                          <!--<footer class="row subfooter">
+<!-- Personalization Slider-->
+<section id="personal" class="slidr content" >
+  <!-- 1st Slide-->
+  <section id="login-right" data-slidr="1">
+    <div class="row content">
+        <div class="grid grid-8">
+        <a class="destinations destination-rome imageLinks" href="https://www.applyonlinenow.com/USCCapp/Ctl/entry?cid=2110427">
+          <div class="module-blueContainer">
+          <div class="emphasize"  id="milesText"> <span>Go Places with</span>
+            <h2><strong>25,000</strong> Bonus Miles</h2>
+            <span>Alaska Airlines Visa Signature<span class="sup">&reg;</span> Card &raquo</span>
+          </div>
+        </div>
+        </a>
+        </div>
+        <div class="grid grid-4-last">
+          <div class="module-content module-whiteContainer">
+          <div class="module-MyAccountSignUp"> <a id="signUpLink" class="subdued" title="Sign Up" tabindex="8" href="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCMyAccountCreate&amp;lid=MyAccount:Sign Up">Join MileagePlan&trade;</a> </div>
+          <h3>Sign In</h3>
+          <div class="module-form">
+            <form action="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCSignInStart" method="post">
+              <div class="module-MyAccountUserID">
+                <div id="divUserId"> 
+                  <!--<label for="UserId" class="left">User ID</label>--> 
+                  <a class="formhelp" id="forgotIdLink" title="Help Retrieving User ID" tabindex="5" href="https://www.alaskaair.com/myaccount/forgotcredentials/userid" onclick="if(s_gi){var s=s_gi('alaskacom');s.linkTrackVars='prop16';s.linkTrackEvents='None';s.prop16='MyAccount:Forgot User ID';s.tl(this,'o','MyAccount:Forgot User ID');s.prop16='';}as.authentication.forgotUserId(this.href);return false;" class="smallLink right">Forgot User ID?</a> </div>
+                <div>
+                  <input class="module-myAccountInput" id="UserId" maxlength="50" autocorrect="off" tabindex="1" name="UserId" type="text" placeholder="User ID" value="">
+                </div>
+              </div>
+              <div class="module-MyAccountPassWord">
+                <div id="divPassword"> 
+                  <!--<label for="Password" class="left">Password</label>--> 
+                  <a class="formhelp" id="forgotPasswordLink" title="Help Retrieving Password" tabindex="6" href="https://www.alaskaair.com/myaccount/forgotcredentials/password" onclick="if(s_gi){var s=s_gi('alaskacom');s.linkTrackVars='prop16';s.linkTrackEvents='None';s.prop16='MyAccount:Forgot Password';s.tl(this,'o','MyAccount:Forgot Password');s.prop16='';}as.authentication.forgotPassword(this.href);return false;" class="smallLink right">Forgot Password?</a> </div>
+                <div>
+                  <input class="module-myAccountInput" id="Password" maxlength="50" tabindex="2" name="Password" type="password" autocomplete="off" placeholder="Password" value="">
+                </div>
+              </div>
+              <div class="module-MyAccountRememberMe">
+                <input id="RememberMe" name="RememberMe" type="checkbox" tabindex="4" value="true">
+                <label id="RememberMeLabel" for="RememberMe">Remember my User ID on this computer.</label>
+                <div class="clear"></div>
+              </div>
+              <div class="btn-wrapper">
+                <button id="myAccoutnSignInButton" class="btn btn-primary" tabindex="7" type="submit" value="SIGN IN">Sign In</button>
+              </div>
+              <input id="signInClient" name="signInClient" type="hidden" value="signInWidget">
+              <div class="clear"></div>
+            </form>
+          </div></div>
+        </div>
+    </div>
+  </section>
+  <!-- 2nd Slide-->
+  <section id="login-left" data-slidr="2">
+    <div class="row content">
+        <div class="grid grid-4">
+          <div class="module-content module-whiteContainer">
+          <div class="module-MyAccountSignUp"> <a id="signUpLink" class="subdued" title="Sign Up" tabindex="8" href="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCMyAccountCreate&amp;lid=MyAccount:Sign Up">Join MileagePlan&trade;</a> </div>
+          <h3>Sign In</h3>
+          <div class="module-form">
+            <form action="https://www.alaskaair.com/www2/ssl/myalaskaair/myalaskaair.aspx?CurrentForm=UCSignInStart" method="post">
+              <div class="module-MyAccountUserID">
+                <div id="divUserId"> 
+                  <!--<label for="UserId" class="left">User ID</label>--> 
+                  <a class="formhelp" id="forgotIdLink" title="Help Retrieving User ID" tabindex="5" href="https://www.alaskaair.com/myaccount/forgotcredentials/userid" onclick="if(s_gi){var s=s_gi('alaskacom');s.linkTrackVars='prop16';s.linkTrackEvents='None';s.prop16='MyAccount:Forgot User ID';s.tl(this,'o','MyAccount:Forgot User ID');s.prop16='';}as.authentication.forgotUserId(this.href);return false;" class="smallLink right">Forgot User ID?</a> </div>
+                <div>
+                  <input class="module-myAccountInput" id="UserId" maxlength="50" autocorrect="off" tabindex="1" name="UserId" type="text" placeholder="User ID" value="">
+                </div>
+              </div>
+              <div class="module-MyAccountPassWord">
+                <div id="divPassword"> 
+                  <!--<label for="Password" class="left">Password</label>--> 
+                  <a class="formhelp" id="forgotPasswordLink" title="Help Retrieving Password" tabindex="6" href="https://www.alaskaair.com/myaccount/forgotcredentials/password" onclick="if(s_gi){var s=s_gi('alaskacom');s.linkTrackVars='prop16';s.linkTrackEvents='None';s.prop16='MyAccount:Forgot Password';s.tl(this,'o','MyAccount:Forgot Password');s.prop16='';}as.authentication.forgotPassword(this.href);return false;" class="smallLink right">Forgot Password?</a> </div>
+                <div>
+                  <input class="module-myAccountInput" id="Password" maxlength="50" tabindex="2" name="Password" type="password" autocomplete="off" placeholder="Password" value="">
+                </div>
+              </div>
+              <div class="module-MyAccountRememberMe">
+                <input id="RememberMe" name="RememberMe" type="checkbox" tabindex="4" value="true">
+                <label id="RememberMeLabel" for="RememberMe">Remember my User ID on this computer.</label>
+                <div class="clear"></div>
+              </div>
+              <div class="btn-wrapper">
+                <button id="myAccoutnSignInButton" class="btn btn-primary" tabindex="7" type="submit" value="SIGN IN">Sign In</button>
+              </div>
+              <input id="signInClient" name="signInClient" type="hidden" value="signInWidget">
+              <div class="clear"></div>
+            </form>
+          </div></div>
+        </div>
+                <div class="grid grid-8-last">
+        <a class="destinations destination-rome imageLinks" href="https://www.applyonlinenow.com/USCCapp/Ctl/entry?cid=2110427">
+          <div class="module-blueContainer">
+          <div class="emphasize"  id="milesText"> <span>Go Places with</span>
+            <h2><strong>25,000</strong> Bonus Miles</h2>
+            <span>Alaska Airlines Visa Signature<span class="sup">&reg;</span> Card &raquo</span>
+          </div>
+        </div>
+        </a>
+        </div>
+    </div>
+  </section>
+
+  <!-- 3rd Slide-->
+  <section id="logedin" data-slidr="3">
+    <div class="row content">
+        <div class="grid grid-8">
+          <div class="module-content module-whiteContainer">
+
+          <h3><strong>Welcome, {First Name}</strong></h3>
+          <span>Mileage Plan Number: 146667065</span>
+          <br />
+          YTD Alaska Miles: <meter min="0" max="20000" value="16000"></meter> 16,000 of 20,000 miles to Elite Status <br />
+
+          <table class="data-table">
+            <tr>
+            <th>My Trips</th>
+            <th>Leaving</th>
+            <th>Confirmation Code</th>
+            <th>Check-In</th>
+            </tr>
+            <tr>
+            <td>Orlando</td>
+            <td>Tue, Aug 26, 2014</td>
+            <td>132ASDF</td>
+            <td>Not Available</td>
+            </tr>
+            <tr>
+            <td>Los Angeles</td>
+            <td>Fri, Nov 28, 2014</td>
+            <td>132ASDF</td>
+            <td>Not Available</td>
+            </tr> 
+            </table>   
+          </div>
+        </div>
+        <div class="grid grid-4-last">
+        <a class="destinations destination-orlando imageLinks" href="#">
+          <div class="module-blueContainer">
+          <div class="emphasize">
+            <h3>Orlando - 93<svg class="icon-farenheit">
+                <use xlink:href="#icon-farenheit"></use>
+                </svg><svg class="icon-sun-1">
+                <use xlink:href="#icon-sun-1"></use>
+                </svg></h3>
+                <span>{First Name}, only XX more days!</span>
+                <br /><br />
+            <h3>Booked your Hotel yet?</h3>
+            <h3>Rooms from <strong>$59</strong> per night</h3>
+            <br />
+            <span class="btn btn-teal">View Deals <svg class="icon-angle-double-right">
+            <use xlink:href="#icon-angle-double-right"></use>
+            </svg></span>
+            
+          </div>
+        </div>
+        </a>
+        </div>
+    </div>
+  </section>
+  <!-- 4th Slide-->
+  <section id="mvp-gold" data-slidr="4"> 
+    <!-- Image with Text on right-->
+    <div class="row content">
+      <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
+      <div class="grid grid-5">
+        <div class="destination-kauai module-whiteContainer">
+          <div class="grid-leftinsidebox">
+            <div class="module-emslSalmonContainer module-headlinesInBoxes">
+              <h3>Kauai, Hawaii - 83<svg class="icon-farenheit">
+                <use xlink:href="#icon-farenheit"></use>
+                </svg><svg class="icon-sun-1">
+                <use xlink:href="#icon-sun-1"></use>
+                </svg></h3>
+              <div class="grid-modulePrice1">
+                <h6 style="text-transorm:none; font-style:itallic;">Flights From</h6>
+                <span class="module-price"><sup>$</sup>129</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-7-last">
+        <div class="module-headlines">
+          <h3>Kauai</h3>
+          <h4>A garden paradise</h4>
+        </div>
+        <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
+          <div class="btn-wrapper"><a class="btn btn-primary" href="#">Explore More <svg class="icon-angle-double-right">
+            <use xlink:href="#icon-angle-double-right"></use>
+            </svg></a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 5th Slide-->
+  <section id="mvp-elite" data-slidr="5">
+    <div class="row content">
+      <h2 class="headlines headlines-centered">Discover</h2>
+      <div class="grid grid-3x4">
+        <div class="destination-kauai module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Kauai</h3>
+          <h4>A garden paradise</h4>
+        </div>
+        <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+      <div class="grid grid-3x4">
+        <div class="destination-neworleans module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>New Orleans</h3>
+          <h4>A place like no other</h4>
+        </div>
+        <div class="module-content">Perhaps the most culturally diverse city in the country, you'll remember a trip to New Orleans. History, gumbo, and music all flow together in the Big Easy. <br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+      <div class="grid grid-3x4">
+        <div class="destination-puertovallarta module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Puerto Vallarta</h3>
+          <h4>Beauty on the Pacific</h4>
+        </div>
+        <div class="module-content">Mexico's resort city of Puerto Vallarta is a perfect balance of amenities, convenience, and scenic beauty. The perfect vacation.<br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+      <div class="grid grid-3x4-last">
+        <div class="destination-orlando module-Picturecontainer"> </div>
+        <div class="module-headlines">
+          <h3>Orlando</h3>
+          <h4>The theme park destination</h4>
+        </div>
+        <div class="module-content"> More fun than you can handle! Orlando is home to Walt Disney World<span class="sup">&reg;</span> , Universal Orlando<span class="sup">&reg;</span>, SeaWorld<span class="sup">&reg;</span>, and Legoland<span class="sup">&reg;</span>. <br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+    </div>
+  </section>
+</section>
+<section class="quickLinks"> 
+  <!-- Quick Links-->
+  <div class="row content">
+    <div class="grid grid-moduleWrapper">
+      <div class="grid grid-12">
+        <div class="module-whiteContainer">
+          <nav class="nav">
+            <ul class="module-horizontalMenu">
+              <li>
+                <h4>News &amp; Advisories:</h4>
+              </li>
+              <li><a href="http://www.alaskaair.com/content/travel-info/before-your-trip/travel-tips/travel-advisories.aspx?_z=z?lid=home-page:news-advisories::travel-advisories">Travel Advisories</a></li>
+              <li><a href="http://www.alaskaair.com/content/travel-info/at-the-airport/airport-boarding-times.aspx?lid=home-page:news-advisories::check-in-time">Check-in Time Change</a></li>
+              <li><a href="http://blog.alaskaair.com/">Alaska Airlines Blog</a></li>
+              <li><a href="http://www.alaskalistens.com/">Alaska Listens</a></li>
+              <li><a href="#footer">More <i class="fa fa-chevron-down"></i></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Vacation Destinations Slider-->
+<section id="vacations" class="slidr content" >
+  <!-- 1st Slide-->
+  <section id="4x3-sestination-1" data-slidr="1">
+    <div class="row content">
+      <div class="grid grid-moduleWrapper">
+        <h2 class="headlines headlines-centered">Entertainment</h2>
+        <div class="grid grid-4x3">
+          <div class="destination-vegas module-Picturecontainer"></div>
+          <div class="module-headlines">
+            <h3>Las Vegas</h3>
+            <h4>A few nights of decadence</h4>
+          </div>
+          <div class="module-content"> Vegas, do we need to say more? America's playground for grownups is open 24/7 and waiting for you. Book it and tell your friends. <br />
+            <a href="#">Learn More &raquo;</a> </div>
+        </div>
+        <div class="grid grid-4x3">
+          <div class="destination-newyork module-Picturecontainer"></div>
+          <div class="module-headlines">
+            <h3>New York</h3>
+            <h4>Come to the center of it all</h4>
+          </div>
+          <div class="module-content"> It's probably the most iconic place in America and a city that truly lives up to its reputation. New York feels like the capital of the world. <br />
+            <a href="#">Learn More &raquo;</a></div>
+        </div>
+        <div class="grid grid-4x3-last">
+          <div class="destination-neworleans module-Picturecontainer"></div>
+          <div class="module-headlines">
+            <h3>New Orleans</h3>
+            <h4>A place like no other</h4>
+          </div>
+          <div class="module-content">Perhaps the most culturally diverse city in the country, you'll remember a trip to New Orleans. History, gumbo, and music all flow together in the Big Easy. <br />
+            <a href="#">Learn More &raquo;</a></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 2nd Slide-->
+  <section id="4x3-sestination-2" data-slidr="2">
+    <div class="row content">
+      <h2 class="headlines headlines-centered">Stunning Destinations</h2>
+      <div class="grid grid-4x3">
+        <div class="destination-kauai module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Kauai</h3>
+          <h4>A garden paradise</h4>
+        </div>
+        <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+      <div class="grid grid-4x3">
+        <div class="destination-orlando module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Orlando</h3>
+          <h4>The theme park destination</h4>
+        </div>
+        <div class="module-content"> More fun than you can handle! Orlando is home to Walt Disney World<span class="sup">&reg;</span> , Universal Orlando<span class="sup">&reg;</span>, SeaWorld<span class="sup">&reg;</span>, and Legoland<span class="sup">&reg;</span>. <br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+      <div class="grid grid-4x3-last">
+        <div class="destination-puertovallarta module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Puerto Vallarta</h3>
+          <h4>Beauty on the Pacific</h4>
+        </div>
+        <div class="module-content">Mexico's resort city of Puerto Vallarta is a perfect balance of amenities, convenience, and scenic beauty. The perfect vacation.<br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+    </div>
+  </section>
+  <!-- 3rd Slide-->
+  <section id="4x3-sestination-2" data-slidr="3"> 
+    <!-- Image with Text on right-->
+    <div class="row content">
+      <div class="grid grid-moduleWrapper">
+        <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
+        <div class="grid grid-5">
+          <div class="destination-newyork module-whiteContainer">
+            <div class="grid-leftinsidebox">
+              <div class="module-emslSalmonContainer module-headlinesInBoxes">
+                <h3>New York, NY - 96<svg class="icon-farenheit">
+                  <use xlink:href="#icon-farenheit"></use>
+                  </svg><svg class="icon-sun-1">
+                  <use xlink:href="#icon-sun-1"></use>
+                  </svg></h3>
+                <div class="grid-modulePrice1">
+                  <h6 style="text-transorm:none; font-style:itallic;">Flights From</h6>
+                  <span class="module-price"><sup>$</sup>89</span> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grid grid-7-last">
+          <div class="module-headlines">
+            <h3>New York</h3>
+            <h4>Come to the center of it all</h4>
+          </div>
+          <div class="module-content">It's probably the most iconic place in America and a city that truly lives up to its reputation. New York feels like the capital of the world.<br />
+            <div class="btn-wrapper"><a class="btn btn-primary" href="#">Explore More <svg class="icon-angle-double-right">
+              <use xlink:href="#icon-angle-double-right"></use>
+              </svg></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 4th Slide-->
+  <section id="4x3-sestination-2" data-slidr="4"> 
+    <!-- Image with Text on right-->
+    <div class="row content">
+      <h2 class="headlines headlines-centered">Explore More. Spend Less.</h2>
+      <div class="grid grid-7">
+        <div class="module-headlines">
+          <h3>Kauai</h3>
+          <h4>A garden paradise</h4>
+        </div>
+        <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
+          <div class="btn-wrapper"><a class="btn btn-primary" href="#">Explore More <svg class="icon-angle-double-right">
+            <use xlink:href="#icon-angle-double-right"></use>
+            </svg></a></div>
+        </div>
+      </div>
+      <div class="grid grid-5-last">
+        <div class="destination-kauai module-whiteContainer">
+          <div class="grid-leftinsidebox">
+            <div class="module-emslSalmonContainer module-headlinesInBoxes">
+              <h3>Kauai, Hawaii - 83<svg class="icon-farenheit">
+                <use xlink:href="#icon-farenheit"></use>
+                </svg><svg class="icon-sun-1">
+                <use xlink:href="#icon-sun-1"></use>
+                </svg></h3>
+              <div class="grid-modulePrice1">
+                <h6 style="text-transorm:none; font-style:itallic;">Flights From</h6>
+                <span class="module-price"><sup>$</sup>129</span> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- 5th Slide-->
+  <section id="3x4-sestination-1" data-slidr="5">
+    <div class="row content">
+      <h2 class="headlines headlines-centered">Discover</h2>
+      <div class="grid grid-3x4">
+        <div class="destination-kauai module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Kauai</h3>
+          <h4>A garden paradise</h4>
+        </div>
+        <div class="module-content">The island of Kauai is the oldest of the Hawaiian Islands is also the most fertile. With a wide variety of ecosystems, it is a natural choice for the outdoor adventurer.<br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+      <div class="grid grid-3x4">
+        <div class="destination-neworleans module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>New Orleans</h3>
+          <h4>A place like no other</h4>
+        </div>
+        <div class="module-content">Perhaps the most culturally diverse city in the country, you'll remember a trip to New Orleans. History, gumbo, and music all flow together in the Big Easy. <br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+      <div class="grid grid-3x4">
+        <div class="destination-puertovallarta module-Picturecontainer"></div>
+        <div class="module-headlines">
+          <h3>Puerto Vallarta</h3>
+          <h4>Beauty on the Pacific</h4>
+        </div>
+        <div class="module-content">Mexico's resort city of Puerto Vallarta is a perfect balance of amenities, convenience, and scenic beauty. The perfect vacation.<br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+      <div class="grid grid-3x4-last">
+        <div class="destination-orlando module-Picturecontainer"> </div>
+        <div class="module-headlines">
+          <h3>Orlando</h3>
+          <h4>The theme park destination</h4>
+        </div>
+        <div class="module-content"> More fun than you can handle! Orlando is home to Walt Disney World<span class="sup">&reg;</span> , Universal Orlando<span class="sup">&reg;</span>, SeaWorld<span class="sup">&reg;</span>, and Legoland<span class="sup">&reg;</span>. <br />
+          <a href="#">Learn More &raquo;</a></div>
+      </div>
+    </div>
+  </section>
+</section>
+
+
+<section id="footer" class="row footer">
+  <section id="footer-slide1" class="slidr" data-slidr="f1" >
+    <footer class="row">
+      <nav class="navFooter">
+        <div class="grid grid-6">
+          <h6><i class="fa fa-plane"></i>About Us</h6>
+          <div class="textBox">
+            <p>At Alaska Airlines we are a company of pioneers, genuinely curious with a taste for adventure. We propel the industry with technological innovation and the highest standards of customer satisfaction. Enjoy a flight that mirrors life here in the Northwest &mdash; comfortable, efficient, and forward thinking.</p>
+            <p>Most importantly, we bring our own love of travel and exploration on board with us, so that we can share it with you.</p>
+          </div>
+          <a class="btn btn-primary" href="#">Explore More <svg class="icon-angle-double-right">
+          <use xlink:href="#icon-angle-double-right"></use>
+          </svg></a> </div>
+        <div class="grid grid-3x4">
+          <h6><i class="fa fa-user"></i>Custom Support</h6>
+          <ul class="footerLists">
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">FAQ Help</a></li>
+            <li><a href="#">Refund</a></li>
+          </ul>
+          <h6><i class="fa fa-suitcase"></i>Services</h6>
+          <ul class="footerLists">
+            <li><a href="#">Arrival and departure</a></li>
+            <li><a href="#">Check-in information</a></li>
+            <li><a href="#">Baggage</a></li>
+          </ul>
+          <h6><i class="fa fa-plane"></i>Mileage Plan<sup>&trade;</sup></h6>
+          <ul class="footerLists">
+            <li><a href="http://www.alaskaair.com/content/mileage-plan/benefits/about-mileage-plan.aspx">About Mileage Plan<sup>&trade;</sup></a></li>
+            <li><a href="http://www.alaskaair.com/content/mileage-plan/frequently-asked-questions/faq-companion-discount-code.aspx">Companion Fare FAQ</a></li>
+            <li><a href="http://www.alaskaair.com/content/mileage-plan/benefits/elite-levels-and-benefits.aspx">Elite Benefits</a></li>
+            <li><a href="#">Enroll Today</a></li>
+          </ul>
+        </div>
+        <div class="grid grid-3x4-last">
+          <h6><i class="fa fa-dollar"></i>Specials</h6>
+          <ul class="footerLists">
+            <li>Sign up for Email Deals</li>
+            <li><a href="#">Flight Deals</a></li>
+            <li><a href="#">Hotel Deals</a></li>
+            <li><a href="#">Car Deals</a></li>
+          </ul>
+          <h6><svg class="icon-information">
+            <use xlink:href="#icon-information"></use>
+            </svg>Information</h6>
+          <ul class="footerLists">
+            <li><a href="#">Careers</a></li>
+            <li><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&lid=footer:easyBiz">EasyBiz</a></li>
+            <li><a href="http://www.alaskaair.com/content/travel-info/optional-services-fees.aspx?cid=mobsite-optional-services-fees">Optional Services & Fees</a></li>
+            <li><a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?cid=mobsite-privacypolicy">Privacy</a></li>
+            <li><a href="http://www.alaskaair.com/content/travel-info/policies/children-infants-and-children.aspx?lid=home-page:quick-links::infants-children">Infants and Children</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </section>
+  <section id="footer-slide2" class="slidr" data-slidr="f2" >
+    <footer class="row">
+      <nav class="navFooter">
+        <div class="grid grid-3x4">
+          <h6><i class="fa fa-user"></i>Custom Support</h6>
+          <ul class="footerLists">
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">FAQ Help</a></li>
+            <li><a href="#">Refund</a></li>
+          </ul>
+          <h6><i class="fa fa-suitcase"></i>Services</h6>
+          <ul class="footerLists">
+            <li><a href="#">Arrival and departure</a></li>
+            <li><a href="#">Check-in information</a></li>
+            <li><a href="#">Baggage</a></li>
+          </ul>
+          <h6><i class="fa fa-plane"></i>Mileage Plan<sup>&trade;</sup></h6>
+          <ul class="footerLists">
+            <li><a href="http://www.alaskaair.com/content/mileage-plan/benefits/about-mileage-plan.aspx">About Mileage Plan<sup>&trade;</sup></a></li>
+            <li><a href="http://www.alaskaair.com/content/mileage-plan/frequently-asked-questions/faq-companion-discount-code.aspx">Companion Fare FAQ</a></li>
+            <li><a href="http://www.alaskaair.com/content/mileage-plan/benefits/elite-levels-and-benefits.aspx">Elite Benefits</a></li>
+            <li><a href="#">Enroll Today</a></li>
+          </ul>
+        </div>
+        <div class="grid grid-3x4">
+          <h6><i class="fa fa-dollar"></i>Specials</h6>
+          <ul class="footerLists">
+            <li>Sign up for Email Deals</li>
+            <li><a href="#">Flight Deals</a></li>
+            <li><a href="#">Hotel Deals</a></li>
+            <li><a href="#">Car Deals</a></li>
+          </ul>
+          <h6><svg class="icon-information">
+            <use xlink:href="#icon-information"></use>
+            </svg>Information</h6>
+          <ul class="footerLists">
+            <li><a href="#">Careers</a></li>
+            <li><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&lid=footer:easyBiz">EasyBiz</a></li>
+            <li><a href="http://www.alaskaair.com/content/travel-info/optional-services-fees.aspx?cid=mobsite-optional-services-fees">Optional Services & Fees</a></li>
+            <li><a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?cid=mobsite-privacypolicy">Privacy</a></li>
+            <li><a href="http://www.alaskaair.com/content/travel-info/policies/children-infants-and-children.aspx?lid=home-page:quick-links::infants-children">Infants and Children</a></li>
+          </ul>
+        </div>
+        <div class="grid grid-6-last">
+          <h6><i class="fa fa-plane"></i>About Us</h6>
+          <div class="textBox">
+            <p>At Alaska Airlines we are a company of pioneers, genuinely curious with a taste for adventure. We propel the industry with technological innovation and the highest standards of customer satisfaction. Enjoy a flight that mirrors life here in the Northwest &mdash; comfortable, efficient, and forward thinking.</p>
+            <p>Most importantly, we bring our own love of travel and exploration on board with us, so that we can share it with you.</p>
+          </div>
+          <a class="btn btn-primary" href="#">Explore More <svg class="icon-angle-double-right">
+          <use xlink:href="#icon-angle-double-right"></use>
+          </svg></a> </div>
+      </nav>
+    </footer>
+  </section>
+  <section id="footer-slide3" class="slidr" data-slidr="f3" >
+    <footer class="row">
+      <nav class="navFooter">
+        <div class="grid grid-3x4">
+          <h6><i class="fa fa-plane"></i>About Alaska</h6>
+          <ul class="footerLists">
+            <li><a href="#">Careers</a></li>
+            <li><a href="https://easybiz.alaskaair.com/ssl/signin/cosignin.aspx?CurrentForm=UCCoSignInStart&lid=footer:easyBiz">EasyBiz</a></li>
+            <li><a href="http://www.alaskaair.com/content/travel-info/optional-services-fees.aspx?cid=mobsite-optional-services-fees">Optional Services & Fees</a></li>
+            <!--<li><a href="http://www.alaskaair.com/content/legal/privacy-policy.aspx?cid=mobsite-privacypolicy">Privacy</a></li>-->
+          </ul>
+        </div>
+        <div class="grid grid-3x4">
+          <h6><i class="fa fa-suitcase"></i>Services</h6>
+          <ul class="footerLists">
+            <li><a href="#">Arrival and departure</a></li>
+            <li><a href="#">Check-in information</a></li>
+            <li><a href="#">Baggage</a></li>
+          </ul>
+        </div>
+        <div class="grid grid-3x4">
+          <h6><i class="fa fa-user"></i>Custom Support</h6>
+          <ul class="footerLists">
+            <li><a href="#">Contacts</a></li>
+            <li><a href="#">FAQ Help</a></li>
+            <li><a href="#">Refund</a></li>
+          </ul>
+        </div>
+        <div class="grid grid-3x4-last">
+          <h6><i class="fa fa-dollar"></i>Specials</h6>
+          <ul>
+            <ul class="footerLists">
+              <li>Sign up for Email Deals</li>
+              <li><a href="#">Flight Deals</a></li>
+              <li><a href="#">Hotel Deals</a></li>
+              <li><a href="#">Car Deals</a></li>
+            </ul>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+  </section>
+</section>
+<section id="footer" class="row subfooter">
+  <footer>
+    <nav class="navFooter">
+      <div class="grid grid-6">
+        <ul class="nav-socialLinks">
+          <li class="mobile-headline"><strong>Connect with us</strong></li>
+          <li class="socialFirst"><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="#"><i class="fa fa-quote-left"></i></a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navFooter">
+      <div class="grid grid-6-last">
+        <ul class="legal">
+          <li><a href="http://www.alaskaair.com/content/legal/consumer-notices.aspx">Copyright &copy; 1995 - 2014 Alaska Air Group, Inc. All Rights Reserved</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+</section>
+<!--<footer class="row subfooter">
                             <div class="grid">
                             </div>
-                          </footer>-->
-                          <script>
+                          </footer>--> 
+<script>
                           $(function () {
                           window.prettyPrint && prettyPrint();
                           $('#dp1').fdatepicker({
@@ -570,10 +795,22 @@
                           checkout.hide();
                           }).data('datepicker');
                           });
-                          </script>
-                          <script type="text/javascript" src="http://www.alaskaair.com/content/~/media/Files/js/slidr.js"></script>
-                          <script>
-                          var s = slidr.create('4x3-sliders-1', {
+                          </script> 
+<script type="text/javascript" src="http://www.alaskaair.com/content/~/media/Files/js/slidr.js"></script> 
+<script>
+                          var s = slidr.create('personal', {
+                          breadcrumbs: false,
+                          controls: 'none',
+                          fade: true,
+                          keyboard: true,
+                          overflow: true,
+                          theme: '#FFF',
+                          timing: { 'linear': '0.9s ease-in' },
+                          touch: true,
+                          }).start().add('h', ['p1', 'p2', 'p3', 'p4', 'p5', 'p1']);
+                          </script> 
+<script>
+                          var s = slidr.create('vacations', {
                           breadcrumbs: false,
                           controls: 'none',
                           fade: true,
@@ -583,9 +820,9 @@
                           timing: { 'linear': '0.9s ease-in' },
                           touch: true,
                           }).start().add('h', ['1', '2', '3', '4', '5', '1']);
-                          </script>
-                          <script type="text/javascript" src="http://www.alaskaair.com/content/~/media/Files/js/slidr.js"></script>
-                          <script>
+                          </script> 
+<script type="text/javascript" src="http://www.alaskaair.com/content/~/media/Files/js/slidr.js"></script> 
+<script>
                           var s = slidr.create('footer', {
                           breadcrumbs: false,
                           controls: 'none',
@@ -595,7 +832,7 @@
                           theme: '#FFF',
                           timing: { 'linear': '0.9s ease-in' },
                           touch: true,
-                          }).start().add('h', ['f1', 'f2', 'f1']);
+                          }).start().add('h', ['f1', 'f2', 'f3', 'f1']);
                           </script>
-                        </body>
-                      </html>
+</body>
+</html>

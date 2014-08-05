@@ -10,6 +10,8 @@
 	text-decoration: none;
 }
 
+span.btn {line-height: 2em}
+
 .btn-wrapper { clear: both;margin: 1em 0 0}
 .btn-wrapper a {}
 .btn a {color: $sitebtn-txtcolor;}
@@ -20,14 +22,34 @@ vertical-align: -.1em;
 }
 
 
-.btn-primary {
+.btn-primary, .btn-default {
 	background-color: $base-color;
 }
-.btn-primary:hover {
+.btn-primary:hover, .btn-default:hover {
 	background-color: lighten($base-color, 8%);
 	cursor:pointer;
 	color: $sitebtn-txtcolor;
 }
+
+.btn-secondary {
+	background-color: $secondary-color;
+}
+.btn-secondary:hover {
+	background-color: lighten($secondary-color, 8%);
+	cursor:pointer;
+	color: $sitebtn-txtcolor;
+}
+
+.btn-teal {
+	background-color: $teal-color;
+}
+.btn-teal:hover, a:hover .btn-teal {
+	background-color: lighten($teal-color, 8%);
+	cursor:pointer;
+	color: $sitebtn-txtcolor;
+}
+
+
 
 .btn-circle {
 	background-color: white;
@@ -39,5 +61,4 @@ vertical-align: -.1em;
 
 .btn-large {}
 .btn-small {}
-.btn-default {}
-.btn-secondary {}
+

@@ -57,7 +57,8 @@ blockquote {
 	.content {
 		font-size: 1em;
 		width: 100%;
-		max-width: 66em;
+		min-width: 66em;
+
 	}
 }
 
@@ -77,3 +78,28 @@ hr {
 	position: relative;
 	top: -3px;
 }
+
+table {
+border: 1px solid lighten($gray, 25%);
+margin: 1em 0 1em;
+width: 100%;
+}
+caption {
+text-align: left;
+line-height: 1.5em;
+font-size: 1em;
+}
+th {
+text-align: left;
+padding: .75em;
+	color: $copy-color ;
+}
+td {
+padding: .75em;
+}
+tr:nth-child(even) {background: lighten($gray, 25%);}
+tr:nth-child(odd) {background: $white;}
+
+
+           
+

@@ -3985,7 +3985,7 @@ form {
 
 p {
   line-height: 1.5em;
-  margin: .5em 0; }
+  margin: .75em 0; }
 
 a img {
   border: 0px; }
@@ -4049,7 +4049,7 @@ blockquote {
   .content {
     font-size: 1em;
     width: 100%;
-    max-width: 66em; } }
+    min-width: 66em; } }
 @media all and (max-width: 66em) {
   .content {
     padding: 0 1em; } }
@@ -4063,6 +4063,48 @@ hr {
   vertical-align: top;
   position: relative;
   top: -3px; }
+
+table {
+  border: 1px solid #eaeaea;
+  margin: 1em 0 1em;
+  width: 100%; }
+
+caption {
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 1em; }
+
+th {
+  text-align: left;
+  padding: .75em;
+  color: #454545; }
+
+td {
+  padding: .75em; }
+
+tr:nth-child(even) {
+  background: #eaeaea; }
+
+tr:nth-child(odd) {
+  background: white; }
+
+/*html5*/
+meter {
+  -webkit-appearance: none; }
+
+meter::-webkit-meter-bar {
+  background: #FFF;
+  border: 1px solid #CCC; }
+
+meter::-webkit-meter-optimum-value {
+  background: #87C7DE;
+  background: -moz-linear-gradient(top, #008480 0%, #008480 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #008480), color-stop(100%, #008480));
+  background: -webkit-linear-gradient(top, teal 0%, #008480 100%);
+  background: -o-linear-gradient(top, #008480 0%, #008480 100%);
+  background: -ms-linear-gradient(top, #008480 0%, teal 100%);
+  background: linear-gradient(to bottom, #008480 0%, #008480 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$teal', endColorstr='$teal',GradientType=0); }
 
 /*grid*/
 /* Row CSS from http://foundation.zurb.com/ */
@@ -4782,6 +4824,9 @@ a.imageLinks {
   font-size: 1.25em;
   text-decoration: none; }
 
+span.btn {
+  line-height: 2em; }
+
 .btn-wrapper {
   clear: both;
   margin: 1em 0 0; }
@@ -4795,11 +4840,27 @@ a.imageLinks {
 .btn svg {
   vertical-align: -.1em; }
 
-.btn-primary {
+.btn-primary, .btn-default {
   background-color: #40639b; }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-default:hover {
   background-color: #4e76b6;
+  cursor: pointer;
+  color: white; }
+
+.btn-secondary {
+  background-color: #40639b; }
+
+.btn-secondary:hover {
+  background-color: #4e76b6;
+  cursor: pointer;
+  color: white; }
+
+.btn-teal {
+  background-color: #008480; }
+
+.btn-teal:hover, a:hover .btn-teal {
+  background-color: #00ada8;
   cursor: pointer;
   color: white; }
 
@@ -4923,6 +4984,10 @@ h4 svg {
   max-width: 100%;
   margin-top: 5em;
   padding-top: 5em; }
+
+.footer p {
+  line-height: 1.75em;
+  margin: 0 0 1em; }
 
 .footer li a {
   color: #787878;
@@ -6021,6 +6086,22 @@ svg.icon-farenheit {
 .pull-left5 {
   margin-left: -5em; }
 
+a.destinations .headlines, a.destinations h1, a.destinations h2, a.destinations h3, a.destinations h4, a.destinations h5, a.destinations h6 {
+  color: white; }
+
+@media all and (max-width: 48em) {
+  a.destinations .headlines, a.destinations h1, a.destinations h2, a.destinations h3, a.destinations h4, a.destinations h5, a.destinations h6 {
+    font-size: 1.5em; } }
+@media all and (max-width: 48em) {
+  a.destinations h2 {
+    font-size: 1.65em; } }
+a.destinations {
+  color: white;
+  text-decoration: none; }
+
+.destinations div.module-blueContainer {
+  min-height: 15.5em; }
+
 #emsl1 {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/kauai.ashx);
   background-position: right center;
@@ -6119,6 +6200,9 @@ svg.icon-farenheit {
   background-size: 101%;
   background-repeat: no-repeat; }
 
+.destination-orlando div.module-blueContainer {
+  background-color: rgba(0, 36, 90, 0.75); }
+
 .destination-rome {
   background-image: url(http://www.alaskaair.com/~/media/Images/destinations/rome.ashx);
   background-position: center;
@@ -6133,21 +6217,7 @@ svg.icon-farenheit {
   min-height: 13.95em;
   color: white; }
 
-a.destination-rome .headlines, a.destination-rome h1, a.destination-rome h2, a.destination-rome h3, a.destination-rome h4, a.destination-rome h5, a.destination-rome h6 {
-  color: white; }
-
-@media all and (max-width: 48em) {
-  a.destination-rome .headlines, a.destination-rome h1, a.destination-rome h2, a.destination-rome h3, a.destination-rome h4, a.destination-rome h5, a.destination-rome h6 {
-    font-size: 1.5em; } }
-@media all and (max-width: 48em) {
-  a.destination-rome h2 {
-    font-size: 1.65em; } }
-a.destination-rome {
-  color: white;
-  text-decoration: none; }
-
 .destination-rome div.module-blueContainer {
-  height: 13.95em;
   background-color: rgba(0, 36, 90, 0.01); }
 
 @media all and (max-width: 26.7em) {
