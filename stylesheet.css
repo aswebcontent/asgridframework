@@ -4470,6 +4470,19 @@ grid 1, 2, 10, 11, 12 don't have margin-right since grid 1 and 2 are to small to
   line-height: 1.5em;
   color: #454545; }
 
+/* Personalization Card when signed in*/
+.module-personalCard {
+  line-height: 1.5em;
+  color: #454545;
+  min-height: 15.5em; }
+
+.module-personalCard h3 {
+  margin-bottom: .5em; }
+
+.module-personalCard h3 a svg, .module-personalCard h3 a use {
+  color: #454545;
+  float: right; }
+
 .module-advisorybgContainer, .module-advisoryContainer, .module-advisoryTextContainer {
   width: auto;
   background: #fcedac url(http://www.alaskaair.com/content/~/media/Images/onSite/icons/advisory) 1.5em center no-repeat;
@@ -4997,6 +5010,10 @@ h4 svg {
 
 .footer a.first, a.AdChoices {
   margin-left: 0; }
+
+.footer section.slidr {
+  margin: 0 auto;
+  width: 100%; }
 
 .footer {
   border-top: 1px solid #c5c5c5; }
@@ -6282,8 +6299,7 @@ div.layout-40.module-textareaWhite {
   overflow: hidden; }
 
 section.slidr {
-  margin: 0 auto;
-  width: 100%; }
+  margin: 0 auto; }
 
 /*Javascript Classes*/
 .is-visuallyHidden {
